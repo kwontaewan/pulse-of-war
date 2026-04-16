@@ -29,10 +29,13 @@ jobs:
       - name: Update news
         run: python scripts/update-news.py
 
+      - name: Generate og:images
+        run: python scripts/generate-og.py
+
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stocks.json data/conflicts.json
-          git diff --cached --quiet || git commit -m "chore: daily stock/news update $(date +%Y-%m-%d)"
+          git add data/stocks.json data/conflicts.json public/og.png public/og-*.png
+          git diff --cached --quiet || git commit -m "chore: daily stock/news/og update $(date +%Y-%m-%d)"
           git push
