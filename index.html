@@ -22,8 +22,16 @@
 
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/card.css">
+  <link rel="stylesheet" href="./css/ticker.css">
 </head>
-<body>
+<body class="has-ticker-bar">
+
+  <!-- Top ticker bar (desktop only, hidden <768px) -->
+  <div class="ticker-bar" aria-hidden="true">
+    <div class="ticker-bar__clock" data-i18n-html></div>
+    <div class="ticker-bar__deaths">💀 —</div>
+    <div class="ticker-bar__tv"></div>
+  </div>
 
   <!-- Loading -->
   <div class="loading">
@@ -45,6 +53,7 @@
         <span data-country-count>—</span>
         <span data-i18n="header.parties">parties</span>
       </div>
+      <div class="header__market-clock" id="js-mobile-clock"></div>
     </div>
 
     <div class="header__center">
@@ -55,6 +64,7 @@
           <span class="live-counter__unit" data-i18n="live.unit">died since you opened this page</span>
         </div>
         <div class="live-comparison"></div>
+        <div class="live-drama" id="js-live-drama"></div>
       </div>
     </div>
 
@@ -185,6 +195,11 @@
     <button class="panel__share-pnl" data-action="share-pnl" data-i18n="panel.sharePnl">SHARE P&L CARD</button>
 
     <div class="panel__section">
+      <div class="panel__section-label" data-i18n="panel.topChart">TOP TICKER — live chart</div>
+      <div class="panel__chart" data-econ="chart"></div>
+    </div>
+
+    <div class="panel__section">
       <div class="panel__section-label" data-i18n="panel.stocks">WAR MARKET — beneficiary stocks</div>
       <div class="panel__stocks" data-econ="stocks"></div>
     </div>
@@ -228,5 +243,6 @@
   </script>
 
   <script type="module" src="./js/app.js"></script>
+  <script type="module" src="./js/ticker-bar.js"></script>
 </body>
 </html>

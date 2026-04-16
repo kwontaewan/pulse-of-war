@@ -1,0 +1,42 @@
+{
+  "note": "Ticker → TradingView symbol mapping. Used by ticker-bar (main page) and panel (conflict-specific chart). Add entries as new stocks appear in data/stocks.json or conflicts.json. If a ticker is missing, the fallback is 'NASDAQ:<TICKER>' which works for most US-listed stocks.",
+  "ticker_tape": [
+    { "proName": "NASDAQ:NDX", "title": "Nasdaq 100" },
+    { "proName": "CME_MINI:ES1!", "title": "S&P 500 Fut" },
+    { "proName": "FX_IDC:USDKRW", "title": "USD/KRW" },
+    { "proName": "BITSTAMP:BTCUSD", "title": "Bitcoin" },
+    { "proName": "TVC:GOLD", "title": "Gold" },
+    { "proName": "TVC:UKOIL", "title": "Brent Oil" }
+  ],
+  "mapping": {
+    "LMT": "NYSE:LMT",
+    "RTX": "NYSE:RTX",
+    "NOC": "NYSE:NOC",
+    "GD": "NYSE:GD",
+    "LHX": "NYSE:LHX",
+    "HII": "NYSE:HII",
+    "BA": "NYSE:BA",
+    "ITA": "BATS:ITA",
+    "XOM": "NYSE:XOM",
+    "CVX": "NYSE:CVX",
+    "OXY": "NYSE:OXY",
+    "COP": "NYSE:COP",
+    "SLB": "NYSE:SLB",
+    "PLTR": "NASDAQ:PLTR",
+    "LDOS": "NYSE:LDOS",
+    "CEG": "NASDAQ:CEG",
+    "BAH": "NYSE:BAH",
+    "KTOS": "NASDAQ:KTOS",
+    "AVAV": "NASDAQ:AVAV",
+    "RHMT.ME": "FWB:RHM",
+    "BAESY": "OTC:BAESY",
+    "FINMY": "OTC:FINMY",
+    "012450.KS": "KRX:012450",
+    "079550.KS": "KRX:079550",
+    "064350.KS": "KRX:064350",
+    "272210.KS": "KRX:272210",
+    "042660.KS": "KRX:042660",
+    "BTC-USD": "BITSTAMP:BTCUSD",
+    "ETH-USD": "BITSTAMP:ETHUSD"
+  }
+}
