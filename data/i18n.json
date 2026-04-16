@@ -60,7 +60,15 @@
     "card.redditCopied": "Reddit-ready text copied. Paste into r/wallstreetbets.",
     "card.copyError": "Copy failed. Try Download instead.",
     "card.downloadError": "Download failed.",
-    "card.renderError": "Render failed."
+    "card.renderError": "Render failed.",
+    "briefing.loading": "Loading today's briefing…",
+    "briefing.stale": "Data delayed — latest briefing is stale.",
+    "briefing.readMore": "📰 READ TODAY'S BRIEFING",
+    "chat.title": "Ask the War Map",
+    "chat.placeholder": "Why did LMT move? Ukraine situation?",
+    "chat.disclaimerShort": "AI commentary · not investment advice",
+    "chat.rateLimit": "Daily chat limit reached. Come back tomorrow.",
+    "disclaimer.ai_commentary": "AI commentary on public data. Not investment advice. Not a registered advisor."
   },
   "ko": {
     "header.activeConflicts": "개 활성 분쟁,",
@@ -123,6 +131,14 @@
     "card.redditCopied": "레딧용 텍스트 복사됨. r/wallstreetbets 에 붙여넣기.",
     "card.copyError": "복사 실패. 다운로드로 시도해보세요.",
     "card.downloadError": "다운로드 실패.",
-    "card.renderError": "렌더링 실패."
+    "card.renderError": "렌더링 실패.",
+    "briefing.loading": "오늘 브리핑 로드 중…",
+    "briefing.stale": "데이터 지연 — 최근 브리핑이 오래되었습니다.",
+    "briefing.readMore": "📰 오늘의 브리핑 읽기",
+    "chat.title": "전쟁 AI 질의",
+    "chat.placeholder": "LMT가 왜 올랐어? Ukraine 상황은?",
+    "chat.disclaimerShort": "AI commentary · 투자자문 아님",
+    "chat.rateLimit": "오늘 채팅 한도 도달. 내일 다시 와주세요.",
+    "disclaimer.ai_commentary": "공개 데이터에 대한 AI 해석. 투자자문 아님. 이 서비스는 자본시장법상 투자자문업 등록을 하지 않았습니다."
   }
 }
