@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Briefing — Pulse of War</title>
+
+  <meta property="og:title" content="Pulse of War — Daily Briefing">
+  <meta property="og:description" content="Daily AI-generated briefing on 26 active conflicts and war-stock movements.">
+  <meta property="og:image" content="/og.png">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="/og.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/briefing.css">
+</head>
+<body class="briefing-body">
+
+  <header class="briefing-header">
+    <a class="briefing-header__brand" href="/">← PULSE OF WAR</a>
+    <div class="briefing-header__right">
+      <button class="lang-toggle" id="js-lang-toggle">KO</button>
+    </div>
+  </header>
+
+  <main class="briefing-main">
+    <div class="briefing-stale" id="js-stale-banner" hidden></div>
+
+    <div class="briefing-content" id="js-briefing">
+      <div class="briefing-loading" data-i18n="briefing.loading">Loading today's briefing…</div>
+    </div>
+
+    <footer class="briefing-disclaimer" data-i18n="disclaimer.ai_commentary"></footer>
+  </main>
+
+  <script type="module" src="./js/briefing.js"></script>
+  <script type="module" src="./js/chatbot.js"></script>
+
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
