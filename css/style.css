@@ -189,11 +189,11 @@ html, body {
 /* Headline */
 .headline {
   position: fixed;
-  bottom: 0;
+  bottom: 56px;
   left: 0;
   right: 0;
   z-index: 10;
-  padding: 20px 32px;
+  padding: 12px 32px;
   pointer-events: none;
 }
 
@@ -213,12 +213,8 @@ html, body {
   font-style: normal;
 }
 
-/* Share Buttons — inside header right area */
+/* Share Buttons */
 .share {
-  position: fixed;
-  top: 24px;
-  right: 300px;
-  z-index: 11;
   display: flex;
   gap: 6px;
 }
@@ -376,22 +372,34 @@ html, body {
   padding-top: 16px;
 }
 
+/* Bottom Bar — unified container */
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 24px;
+  padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px));
+  background: rgba(6, 6, 8, 0.92);
+  border-top: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+
 /* Sound Toggle */
 .sound-toggle {
-  position: fixed;
-  bottom: 56px;
-  left: 32px;
-  z-index: 15;
-  padding: 8px 16px;
-  background: rgba(6, 6, 8, 0.8);
+  padding: 8px 14px;
+  background: none;
   border: 1px solid var(--border);
   color: var(--text-dim);
   font-family: 'Space Mono', monospace;
   font-size: 11px;
   cursor: pointer;
   transition: all 0.2s;
-  pointer-events: auto;
-  backdrop-filter: blur(8px);
+  min-height: 40px;
 }
 
 .sound-toggle:hover {
@@ -1556,12 +1564,8 @@ html, body {
 
 /* Auto Focus Toggle */
 .autofocus-toggle {
-  position: fixed;
-  bottom: 20px;
-  right: 32px;
-  z-index: 15;
-  padding: 8px 16px;
-  background: rgba(6, 6, 8, 0.8);
+  padding: 8px 14px;
+  background: none;
   border: 1px solid var(--border);
   color: var(--text-dim);
   font-family: 'Space Mono', monospace;
@@ -1569,7 +1573,7 @@ html, body {
   cursor: pointer;
   transition: all 0.2s;
   letter-spacing: 0.05em;
-  backdrop-filter: blur(8px);
+  min-height: 40px;
 }
 
 .autofocus-toggle:hover {
@@ -1727,8 +1731,8 @@ html, body {
 
   /* headline: 하단바 위에 */
   .headline {
-    padding: 10px 16px;
-    bottom: calc(48px + env(safe-area-inset-bottom, 0px));
+    padding: 8px 16px;
+    bottom: calc(52px + env(safe-area-inset-bottom, 0px));
   }
 
   .headline__text {
@@ -1771,57 +1775,22 @@ html, body {
     min-height: 44px;
   }
 
-  /* unified bottom bar — single flex container */
-  .share {
-    position: fixed;
-    bottom: env(safe-area-inset-bottom, 0px);
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    gap: 4px;
-    padding: 6px 80px;
-    background: rgba(0, 0, 0, 0.92);
-    border-top: 1px solid var(--border);
-    z-index: 15;
-    min-height: 44px;
-    align-items: center;
+  /* bottom-bar: compact on mobile */
+  .bottom-bar {
+    padding: 6px 12px;
+    padding-bottom: calc(6px + env(safe-area-inset-bottom, 0px));
   }
 
   .share__btn {
-    padding: 10px 14px;
-    font-size: 10px;
-    min-height: 44px;
-  }
-
-  .sound-toggle {
-    position: fixed;
-    bottom: env(safe-area-inset-bottom, 0px);
-    left: 0;
-    padding: 0 12px;
+    padding: 8px 10px;
     font-size: 9px;
-    background: rgba(0, 0, 0, 0.92);
-    border-top: 1px solid var(--border);
-    border-right: 1px solid var(--border);
-    z-index: 16;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
   }
 
+  .sound-toggle,
   .autofocus-toggle {
-    position: fixed;
-    bottom: env(safe-area-inset-bottom, 0px);
-    right: 0;
-    padding: 0 12px;
+    padding: 6px 10px;
     font-size: 9px;
-    background: rgba(0, 0, 0, 0.92);
-    border-top: 1px solid var(--border);
-    border-left: 1px solid var(--border);
-    z-index: 16;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
+    min-height: 40px;
   }
 
   .live-comparison { display: none; }
