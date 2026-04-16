@@ -363,8 +363,10 @@ async function main() {
     });
   }
 
-  // Done — start everything
-  let autoStartTimer = null;
+  // Done — start everything. Auto-tour is OFF by default; user toggles with
+  // the "▶ AUTO FOCUS" button. Previous behavior (auto-start after 3s) was
+  // disorienting for first-time visitors — the camera panned before they
+  // could orient themselves.
   loadingFill.style.width = '100%';
   setTimeout(() => {
     loadingEl.classList.add('loading--hidden');
@@ -381,10 +383,6 @@ async function main() {
 
     if (location.hash && location.hash.startsWith('#conflict=')) {
       handleDeepLink();
-    } else {
-      autoStartTimer = setTimeout(() => {
-        if (!tourActive) startTour();
-      }, 3000);
     }
 
     // Handle address-bar hash changes without full reload
