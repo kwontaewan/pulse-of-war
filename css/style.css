@@ -245,9 +245,10 @@ html, body {
   right: -420px;
   width: 400px;
   height: 100%;
-  z-index: 20;
-  background: rgba(6, 6, 8, 0.96);
+  z-index: 50;
+  background: rgba(6, 6, 8, 0.98);
   border-left: 1px solid rgba(255, 32, 32, 0.12);
+  pointer-events: auto;
   padding: 32px 24px;
   overflow-y: auto;
   transition: right 0.45s cubic-bezier(0.16, 1, 0.3, 1);
@@ -257,7 +258,7 @@ html, body {
 }
 
 .panel--open {
-  right: 0;
+  right: 0 !important;
 }
 
 .panel__close {
@@ -581,17 +582,18 @@ html, body {
   left: -380px;
   width: 360px;
   height: 100%;
-  z-index: 20;
-  background: rgba(6, 6, 8, 0.96);
+  z-index: 50;
+  background: rgba(6, 6, 8, 0.98);
   border-right: 1px solid var(--border);
   backdrop-filter: blur(24px);
   transition: left 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
   flex-direction: column;
+  pointer-events: auto;
 }
 
 .sidebar--open {
-  left: 0;
+  left: 0 !important;
 }
 
 .sidebar__header {
