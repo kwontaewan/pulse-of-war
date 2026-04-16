@@ -1,19 +1,29 @@
 // Conflict detail panel with economic impact + clickable news
 
 import { t } from './i18n.js';
+import { openShareModal } from './share-modal.js';
 
 export class DetailPanel {
   constructor(panelEl) {
     this.el = panelEl;
+    this.currentConflict = null;
     this.closeBtn = panelEl.querySelector('.panel__close');
     this.closeBtn.addEventListener('click', () => this.close());
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') this.close();
     });
+
+    const shareBtn = panelEl.querySelector('[data-action="share-pnl"]');
+    if (shareBtn) {
+      shareBtn.addEventListener('click', () => {
+        if (this.currentConflict) openShareModal(this.currentConflict);
+      });
+    }
   }
 
   open(conflict, lang) {
     this.lang = lang || 'en';
+    this.currentConflict = conflict;
     this.el.querySelector('.panel__type').textContent = conflict.type.toUpperCase();
     this.el.querySelector('.panel__title').textContent = conflict.name;
 
@@ -43,7 +53,7 @@ export class DetailPanel {
 
     // Economic data
     const econ = conflict.economicImpact;
-    const econSections = this.el.querySelectorAll('.panel__section, .panel__war-cost');
+    const econSections = this.el.querySelectorAll('.panel__section, .panel__war-cost, .panel__share-pnl');
 
     if (econ) {
       econSections.forEach(el => el.style.display = '');
@@ -56,6 +66,12 @@ export class DetailPanel {
       this.renderStocks(econ.stocks || []);
       this.renderCommodities(econ.commodities || []);
       this.renderNews(econ.news || []);
+
+      // Hide share button if no stocks to render
+      const shareBtn = this.el.querySelector('.panel__share-pnl');
+      if (shareBtn) {
+        shareBtn.style.display = (econ.stocks?.length > 0) ? '' : 'none';
+      }
     } else {
       econSections.forEach(el => el.style.display = 'none');
     }

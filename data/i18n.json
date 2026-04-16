@@ -46,7 +46,21 @@
     "sidebar.conflicts": "ALL CONFLICTS",
     "onboarding": "Click any red pulse to explore conflict details",
     "legend.major": "MAJOR CONFLICT",
-    "legend.active": "ACTIVE CONFLICT"
+    "legend.active": "ACTIVE CONFLICT",
+    "panel.sharePnl": "SHARE P&L CARD",
+    "card.modalTitle": "If you bought…",
+    "card.ticker": "Ticker",
+    "card.amount": "Amount",
+    "card.download": "Download PNG",
+    "card.copy": "Copy image",
+    "card.tweet": "Share on X",
+    "card.copyReddit": "Copy Reddit text",
+    "card.downloaded": "Downloaded.",
+    "card.copied": "Image copied to clipboard.",
+    "card.redditCopied": "Reddit-ready text copied. Paste into r/wallstreetbets.",
+    "card.copyError": "Copy failed. Try Download instead.",
+    "card.downloadError": "Download failed.",
+    "card.renderError": "Render failed."
   },
   "ko": {
     "header.activeConflicts": "개 활성 분쟁,",
@@ -95,6 +109,20 @@
     "sidebar.conflicts": "전체 분쟁",
     "onboarding": "빨간 펄스를 클릭하면 분쟁 상세 정보를 볼 수 있습니다",
     "legend.major": "주요 분쟁",
-    "legend.active": "활성 분쟁"
+    "legend.active": "활성 분쟁",
+    "panel.sharePnl": "손익 카드 공유",
+    "card.modalTitle": "만약 그때 샀다면…",
+    "card.ticker": "종목",
+    "card.amount": "투자금",
+    "card.download": "PNG 다운로드",
+    "card.copy": "이미지 복사",
+    "card.tweet": "X에 공유",
+    "card.copyReddit": "레딧용 텍스트 복사",
+    "card.downloaded": "다운로드 완료.",
+    "card.copied": "이미지 복사됨.",
+    "card.redditCopied": "레딧용 텍스트 복사됨. r/wallstreetbets 에 붙여넣기.",
+    "card.copyError": "복사 실패. 다운로드로 시도해보세요.",
+    "card.downloadError": "다운로드 실패.",
+    "card.renderError": "렌더링 실패."
   }
 }
