@@ -1,6 +1,11 @@
 {
   "outputDirectory": ".",
   "buildCommand": "",
-  "installCommand": "",
-  "framework": null
+  "installCommand": "npm install",
+  "framework": null,
+  "functions": {
+    "api/chat.ts": {
+      "maxDuration": 30
+    }
+  }
 }
