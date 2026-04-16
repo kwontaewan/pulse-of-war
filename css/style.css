@@ -540,7 +540,7 @@ html, body {
 /* Sidebar Toggle Buttons */
 .sidebar-toggles {
   position: fixed;
-  top: 140px;
+  top: 185px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 15;
