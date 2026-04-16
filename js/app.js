@@ -49,14 +49,15 @@ async function main() {
   const counterEl = document.querySelector('.counter__number');
   const counter = new CasualtyCounter(counterEl, totalCasualties);
 
-  // Step 4b: Session death counter
+  // Step 4b: Session death counter — throttled to 1/sec
   const sessionDeathEl = document.getElementById('js-session-deaths');
   const deathsPerSecond = totalCasualties / (365.25 * 24 * 3600);
   const sessionStart = performance.now();
   function updateSessionDeaths() {
-    const elapsed = (performance.now() - sessionStart) / 1000;
-    sessionDeathEl.textContent = Math.floor(deathsPerSecond * elapsed).toLocaleString('en-US');
-    requestAnimationFrame(updateSessionDeaths);
+    setInterval(() => {
+      const elapsed = (performance.now() - sessionStart) / 1000;
+      sessionDeathEl.textContent = Math.floor(deathsPerSecond * elapsed).toLocaleString('en-US');
+    }, 1000);
   }
 
   // Step 5: Header stats
@@ -274,20 +275,19 @@ async function main() {
 
   let lastComparison = '';
   function updateComparison() {
-    const deaths = getSessionDeaths();
-    let label = '';
-    for (let i = comparisons.length - 1; i >= 0; i--) {
-      if (deaths >= comparisons[i][0]) { label = comparisons[i][1]; break; }
-    }
-    if (label && label !== lastComparison && comparisonEl) {
-      lastComparison = label;
-      comparisonEl.textContent = lang === 'ko'
-        ? `= ${label}`
-        : `= ${label}`;
-      comparisonEl.classList.add('live-comparison--flash');
-      setTimeout(() => comparisonEl.classList.remove('live-comparison--flash'), 1000);
-    }
-    requestAnimationFrame(updateComparison);
+    setInterval(() => {
+      const deaths = getSessionDeaths();
+      let label = '';
+      for (let i = comparisons.length - 1; i >= 0; i--) {
+        if (deaths >= comparisons[i][0]) { label = comparisons[i][1]; break; }
+      }
+      if (label && label !== lastComparison && comparisonEl) {
+        lastComparison = label;
+        comparisonEl.textContent = `= ${label}`;
+        comparisonEl.classList.add('live-comparison--flash');
+        setTimeout(() => comparisonEl.classList.remove('live-comparison--flash'), 1000);
+      }
+    }, 2000);
   }
 
   // Step 15: Exit overlay — show stats when user leaves

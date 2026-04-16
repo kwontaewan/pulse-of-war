@@ -213,11 +213,11 @@ html, body {
   font-style: normal;
 }
 
-/* Share Buttons — fixed top right, below lang toggle */
+/* Share Buttons — inside header right area */
 .share {
   position: fixed;
   top: 24px;
-  right: 80px;
+  right: 300px;
   z-index: 11;
   display: flex;
   gap: 6px;
@@ -379,7 +379,7 @@ html, body {
 /* Sound Toggle */
 .sound-toggle {
   position: fixed;
-  bottom: 20px;
+  bottom: 56px;
   left: 32px;
   z-index: 15;
   padding: 8px 16px;
@@ -482,7 +482,7 @@ html, body {
 .watermark {
   position: fixed;
   bottom: 24px;
-  left: 32px;
+  left: 140px;
   z-index: 10;
   font-size: 10px;
   letter-spacing: 0.1em;
@@ -530,7 +530,7 @@ html, body {
 /* Sidebar Toggle Buttons */
 .sidebar-toggles {
   position: fixed;
-  top: 20px;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 15;
@@ -1691,7 +1691,7 @@ html, body {
 
   /* stats-bar: 모바일에서 상단 헤더 아래 가로 스크롤 */
   .stats-bar {
-    top: 56px;
+    top: 72px;
     bottom: auto;
     display: flex;
     gap: 0;
@@ -1725,10 +1725,10 @@ html, body {
     display: none;
   }
 
-  /* headline: 하단 고정, 컴팩트 */
+  /* headline: 하단바 위에 */
   .headline {
     padding: 10px 16px;
-    bottom: 44px;
+    bottom: calc(48px + env(safe-area-inset-bottom, 0px));
   }
 
   .headline__text {
@@ -1758,56 +1758,70 @@ html, body {
   }
 
   .sidebar-toggles {
-    gap: 2px;
+    top: 72px;
+    right: 12px;
+    left: auto;
+    transform: none;
+    gap: 4px;
   }
 
   .sidebar-toggle {
-    padding: 6px 10px;
+    padding: 10px 12px;
     font-size: 10px;
+    min-height: 44px;
   }
 
-  /* bottom bar: all controls in one row at very bottom */
+  /* unified bottom bar — single flex container */
   .share {
     position: fixed;
-    bottom: 0;
+    bottom: env(safe-area-inset-bottom, 0px);
     left: 0;
     right: 0;
     display: flex;
     justify-content: center;
     gap: 4px;
-    padding: 8px 12px;
-    background: rgba(0, 0, 0, 0.9);
+    padding: 6px 80px;
+    background: rgba(0, 0, 0, 0.92);
     border-top: 1px solid var(--border);
     z-index: 15;
+    min-height: 44px;
+    align-items: center;
   }
 
   .share__btn {
-    padding: 8px 12px;
+    padding: 10px 14px;
     font-size: 10px;
+    min-height: 44px;
   }
 
   .sound-toggle {
     position: fixed;
-    bottom: 0;
+    bottom: env(safe-area-inset-bottom, 0px);
     left: 0;
-    padding: 8px 10px;
+    padding: 0 12px;
     font-size: 9px;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.92);
     border-top: 1px solid var(--border);
     border-right: 1px solid var(--border);
     z-index: 16;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
 
   .autofocus-toggle {
     position: fixed;
-    bottom: 0;
+    bottom: env(safe-area-inset-bottom, 0px);
     right: 0;
-    padding: 8px 10px;
+    padding: 0 12px;
     font-size: 9px;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.92);
     border-top: 1px solid var(--border);
     border-left: 1px solid var(--border);
     z-index: 16;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
 
   .live-comparison { display: none; }
