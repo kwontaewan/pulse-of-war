@@ -29,6 +29,19 @@ jobs:
       - name: Update news
         run: python scripts/update-news.py
 
+      - name: Build compact context
+        run: python scripts/data_compact.py
+
+      - name: Generate daily briefing
+        if: env.ANTHROPIC_API_KEY != ''
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          POW_MODEL: claude-haiku-4-5
+        run: |
+          pip install anthropic
+          python scripts/generate-briefing.py
+
       - name: Generate og:images
         run: python scripts/generate-og.py
 
@@ -36,6 +49,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stocks.json data/conflicts.json public/og.png public/og-*.png
-          git diff --cached --quiet || git commit -m "chore: daily stock/news/og update $(date +%Y-%m-%d)"
+          git add data/stocks.json data/conflicts.json data/context-compact.json data/briefing.json public/og.png public/og-*.png || true
+          git diff --cached --quiet || git commit -m "chore: daily stock/news/briefing/og update $(date +%Y-%m-%d)"
           git push

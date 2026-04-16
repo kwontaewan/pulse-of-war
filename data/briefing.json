@@ -1,0 +1,59 @@
+{
+  "date": "2026-04-16",
+  "generated_at": "2026-04-16T18:48:20.322931+00:00",
+  "model": "dry-run",
+  "en": {
+    "date": "2026-04-16",
+    "headline": "Defense ETF extends lead as US-Iran ceasefire holds",
+    "sections": [
+      {
+        "title": "TOP 3 WAR UPDATES",
+        "bullets": [
+          {
+            "text": "US-Iran ceasefire holds 40 days in, keeping Hormuz open for oil transit.",
+            "claims": []
+          },
+          {
+            "text": "Ukraine war passes 300,000 casualties per ACLED/UN estimates.",
+            "claims": [
+              {
+                "type": "numerical",
+                "text": "300,000",
+                "source": "conflicts.json.1.casualties"
+              }
+            ]
+          },
+          {
+            "text": "Sudan RSF-SAF fighting produces 500,000+ refugees in 2026 to date.",
+            "claims": []
+          }
+        ]
+      },
+      {
+        "title": "MARKET IMPACT",
+        "bullets": [
+          {
+            "text": "$ITA trades 55% above 2025 baseline on US-Iran positioning.",
+            "claims": [
+              {
+                "type": "numerical",
+                "text": "55%",
+                "source": "conflicts.json.0.economicImpact.stocks.0.change"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "WHAT TO WATCH THIS WEEK",
+        "bullets": [
+          {
+            "text": "Hormuz reopening progress — any renewed closure sends oil back past 100.",
+            "claims": []
+          }
+        ]
+      }
+    ]
+  },
+  "ko": null
+}
