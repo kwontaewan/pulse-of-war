@@ -204,6 +204,25 @@
     <div class="panel__source"></div>
   </div>
 
+  <!-- Vercel Web Analytics (free, no config needed) -->
+  <script defer src="/_vercel/insights/script.js"></script>
+
+  <!-- Simple self-hosted DAU counter -->
+  <script>
+    (function() {
+      const today = new Date().toISOString().slice(0, 10);
+      const key = 'pow_visit_' + today;
+      if (!localStorage.getItem(key)) {
+        localStorage.setItem(key, '1');
+        // Log visit to console (visible in Vercel logs)
+        fetch('/api/ping?d=' + today + '&r=' + encodeURIComponent(document.referrer || 'direct') + '&l=' + navigator.language).catch(() => {});
+      }
+      // Track total unique days visited
+      const visits = Object.keys(localStorage).filter(k => k.startsWith('pow_visit_')).length;
+      console.log('[POW] Day ' + visits + ' visitor, date: ' + today);
+    })();
+  </script>
+
   <script type="module" src="./js/app.js"></script>
 </body>
 </html>
