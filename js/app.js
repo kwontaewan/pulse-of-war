@@ -42,8 +42,17 @@ async function main() {
   // Step 3: Aggregate stats
   const totalCasualties = conflicts.reduce((sum, c) => sum + c.casualties, 0);
   const totalRefugees = conflicts.reduce((sum, c) => sum + c.refugees, 0);
-  const dailyDeaths = Math.round(totalCasualties / 365);
   const conflictCount = conflicts.length;
+
+  // Annual conflict-death rate — sum of each conflict's own per-year rate
+  // (c.casualties / years_active). Previous buggy math divided the cumulative
+  // multi-year totalCasualties by a single year, overstating the rate ~5x.
+  const currentYear = new Date().getFullYear();
+  const annualDeathRate = conflicts.reduce((sum, c) => {
+    const yearsActive = Math.max(1, currentYear - (c.startYear || currentYear));
+    return sum + c.casualties / yearsActive;
+  }, 0);
+  const dailyDeaths = Math.round(annualDeathRate / 365);
 
   // Step 4: Counter
   const counterEl = document.querySelector('.counter__number');
@@ -51,7 +60,7 @@ async function main() {
 
   // Step 4b: Session death counter — throttled to 1/sec
   const sessionDeathEl = document.getElementById('js-session-deaths');
-  const deathsPerSecond = totalCasualties / (365.25 * 24 * 3600);
+  const deathsPerSecond = annualDeathRate / (365.25 * 24 * 3600);
   const sessionStart = performance.now();
   function updateSessionDeaths() {
     setInterval(() => {
