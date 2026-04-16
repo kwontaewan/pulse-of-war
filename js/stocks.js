@@ -92,7 +92,7 @@ export class StocksPanel {
       <div class="stock-card ${colorClass}" data-sector="${s.sector}" data-ticker="${esc(s.ticker)}">
         <div class="stock-card__header">
           <div class="stock-card__ticker-row">
-            <span class="stock-card__ticker">${esc(s.ticker)}</span>
+            <span class="stock-card__ticker">${esc(s.ticker.endsWith('.KS') ? (this.lang === 'ko' ? (s.name_ko || s.name) : s.name) : s.ticker)}</span>
             ${exchangeBadge}
             ${trendBadge}
             <span class="stock-card__price">${s.price}</span>
@@ -167,7 +167,7 @@ export class StocksPanel {
     detail.innerHTML = `
       <button class="stock-detail__back">${ko ? '← 목록으로' : '← Back to list'}</button>
       <div class="stock-detail__header ${up ? 'stock-card--up' : 'stock-card--down'}">
-        <div class="stock-detail__ticker">${esc(s.ticker)}</div>
+        <div class="stock-detail__ticker">${esc(s.ticker.endsWith('.KS') ? (ko ? (s.name_ko || s.name) : s.name) : s.ticker)}</div>
         <div class="stock-detail__name">${esc(name)}</div>
         <div class="stock-detail__exchange-badge">${esc(s.exchange)}</div>
       </div>
