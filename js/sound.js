@@ -1,4 +1,4 @@
-// Web Audio API heartbeat sound
+// Web Audio API heartbeat sound — optimized for mobile speakers
 
 export class HeartbeatSound {
   constructor() {
@@ -13,32 +13,52 @@ export class HeartbeatSound {
 
   beat() {
     if (!this.ctx || !this.playing) return;
-
     const now = this.ctx.currentTime;
 
-    // First thump (lub)
-    this.thump(now, 60, 0.15);
-    // Second thump (dub) — slightly higher, quieter
-    this.thump(now + 0.12, 50, 0.08);
+    // Lub (first beat) — deep thump + audible click
+    this.thump(now, 150, 0.6, 0.25);       // main bass
+    this.click(now, 800, 0.3);              // transient click for mobile
+
+    // Dub (second beat) — softer
+    this.thump(now + 0.15, 120, 0.35, 0.2);
+    this.click(now + 0.15, 600, 0.15);
   }
 
-  thump(time, freq, volume) {
+  thump(time, freq, volume, duration) {
     const osc = this.ctx.createOscillator();
     const gain = this.ctx.createGain();
 
     osc.type = 'sine';
     osc.frequency.setValueAtTime(freq, time);
-    osc.frequency.exponentialRampToValueAtTime(30, time + 0.15);
+    osc.frequency.exponentialRampToValueAtTime(40, time + duration);
 
     gain.gain.setValueAtTime(0, time);
-    gain.gain.linearRampToValueAtTime(volume, time + 0.02);
-    gain.gain.exponentialRampToValueAtTime(0.001, time + 0.3);
+    gain.gain.linearRampToValueAtTime(volume, time + 0.01);
+    gain.gain.exponentialRampToValueAtTime(0.001, time + duration + 0.1);
 
     osc.connect(gain);
     gain.connect(this.ctx.destination);
-
     osc.start(time);
-    osc.stop(time + 0.4);
+    osc.stop(time + duration + 0.2);
+  }
+
+  // High-freq transient so mobile speakers can reproduce it
+  click(time, freq, volume) {
+    const osc = this.ctx.createOscillator();
+    const gain = this.ctx.createGain();
+
+    osc.type = 'triangle';
+    osc.frequency.setValueAtTime(freq, time);
+    osc.frequency.exponentialRampToValueAtTime(200, time + 0.05);
+
+    gain.gain.setValueAtTime(0, time);
+    gain.gain.linearRampToValueAtTime(volume, time + 0.005);
+    gain.gain.exponentialRampToValueAtTime(0.001, time + 0.08);
+
+    osc.connect(gain);
+    gain.connect(this.ctx.destination);
+    osc.start(time);
+    osc.stop(time + 0.15);
   }
 
   toggle() {
