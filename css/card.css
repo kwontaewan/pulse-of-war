@@ -1,0 +1,226 @@
+/* P&L Share card modal */
+
+.share-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: none;
+  font-family: 'Space Mono', monospace;
+}
+
+.share-modal--open {
+  display: block;
+}
+
+.share-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.share-modal__panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(900px, 95vw);
+  max-height: 95vh;
+  overflow-y: auto;
+  background: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 32px;
+  color: #fff;
+}
+
+.share-modal__close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  font-size: 28px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+.share-modal__close:hover {
+  color: #fff;
+}
+
+.share-modal__title {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.share-modal__canvas-wrap {
+  width: 100%;
+  aspect-ratio: 1200 / 630;
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.share-modal__canvas {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+.share-modal__controls {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.share-modal__ctrl {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.share-modal__label {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
+}
+
+.share-modal__amount-value {
+  font-weight: 700;
+  color: #fff;
+}
+
+.share-modal__stocks,
+.share-modal__amount-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.share-modal__stock,
+.share-modal__preset {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.1s, background 0.1s;
+}
+
+.share-modal__stock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-width: 90px;
+}
+.share-modal__stock-ticker {
+  font-weight: 700;
+}
+.share-modal__stock-change {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.share-modal__stock-change.is-up { color: #2ee67a; }
+.share-modal__stock-change.is-down { color: #ff2020; }
+
+.share-modal__stock:hover,
+.share-modal__preset:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.share-modal__stock--active,
+.share-modal__preset--active {
+  border-color: #ff2020;
+  background: rgba(255, 32, 32, 0.12);
+}
+
+.share-modal__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.share-modal__action {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  padding: 12px 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: background 0.1s;
+}
+.share-modal__action:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.share-modal__action--primary {
+  background: #ff2020;
+  border-color: #ff2020;
+}
+.share-modal__action--primary:hover {
+  background: #ff4040;
+}
+
+.share-modal__status {
+  margin-top: 12px;
+  font-size: 12px;
+  color: rgba(46, 230, 122, 0.9);
+  min-height: 1em;
+}
+
+/* Share P&L button inside conflict panel */
+.panel__share-pnl {
+  display: block;
+  width: 100%;
+  margin: 20px 0 12px;
+  padding: 14px 16px;
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  background: #ff2020;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.1s;
+}
+.panel__share-pnl:hover {
+  background: #ff4040;
+}
+.panel__share-pnl::before {
+  content: '📸  ';
+}
+
+@media (max-width: 640px) {
+  .share-modal__panel {
+    padding: 20px 16px;
+    width: 100vw;
+    max-height: 100vh;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  .share-modal__action {
+    flex: 1 1 calc(50% - 4px);
+    font-size: 12px;
+    padding: 10px 8px;
+  }
+}
