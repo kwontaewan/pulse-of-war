@@ -101,11 +101,15 @@ export class StocksPanel {
         </div>
         <div class="stock-card__returns">
           <div class="stock-card__return">
+            <span class="stock-card__return-label">${this.lang === 'ko' ? '오늘' : 'DoD'}</span>
+            <span class="stock-card__return-value ${s.dod != null ? (s.dod >= 0 ? 'val--up' : 'val--down') : ''}">${s.dod != null ? (s.dod >= 0 ? '+' : '') + s.dod + '%' : '—'}</span>
+          </div>
+          <div class="stock-card__return">
             <span class="stock-card__return-label">YTD</span>
             <span class="stock-card__return-value">${sign}${s.ytdReturn}%</span>
           </div>
           <div class="stock-card__return">
-            <span class="stock-card__return-label">${this.lang === 'ko' ? '전쟁 수익' : 'WAR'}</span>
+            <span class="stock-card__return-label">${this.lang === 'ko' ? '전쟁' : 'WAR'}</span>
             <span class="stock-card__return-value stock-card__return-value--war">${sign}${s.warReturn}%</span>
           </div>
         </div>
@@ -134,6 +138,32 @@ export class StocksPanel {
     const outlookSection = this.el.querySelector('.stocks__outlook-section');
     const sectors = this.el.querySelector('.stocks__sectors');
 
+    // Return helpers
+    const rv = (val) => val != null ? `${val >= 0 ? '+' : ''}${val}%` : '—';
+    const rc = (val) => val == null ? '' : val >= 0 ? 'val--up' : 'val--down';
+
+    // 52-week range bar
+    const rangePercent = (s.weekHigh52 && s.weekLow52 && s.priceNumeric)
+      ? Math.round(((s.priceNumeric - s.weekLow52) / (s.weekHigh52 - s.weekLow52)) * 100)
+      : null;
+
+    const rangeHtml = rangePercent != null ? `
+      <div class="stock-detail__section-label">${ko ? '52주 레인지' : '52-WEEK RANGE'}</div>
+      <div class="stock-detail__range">
+        <span class="stock-detail__range-val">${s.weekLow52.toLocaleString()}</span>
+        <div class="stock-detail__range-track">
+          <div class="stock-detail__range-marker" style="left:${rangePercent}%"></div>
+        </div>
+        <span class="stock-detail__range-val">${s.weekHigh52.toLocaleString()}</span>
+      </div>` : '';
+
+    // Valuation metrics
+    const metrics = [];
+    if (s.pe != null) metrics.push(`<div class="stock-detail__metric"><span class="stock-detail__metric-label">PER</span><span class="stock-detail__metric-val">${s.pe}x</span></div>`);
+    if (s.dividendYield != null) metrics.push(`<div class="stock-detail__metric"><span class="stock-detail__metric-label">${ko ? '배당수익률' : 'Div Yield'}</span><span class="stock-detail__metric-val">${s.dividendYield}%</span></div>`);
+    if (s.volume) metrics.push(`<div class="stock-detail__metric"><span class="stock-detail__metric-label">${ko ? '거래량' : 'Volume'}</span><span class="stock-detail__metric-val">${s.volume}</span></div>`);
+    const metricsHtml = metrics.length > 0 ? `<div class="stock-detail__metrics">${metrics.join('')}</div>` : '';
+
     detail.innerHTML = `
       <button class="stock-detail__back">${ko ? '← 목록으로' : '← Back to list'}</button>
       <div class="stock-detail__header ${up ? 'stock-card--up' : 'stock-card--down'}">
@@ -143,18 +173,35 @@ export class StocksPanel {
       </div>
       <div class="stock-detail__price-row">
         <span class="stock-detail__price">${s.price}</span>
-        <span class="stock-detail__mcap">${ko ? '시가총액' : 'Mkt Cap'}: ${s.marketCap}</span>
+        <span class="stock-detail__dod ${rc(s.dod)}">${rv(s.dod)} ${ko ? '오늘' : 'today'}</span>
       </div>
-      <div class="stock-detail__returns">
-        <div class="stock-detail__return-item">
-          <div class="stock-detail__return-label">YTD ${ko ? '수익률' : 'Return'}</div>
-          <div class="stock-detail__return-val ${up ? 'val--up' : 'val--down'}">${sign}${s.ytdReturn}%</div>
+      <div class="stock-detail__mcap-row">
+        <span>${ko ? '시가총액' : 'Mkt Cap'}: ${s.marketCap}</span>
+      </div>
+
+      <div class="stock-detail__section-label">${ko ? '수익률' : 'RETURNS'}</div>
+      <div class="stock-detail__returns-grid">
+        <div class="stock-detail__return-card">
+          <div class="stock-detail__return-label">${ko ? '전일대비' : 'DoD'}</div>
+          <div class="stock-detail__return-val ${rc(s.dod)}">${rv(s.dod)}</div>
         </div>
-        <div class="stock-detail__return-item">
-          <div class="stock-detail__return-label">${ko ? '전쟁 이후' : 'Since War'} (${s.warReturnSince})</div>
-          <div class="stock-detail__return-val ${up ? 'val--up' : 'val--down'}">${sign}${s.warReturn}%</div>
+        <div class="stock-detail__return-card">
+          <div class="stock-detail__return-label">${ko ? '월간' : 'MoM'}</div>
+          <div class="stock-detail__return-val ${rc(s.mom)}">${rv(s.mom)}</div>
+        </div>
+        <div class="stock-detail__return-card">
+          <div class="stock-detail__return-label">${ko ? '연간' : 'YoY'}</div>
+          <div class="stock-detail__return-val ${rc(s.yoy)}">${rv(s.yoy)}</div>
+        </div>
+        <div class="stock-detail__return-card">
+          <div class="stock-detail__return-label">${ko ? '전쟁 이후' : 'WAR'}</div>
+          <div class="stock-detail__return-val ${rc(s.warReturn)}">${rv(s.warReturn)}</div>
         </div>
       </div>
+
+      ${rangeHtml}
+      ${metricsHtml}
+
       <div class="stock-detail__desc">${esc(desc)}</div>
       <div class="stock-detail__sector-outlook">
         <div class="stock-detail__sector-label">${ko ? '섹터 전망' : 'SECTOR OUTLOOK'}: ${esc(sectorName)}</div>

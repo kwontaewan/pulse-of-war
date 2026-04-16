@@ -1076,6 +1076,129 @@ html, body {
   border-color: rgba(255, 255, 255, 0.25);
 }
 
+/* DoD badge next to price */
+.stock-detail__dod {
+  font-size: 14px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  margin-left: 12px;
+}
+
+.stock-detail__mcap-row {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Section labels */
+.stock-detail__section-label {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+
+/* 4-column returns grid (DoD/MoM/YoY/WAR) */
+.stock-detail__returns-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.stock-detail__return-card {
+  padding: 8px 6px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.stock-detail__return-card .stock-detail__return-label {
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  margin-bottom: 4px;
+}
+
+.stock-detail__return-card .stock-detail__return-val {
+  font-size: 15px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 52-week range bar */
+.stock-detail__range {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.stock-detail__range-val {
+  font-size: 10px;
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  min-width: 40px;
+}
+
+.stock-detail__range-val:last-child {
+  text-align: right;
+}
+
+.stock-detail__range-track {
+  flex: 1;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  position: relative;
+  border-radius: 2px;
+}
+
+.stock-detail__range-marker {
+  position: absolute;
+  top: -4px;
+  width: 4px;
+  height: 12px;
+  background: var(--text);
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+
+/* Valuation metrics row */
+.stock-detail__metrics {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.stock-detail__metric {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  flex: 1;
+  min-width: 80px;
+}
+
+.stock-detail__metric-label {
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+}
+
+.stock-detail__metric-val {
+  font-size: 14px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
 /* Loading Screen */
 .loading {
   position: fixed;
