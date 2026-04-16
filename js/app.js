@@ -73,17 +73,26 @@ async function main() {
 
   // Step 7: Sidebar (conflicts + stocks tabs)
   const sidebar = document.querySelector('.sidebar');
-  const sorted = [...conflicts].sort((a, b) => b.casualties - a.casualties);
+  // Sort: featured first, then by casualties
+  const sorted = [...conflicts].sort((a, b) => {
+    if (a.featured && !b.featured) return -1;
+    if (!a.featured && b.featured) return 1;
+    return b.casualties - a.casualties;
+  });
 
   // Populate conflict list
   const listContainer = document.querySelector('.conflict-list__items');
   sorted.forEach(c => {
+    const isFeatured = c.featured === true;
+    const isHot = c.economicImpact != null;
     const item = document.createElement('div');
-    item.className = 'conflict-list__item';
+    item.className = 'conflict-list__item' + (isFeatured ? ' conflict-list__item--featured' : '') + (isHot ? ' conflict-list__item--hot' : '');
+    const badge = isFeatured ? `<span class="conflict-list__badge conflict-list__badge--featured">⚠ HOT</span>` : isHot ? `<span class="conflict-list__badge">📈</span>` : '';
     item.innerHTML = `
-      <div class="conflict-list__item-name">${escapeHtml(c.name)}</div>
+      <div class="conflict-list__item-name">${badge}${escapeHtml(c.name)}</div>
       <div class="conflict-list__item-meta">
         <span>${c.casualties.toLocaleString('en-US')}</span> ${t('list.casualties')} · ${t('list.since')} ${c.startYear}
+        ${c.economicImpact ? `· <span class="conflict-list__item-cost">${c.economicImpact.warCost}</span>` : ''}
       </div>
     `;
     item.addEventListener('click', () => {
