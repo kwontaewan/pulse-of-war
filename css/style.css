@@ -378,15 +378,16 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 15;
+  z-index: 30;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 8px 24px;
   padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px));
-  background: rgba(6, 6, 8, 0.92);
+  background: rgba(6, 6, 8, 0.95);
   border-top: 1px solid var(--border);
   backdrop-filter: blur(12px);
+  pointer-events: auto;
 }
 
 /* Sound Toggle */
@@ -550,6 +551,7 @@ html, body {
   padding: 7px 14px;
   background: rgba(6, 6, 8, 0.8);
   border: 1px solid var(--border);
+  pointer-events: auto;
   color: var(--text-dim);
   font-family: 'Space Mono', monospace;
   font-size: 11px;
@@ -1762,11 +1764,12 @@ html, body {
   }
 
   .sidebar-toggles {
-    top: 72px;
+    top: 112px;
     right: 12px;
     left: auto;
     transform: none;
     gap: 4px;
+    z-index: 16;
   }
 
   .sidebar-toggle {
