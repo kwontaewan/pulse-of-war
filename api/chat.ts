@@ -94,13 +94,16 @@ export default async function handler(req: Request): Promise<Response> {
     return json({ error: 'Method not allowed' }, 405);
   }
 
-  // Kill switch
-  if (process.env.BUDGET_EXHAUSTED === 'true') {
+  // Kill switch / AI paused — set either env var to disable chat without
+  // touching code. Default: chat is OFF until an operator explicitly enables
+  // it by unsetting PAUSE_AI and adding ANTHROPIC_API_KEY.
+  const pausedReason = detectPaused();
+  if (pausedReason) {
     return json(
       {
-        error: 'budget_exhausted',
+        error: pausedReason,
         message:
-          'Daily AI budget reached. Chat will resume tomorrow. The map and data still work.',
+          "The AI chat is paused while we validate demand. The map, stock data, conflicts, and P&L cards still work.",
       },
       503,
     );
@@ -226,6 +229,17 @@ function clientIp(req: Request): string {
     h.get('x-forwarded-for')?.split(',')[0]?.trim() ||
     'unknown'
   );
+}
+
+function detectPaused(): 'paused' | 'budget_exhausted' | null {
+  if (process.env.PAUSE_AI === 'true') return 'paused';
+  if (process.env.BUDGET_EXHAUSTED === 'true') return 'budget_exhausted';
+  // Default to paused when no credentials are configured. Prevents a broken
+  // 500 response if someone deploys without wiring up the API key.
+  if (!process.env.ANTHROPIC_API_KEY && !process.env.AI_GATEWAY_API_KEY && !process.env.VERCEL_OIDC_TOKEN) {
+    return 'paused';
+  }
+  return null;
 }
 
 function allowIp(ip: string): boolean {

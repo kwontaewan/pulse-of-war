@@ -19,7 +19,32 @@ let state = {
 export async function initChatbot() {
   state.lang = (await initI18n()) || 'en';
   state.history = loadHistory();
+
+  // Probe the chat endpoint. If it returns 503 "paused", hide the FAB entirely
+  // so the UI never promises a feature it can't deliver. Runs once at page
+  // load. Failure to reach the endpoint is treated as paused too.
+  const available = await probeAvailability();
+  if (!available) return;
+
   renderButton();
+}
+
+async function probeAvailability() {
+  try {
+    const r = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ messages: [{ role: 'user', content: 'ping' }], lang: state.lang }),
+    });
+    // Drain the body so the stream doesn't stay open.
+    try { await r.body?.cancel(); } catch {}
+    // Only a real 200 stream indicates the chatbot is live. Anything else
+    // (404 static-serve, 401 auth wall, 503 paused, 5xx errors) means hide
+    // the widget.
+    return r.status === 200;
+  } catch {
+    return false;
+  }
 }
 
 function renderButton() {

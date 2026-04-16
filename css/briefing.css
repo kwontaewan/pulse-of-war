@@ -54,6 +54,39 @@
   font-size: 14px;
 }
 
+.briefing-coming-soon {
+  padding: 80px 0 40px;
+}
+.briefing-coming-soon__badge {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #ff2020;
+  margin-bottom: 20px;
+}
+.briefing-coming-soon__body {
+  font-family: 'Space Mono', monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 24px 0 36px;
+}
+.briefing-coming-soon__back {
+  display: inline-block;
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.briefing-coming-soon__back:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
 .briefing-meta {
   display: flex;
   gap: 16px;
