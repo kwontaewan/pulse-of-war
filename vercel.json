@@ -2,8 +2,5 @@
   "outputDirectory": ".",
   "buildCommand": "",
   "installCommand": "",
-  "framework": null,
-  "analytics": {
-    "id": "pulse-of-war"
-  }
+  "framework": null
 }
