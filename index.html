@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulse of War — 2026 Global Conflict Map</title>
+
+  <meta property="og:title" content="Pulse of War — Every Active Conflict in 2026">
+  <meta property="og:description" content="More wars are happening right now than at any point since World War II.">
+  <meta property="og:image" content="/og.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pulse of War — Every Active Conflict in 2026">
+  <meta name="twitter:description" content="More wars are happening right now than at any point since WWII.">
+  <meta name="twitter:image" content="/og.png">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Loading -->
+  <div class="loading">
+    <div class="loading__text" data-i18n="loading.title">PULSE OF WAR</div>
+    <div class="loading__sub" data-i18n="loading.sub">2026 GLOBAL CONFLICT MAP</div>
+    <div class="loading__bar"><div class="loading__fill"></div></div>
+  </div>
+
+  <!-- Map -->
+  <div id="map-container"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__left">
+      <div class="header__brand">PULSE OF WAR</div>
+      <div class="header__subtitle">
+        <span data-conflict-count>—</span>
+        <span data-i18n="header.activeConflicts">active conflicts across</span>
+        <span data-country-count>—</span>
+        <span data-i18n="header.parties">parties</span>
+      </div>
+    </div>
+
+    <div class="header__center">
+      <div class="live-counter">
+        <div class="live-counter__badge" data-i18n="live.badge">● LIVE</div>
+        <div class="live-counter__main">
+          <span class="live-counter__number" id="js-session-deaths">0</span>
+          <span class="live-counter__unit" data-i18n="live.unit">died since you opened this page</span>
+        </div>
+        <div class="live-comparison"></div>
+      </div>
+    </div>
+
+    <div class="header__right">
+      <button class="lang-toggle" id="js-lang-toggle">KO</button>
+      <div class="counter">
+        <div class="counter__label" data-i18n="header.totalCasualties">TOTAL ESTIMATED CASUALTIES</div>
+        <div class="counter__number">0</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar">
+    <div class="stats-bar__item">
+      <div class="stats-bar__number stats-bar__number--red" data-stat-refugees>—</div>
+      <div class="stats-bar__label" data-i18n="stats.displaced">PEOPLE DISPLACED</div>
+      <div class="stats-bar__compare" data-i18n="stats.displacedCompare">= population of France</div>
+    </div>
+    <div class="stats-bar__item">
+      <div class="stats-bar__number" data-stat-daily>—</div>
+      <div class="stats-bar__label" data-i18n="stats.daily">DYING EVERY DAY</div>
+      <div class="stats-bar__compare" data-i18n="stats.dailyCompare">1 person every 18 seconds</div>
+    </div>
+    <div class="stats-bar__item">
+      <div class="stats-bar__number stats-bar__number--green">+$2.4T</div>
+      <div class="stats-bar__label" data-i18n="stats.defense">DEFENSE MARKET</div>
+      <div class="stats-bar__compare" data-i18n="stats.defenseCompare">↑ 38% since 2021</div>
+    </div>
+    <div class="stats-bar__item">
+      <div class="stats-bar__number" data-stat-countries>—</div>
+      <div class="stats-bar__label" data-i18n="stats.parties">PARTIES AT WAR</div>
+      <div class="stats-bar__compare" data-i18n="stats.partiesCompare">most since WWII</div>
+    </div>
+  </div>
+
+  <!-- Sidebar Toggle Buttons -->
+  <div class="sidebar-toggles">
+    <button class="sidebar-toggle" id="js-toggle-conflicts" data-i18n="btn.allConflicts">☰ ALL CONFLICTS</button>
+    <button class="sidebar-toggle sidebar-toggle--stocks" id="js-toggle-stocks" data-i18n="btn.warStocks">📈 WAR STOCKS</button>
+  </div>
+
+  <!-- Left Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar__header">
+      <div class="sidebar__tabs">
+        <button class="sidebar__tab sidebar__tab--active" data-tab="conflicts" data-i18n="sidebar.conflicts">ALL CONFLICTS</button>
+        <button class="sidebar__tab" data-tab="stocks" data-i18n="sidebar.stocks">WAR STOCKS</button>
+      </div>
+      <button class="sidebar__close">&times;</button>
+    </div>
+    <!-- Conflicts Tab -->
+    <div class="sidebar__panel sidebar__panel--active" data-panel="conflicts">
+      <div class="conflict-list__items"></div>
+    </div>
+    <!-- Stocks Tab -->
+    <div class="sidebar__panel" data-panel="stocks">
+      <div class="stocks-container"></div>
+    </div>
+  </div>
+
+  <!-- Tour Tooltip -->
+  <div class="tour-tooltip">
+    <div class="tour-tooltip__name"></div>
+    <div class="tour-tooltip__fact"></div>
+  </div>
+
+  <!-- Headline -->
+  <footer class="headline">
+    <div class="headline__text" data-i18n="headline" data-i18n-html>
+      More wars are happening right now than at <em>any point since World War II</em>.
+    </div>
+    <div class="share">
+      <button class="share__btn" data-share="twitter" data-i18n="btn.shareX">SHARE ON X</button>
+      <button class="share__btn" data-share="copy" data-i18n="btn.copyLink">COPY LINK</button>
+    </div>
+  </footer>
+
+  <!-- Auto Focus Toggle -->
+  <button class="autofocus-toggle">▶ AUTO FOCUS</button>
+
+  <!-- Sound -->
+  <button class="sound-toggle" data-i18n="btn.soundOff">♡ ENABLE SOUND</button>
+
+  <!-- Watermark -->
+  <div class="watermark" data-i18n="watermark">PULSEOFWAR.COM</div>
+
+  <!-- Map Legend -->
+  <div class="map-legend">
+    <div class="map-legend__item">
+      <div class="map-legend__dot map-legend__dot--large"></div>
+      <span data-i18n="legend.major">MAJOR CONFLICT</span>
+    </div>
+    <div class="map-legend__item">
+      <div class="map-legend__dot map-legend__dot--small"></div>
+      <span data-i18n="legend.active">ACTIVE CONFLICT</span>
+    </div>
+  </div>
+
+  <!-- Detail Panel -->
+  <div class="panel">
+    <button class="panel__close" aria-label="Close panel">&times;</button>
+    <div class="panel__type"></div>
+    <h2 class="panel__title"></h2>
+    <p class="panel__desc"></p>
+
+    <div class="panel__stats">
+      <div class="panel__stat">
+        <span class="panel__stat-label" data-i18n="panel.casualties">CASUALTIES</span>
+        <span class="panel__stat-value panel__stat-value--red" data-stat="casualties"></span>
+      </div>
+      <div class="panel__stat">
+        <span class="panel__stat-label" data-i18n="panel.displaced">DISPLACED</span>
+        <span class="panel__stat-value" data-stat="refugees"></span>
+      </div>
+      <div class="panel__stat">
+        <span class="panel__stat-label" data-i18n="panel.since">SINCE</span>
+        <span class="panel__stat-value" data-stat="since"></span>
+      </div>
+    </div>
+
+    <div class="panel__war-cost">
+      <div class="panel__war-cost-label" data-i18n="panel.warCost">TOTAL ECONOMIC COST</div>
+      <div class="panel__war-cost-value" data-econ="warCost">—</div>
+      <div class="panel__war-cost-note" data-econ="warCostNote"></div>
+    </div>
+
+    <div class="panel__section">
+      <div class="panel__section-label" data-i18n="panel.stocks">WAR MARKET — beneficiary stocks</div>
+      <div class="panel__stocks" data-econ="stocks"></div>
+    </div>
+
+    <div class="panel__section">
+      <div class="panel__section-label" data-i18n="panel.commodities">COMMODITIES — price shock</div>
+      <div class="panel__commodities" data-econ="commodities"></div>
+    </div>
+
+    <div class="panel__section">
+      <div class="panel__section-label" data-i18n="panel.news">LATEST NEWS</div>
+      <div class="panel__news" data-econ="news"></div>
+    </div>
+
+    <div class="panel__parties">
+      <div class="panel__parties-label" data-i18n="panel.parties">PARTIES INVOLVED</div>
+      <div class="panel__party-list"></div>
+    </div>
+
+    <div class="panel__source"></div>
+  </div>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

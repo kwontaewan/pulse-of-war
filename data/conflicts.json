@@ -1,0 +1,494 @@
+[
+  {
+    "name": "US-Iran Conflict 2026",
+    "lat": 32.50,
+    "lng": 53.00,
+    "type": "interstate",
+    "featured": true,
+    "parties": ["United States", "Israel", "Iran", "Hezbollah", "Houthis", "Iraqi PMF"],
+    "casualties": 12000,
+    "refugees": 500000,
+    "startYear": 2026,
+    "description": "US-Israeli airstrikes killed Supreme Leader Khamenei on Feb 28. Iran closed Strait of Hormuz, disrupting 20% of global oil. Ceasefire on April 8 after 40 days of combat.",
+    "description_ko": "2월 28일 미국-이스라엘 공습으로 최고지도자 하메네이 사망. 이란 호르무즈 해협 봉쇄로 세계 석유 20% 차단. 40일간 전투 후 4월 8일 휴전, 긴장 지속 중.",
+    "source": "Reuters/AP/UN",
+    "economicImpact": {
+      "warCost": "$450B",
+      "warCostNote": "군사비 + 글로벌 공급망 차질 + 유가 쇼크 (2026 Q2 GDP -2.9%)",
+      "stocks": [
+        { "ticker": "LMT", "name": "Lockheed Martin", "change": 24.4, "since": "2026" },
+        { "ticker": "RTX", "name": "RTX Corp", "change": 7.0, "since": "2026" },
+        { "ticker": "ITA", "name": "iShares Aerospace ETF", "change": 55.0, "since": "2025" },
+        { "ticker": "XOM", "name": "Exxon Mobil", "change": 42.0, "since": "2026" },
+        { "ticker": "CVX", "name": "Chevron", "change": 37.1, "since": "2026" },
+        { "ticker": "OXY", "name": "Occidental Petroleum", "change": 35.0, "since": "2026" }
+      ],
+      "commodities": [
+        { "name": "Brent Crude Oil", "change": 34.0 },
+        { "name": "WTI Crude Oil", "change": 30.0 },
+        { "name": "Natural Gas (LNG)", "change": 25.0 },
+        { "name": "Gold", "change": 18.0 }
+      ],
+      "news": [
+        { "headline": "US-Israeli airstrikes kill Iran's Supreme Leader, escalate regional war", "headline_ko": "미국-이스라엘 공습으로 이란 최고지도자 사망, 중동 전면전 확대", "date": "2026-02-28", "source": "Reuters", "url": "https://www.reuters.com/world/middle-east/iran-strikes-2026" },
+        { "headline": "Iran closes Strait of Hormuz — oil surges past $120/barrel", "headline_ko": "이란 호르무즈 해협 봉쇄 — 유가 $120 돌파", "date": "2026-03-04", "source": "Bloomberg", "url": "https://www.bloomberg.com/graphics/2026-iran-war-hormuz-closure-oil-shock/" },
+        { "headline": "Trump proposes $1.5T defense budget funded by tariff revenue", "headline_ko": "트럼프, 관세 수입으로 $1.5조 국방 예산 제안", "date": "2026-01-15", "source": "Motley Fool", "url": "https://www.fool.com/investing/2026/04/15/does-trumps-record-defense-budget-make-lockheed-ma/" },
+        { "headline": "Supreme Court strikes down IEEPA tariffs 6-3; $175B in refunds pending", "headline_ko": "대법원 IEEPA 관세 6-3 위헌 판결, $1,750억 환불 대기 중", "date": "2026-02-20", "source": "Holland & Knight", "url": "https://www.hklaw.com/en/insights/publications/2026/02/supreme-court-strikes-down-ieepa-tariffs" },
+        { "headline": "US-Iran ceasefire after 40 days; Hormuz shipping corridor reopening", "headline_ko": "미국-이란 40일 만에 휴전, 호르무즈 해협 재개통 시작", "date": "2026-04-08", "source": "CNN", "url": "https://www.cnn.com/2026/04/14/world/live-news/iran-war-blockade-us-trump" },
+        { "headline": "Defense ETF ITA up 55% in 12 months — biggest rally since 9/11", "headline_ko": "방산 ETF ITA 12개월간 +55% — 9/11 이후 최대 랠리", "date": "2026-04-10", "source": "24/7 Wall St", "url": "https://247wallst.com/investing/2026/04/01/ppa-is-up-about-35-in-2026/" }
+      ]
+    }
+  },
+  {
+    "name": "Ukraine-Russia War",
+    "lat": 48.38,
+    "lng": 31.17,
+    "type": "interstate",
+    "parties": ["Ukraine", "Russia"],
+    "casualties": 300000,
+    "refugees": 6400000,
+    "startYear": 2022,
+    "description": "Full-scale Russian invasion of Ukraine, the largest land war in Europe since WWII",
+    "description_ko": "러시아의 우크라이나 전면 침공. 2차 세계대전 이후 유럽 최대 규모의 지상전",
+    "source": "ACLED/UN",
+    "economicImpact": {
+      "warCost": "$1.3T",
+      "warCostNote": "Cumulative economic damage since 2022 — World Bank",
+      "stocks": [
+        { "ticker": "LMT", "name": "Lockheed Martin", "change": 67.2, "since": "2022" },
+        { "ticker": "RTX", "name": "RTX Corp", "change": 48.1, "since": "2022" },
+        { "ticker": "NOC", "name": "Northrop Grumman", "change": 41.8, "since": "2022" },
+        { "ticker": "RHMT.ME", "name": "Rheinmetall", "change": 312.0, "since": "2022" }
+      ],
+      "commodities": [
+        { "name": "Natural Gas (EU)", "change": 180.0 },
+        { "name": "Wheat", "change": 32.0 },
+        { "name": "WTI Crude Oil", "change": 22.4 },
+        { "name": "Uranium", "change": 95.0 }
+      ],
+      "news": [
+        { "headline": "NATO defense spending hits record — 23 members meet 2% GDP target", "headline_ko": "NATO 방위비 역대 최고 — 23개국 GDP 2% 달성", "date": "2026-03-12", "source": "Reuters", "url": "https://www.reuters.com/world/europe/nato-defense-spending-2026-03-12/" },
+        { "headline": "Ukraine reconstruction cost estimated at $486B", "headline_ko": "우크라이나 재건 비용 $4,860억 추산", "date": "2026-02-28", "source": "World Bank", "url": "https://www.worldbank.org/en/news/press-release/2026/02/28/ukraine-reconstruction" },
+        { "headline": "Rheinmetall stock up 312% since invasion — largest defense rally in decades", "headline_ko": "라인메탈 주가 침공 이후 +312% — 수십년 만의 최대 방산 랠리", "date": "2026-04-01", "source": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-04-01/rheinmetall-defense-rally" }
+      ]
+    }
+  },
+  {
+    "name": "Gaza War",
+    "lat": 31.35,
+    "lng": 34.31,
+    "type": "interstate",
+    "parties": ["Israel", "Hamas", "Palestine"],
+    "casualties": 46000,
+    "refugees": 1900000,
+    "startYear": 2023,
+    "description": "Israeli military operation in Gaza following the October 7 attacks",
+    "description_ko": "10월 7일 공격 이후 이스라엘의 가자지구 군사 작전. GDP 80% 감소, 현대사 최악의 경제 붕괴",
+    "source": "UN OCHA",
+    "economicImpact": {
+      "warCost": "$80B",
+      "warCostNote": "Israel's estimated war costs + Gaza reconstruction needs",
+      "stocks": [
+        { "ticker": "ESLT", "name": "Elbit Systems", "change": 52.3, "since": "2023" },
+        { "ticker": "LMT", "name": "Lockheed Martin", "change": 28.0, "since": "2023" },
+        { "ticker": "CL=F", "name": "Crude Oil Futures", "change": 18.5, "since": "2023" }
+      ],
+      "commodities": [
+        { "name": "Brent Crude", "change": 18.5 },
+        { "name": "Gold", "change": 35.0 },
+        { "name": "Shipping Rates (Red Sea)", "change": 250.0 }
+      ],
+      "news": [
+        { "headline": "Red Sea shipping costs up 250% as Houthi attacks continue", "headline_ko": "후티 공격 지속으로 홍해 해운비 250% 급등", "date": "2026-03-20", "source": "Lloyd's List", "url": "https://www.lloydslist.com/LL/sector/ship-operations/article/red-sea-shipping-costs-2026/" },
+        { "headline": "Gaza GDP drops 80% — UN declares worst economic collapse in modern history", "headline_ko": "가자 GDP 80% 폭락 — UN '현대사 최악의 경제 붕괴' 선언", "date": "2026-04-05", "source": "UNCTAD", "url": "https://unctad.org/news/gaza-economic-collapse-2026" }
+      ]
+    }
+  },
+  {
+    "name": "Sudan Civil War",
+    "lat": 15.50,
+    "lng": 32.56,
+    "type": "civil war",
+    "parties": ["SAF", "RSF"],
+    "casualties": 150000,
+    "refugees": 8600000,
+    "startYear": 2023,
+    "description": "War between the Sudanese Armed Forces and the Rapid Support Forces — world's largest displacement crisis",
+    "description_ko": "수단군과 신속지원군 간의 내전. 860만 명 난민 발생, 세계 최대 난민 위기",
+    "source": "ACLED",
+    "economicImpact": {
+      "warCost": "$42B",
+      "warCostNote": "GDP collapse + humanitarian aid costs",
+      "stocks": [
+        { "ticker": "ADM", "name": "Archer-Daniels (grain)", "change": -12.0, "since": "2023" },
+        { "ticker": "GLD", "name": "SPDR Gold Trust", "change": 28.0, "since": "2023" }
+      ],
+      "commodities": [
+        { "name": "Gold (Sudan supply)", "change": 28.0 },
+        { "name": "Gum Arabic", "change": 120.0 }
+      ],
+      "news": [
+        { "headline": "Sudan surpasses Ukraine as world's largest displacement crisis — 8.6M fled", "headline_ko": "수단, 우크라이나 넘어 세계 최대 난민 위기 — 860만 명 탈출", "date": "2026-03-15", "source": "UNHCR" },
+        { "headline": "Gum Arabic prices double as Sudan conflict disrupts 70% of global supply", "headline_ko": "수단 분쟁으로 아라비아 검 가격 2배 — 세계 공급의 70% 차질", "date": "2026-02-10", "source": "FT" }
+      ]
+    }
+  },
+  {
+    "name": "Myanmar Civil War",
+    "lat": 19.76,
+    "lng": 96.07,
+    "type": "civil war",
+    "parties": ["Military Junta", "NUG", "Ethnic Armed Organizations"],
+    "casualties": 50000,
+    "refugees": 2600000,
+    "startYear": 2021,
+    "description": "Armed resistance against the military coup, with ethnic armed groups controlling large territories",
+    "description_ko": "군사 쿠데타에 대한 무장 저항. 소수민족 무장세력이 영토 60% 장악",
+    "source": "ACLED",
+    "economicImpact": {
+      "warCost": "$18B",
+      "warCostNote": "GDP contraction + lost FDI since coup",
+      "stocks": [
+        { "ticker": "TIN", "name": "Tin Futures", "change": 45.0, "since": "2021" }
+      ],
+      "commodities": [
+        { "name": "Rare Earths (Myanmar)", "change": 60.0 },
+        { "name": "Tin", "change": 45.0 },
+        { "name": "Jade", "change": -80.0 }
+      ],
+      "news": [
+        { "headline": "Resistance forces control 60% of Myanmar territory — junta losing ground", "headline_ko": "저항군, 미얀마 영토 60% 장악 — 군부 수세", "date": "2026-04-08", "source": "AP" }
+      ]
+    }
+  },
+  {
+    "name": "Ethiopian Conflicts",
+    "lat": 9.15,
+    "lng": 40.49,
+    "type": "civil war",
+    "parties": ["Ethiopian Government", "Fano Militia", "OLA"],
+    "casualties": 20000,
+    "refugees": 4500000,
+    "startYear": 2020,
+    "description": "Multiple insurgencies in Amhara and Oromia regions despite Tigray ceasefire",
+    "source": "ACLED"
+  },
+  {
+    "name": "Syrian Civil War",
+    "lat": 34.80,
+    "lng": 38.99,
+    "type": "civil war",
+    "parties": ["HTS-led Government", "SDF", "ISIS remnants", "Turkey"],
+    "casualties": 500000,
+    "refugees": 6800000,
+    "startYear": 2011,
+    "description": "Ongoing fragmentation after Assad's fall, with multiple factions controlling territory",
+    "description_ko": "아사드 정권 붕괴 이후 다수 무장 세력의 영토 분할. 15년간 $1.2조 파괴",
+    "source": "SOHR",
+    "economicImpact": {
+      "warCost": "$1.2T",
+      "warCostNote": "15 years of cumulative destruction — World Bank",
+      "stocks": [
+        { "ticker": "BA", "name": "Boeing (defense)", "change": 15.0, "since": "2011" },
+        { "ticker": "TAP.L", "name": "TAP Pipeline", "change": 42.0, "since": "2015" }
+      ],
+      "commodities": [
+        { "name": "Syrian Lira", "change": -99.5 },
+        { "name": "Phosphate", "change": 35.0 }
+      ],
+      "news": [
+        { "headline": "Syria reconstruction needs estimated at $400B — most unfunded", "headline_ko": "시리아 재건 $4,000억 필요 — 대부분 미조달", "date": "2026-01-20", "source": "UN" }
+      ]
+    }
+  },
+  {
+    "name": "Yemen Civil War",
+    "lat": 15.55,
+    "lng": 48.52,
+    "type": "civil war",
+    "parties": ["Houthis", "Saudi-backed Government", "STC"],
+    "casualties": 377000,
+    "refugees": 4500000,
+    "startYear": 2014,
+    "description": "Protracted civil war with Houthi attacks on Red Sea shipping disrupting global trade",
+    "description_ko": "후티 반군의 홍해 선박 공격으로 글로벌 무역 교란. 해운 비용 250% 급등",
+    "source": "UN",
+    "economicImpact": {
+      "warCost": "$126B",
+      "warCostNote": "Global shipping disruption + Saudi military spending",
+      "stocks": [
+        { "ticker": "ZIM", "name": "ZIM Shipping", "change": 180.0, "since": "2023" },
+        { "ticker": "MAERSK.CO", "name": "Maersk", "change": 42.0, "since": "2023" }
+      ],
+      "commodities": [
+        { "name": "Container Shipping Rates", "change": 250.0 },
+        { "name": "Suez Canal Revenue", "change": -50.0 }
+      ],
+      "news": [
+        { "headline": "Houthi Red Sea attacks force 90% of shipping to reroute via Cape of Good Hope", "headline_ko": "후티 홍해 공격으로 90% 선박 희망봉 우회 항로 전환", "date": "2026-03-01", "source": "Reuters" }
+      ]
+    }
+  },
+  {
+    "name": "Somalia - Al-Shabaab",
+    "lat": 5.15,
+    "lng": 46.20,
+    "type": "insurgency",
+    "parties": ["Somali Government", "Al-Shabaab", "ATMIS"],
+    "casualties": 30000,
+    "refugees": 3800000,
+    "startYear": 2006,
+    "description": "Islamist insurgency controlling rural areas of southern Somalia",
+    "source": "ACLED"
+  },
+  {
+    "name": "DR Congo - M23 & ADF",
+    "lat": -1.68,
+    "lng": 29.22,
+    "type": "civil war",
+    "parties": ["DRC Government", "M23", "ADF", "Rwanda"],
+    "casualties": 120000,
+    "refugees": 6900000,
+    "startYear": 2021,
+    "description": "M23 rebel advance in eastern Congo backed by Rwanda — worst displacement crisis globally",
+    "description_ko": "르완다 지원 M23 반군의 동부 콩고 진격. 콜탄(휴대폰 핵심 광물) 공급망 60% 위협",
+    "source": "ACLED/UN",
+    "economicImpact": {
+      "warCost": "$32B",
+      "warCostNote": "Lost mining revenue + humanitarian costs",
+      "stocks": [
+        { "ticker": "CMCL", "name": "Caledonia Mining", "change": -25.0, "since": "2021" },
+        { "ticker": "COBA.L", "name": "Cobalt Blue", "change": -40.0, "since": "2021" }
+      ],
+      "commodities": [
+        { "name": "Cobalt", "change": -55.0 },
+        { "name": "Coltan/Tantalum", "change": 85.0 },
+        { "name": "Gold (artisanal)", "change": 40.0 }
+      ],
+      "news": [
+        { "headline": "M23 captures key coltan mines — 60% of global phone mineral supply at risk", "headline_ko": "M23, 핵심 콜탄 광산 점령 — 세계 휴대폰 광물 60% 위협", "date": "2026-04-10", "source": "FT" }
+      ]
+    }
+  },
+  {
+    "name": "Sahel Insurgency - Burkina Faso",
+    "lat": 12.37,
+    "lng": -1.52,
+    "type": "insurgency",
+    "parties": ["Military Junta", "JNIM", "ISSP"],
+    "casualties": 26000,
+    "refugees": 2000000,
+    "startYear": 2015,
+    "description": "Jihadist insurgency controlling ~40% of national territory",
+    "source": "ACLED"
+  },
+  {
+    "name": "Sahel Insurgency - Mali",
+    "lat": 17.57,
+    "lng": -3.99,
+    "type": "insurgency",
+    "parties": ["Military Junta", "Wagner Group", "JNIM", "Tuareg rebels"],
+    "casualties": 15000,
+    "refugees": 400000,
+    "startYear": 2012,
+    "description": "Multi-sided conflict with Russian mercenary involvement after French withdrawal",
+    "source": "ACLED"
+  },
+  {
+    "name": "Sahel Insurgency - Niger",
+    "lat": 13.51,
+    "lng": 2.11,
+    "type": "insurgency",
+    "parties": ["Military Junta", "JNIM", "IS Sahel"],
+    "casualties": 5000,
+    "refugees": 350000,
+    "startYear": 2015,
+    "description": "Jihadist groups expanding from border regions after 2023 coup",
+    "source": "ACLED"
+  },
+  {
+    "name": "Nigeria - Boko Haram & Banditry",
+    "lat": 9.08,
+    "lng": 7.49,
+    "type": "insurgency",
+    "parties": ["Nigerian Government", "Boko Haram", "ISWAP", "Bandits"],
+    "casualties": 50000,
+    "refugees": 3200000,
+    "startYear": 2009,
+    "description": "Islamist insurgency in the northeast and widespread banditry in the northwest",
+    "source": "ACLED"
+  },
+  {
+    "name": "Haiti Gang War",
+    "lat": 18.54,
+    "lng": -72.34,
+    "type": "gang warfare",
+    "parties": ["Gangs", "Transitional Government", "Kenya-led MSS"],
+    "casualties": 8000,
+    "refugees": 700000,
+    "startYear": 2021,
+    "description": "Armed gangs control 80% of Port-au-Prince despite multinational intervention",
+    "source": "UN"
+  },
+  {
+    "name": "Colombia - Armed Groups",
+    "lat": 4.57,
+    "lng": -74.30,
+    "type": "insurgency",
+    "parties": ["Colombian Government", "ELN", "FARC dissidents", "Gulf Clan"],
+    "casualties": 7000,
+    "refugees": 5800000,
+    "startYear": 1964,
+    "description": "Peace process stalled with ELN, FARC dissident groups expanding coca territory",
+    "source": "ACLED"
+  },
+  {
+    "name": "Mexico Drug War",
+    "lat": 23.63,
+    "lng": -102.55,
+    "type": "drug war",
+    "parties": ["Mexican Government", "Sinaloa Cartel", "CJNG"],
+    "casualties": 40000,
+    "refugees": 380000,
+    "startYear": 2006,
+    "description": "Cartel violence at record levels with Sinaloa cartel internal war",
+    "description_ko": "시날로아 카르텔 내전으로 역대급 폭력. 6개월간 3,000명 이상 사망",
+    "source": "ACLED",
+    "economicImpact": {
+      "warCost": "$50B",
+      "warCostNote": "Annual cost of drug war to Mexican economy — UNAM",
+      "stocks": [
+        { "ticker": "AXON", "name": "Axon Enterprise", "change": 180.0, "since": "2020" },
+        { "ticker": "SWBI", "name": "Smith & Wesson", "change": 45.0, "since": "2020" }
+      ],
+      "commodities": [
+        { "name": "Fentanyl precursors", "change": 300.0 },
+        { "name": "Avocado (cartel-controlled)", "change": 60.0 }
+      ],
+      "news": [
+        { "headline": "Sinaloa cartel civil war kills 3,000+ in 6 months", "headline_ko": "시날로아 카르텔 내전으로 6개월간 3,000명 이상 사망", "date": "2026-03-28", "source": "AP" }
+      ]
+    }
+  },
+  {
+    "name": "Afghanistan - Taliban vs ISIS-K",
+    "lat": 33.94,
+    "lng": 67.71,
+    "type": "insurgency",
+    "parties": ["Taliban Government", "ISIS-K", "NRF"],
+    "casualties": 10000,
+    "refugees": 6400000,
+    "startYear": 2021,
+    "description": "ISIS-K attacks against Taliban rule, resistance pockets in Panjshir",
+    "source": "ACLED"
+  },
+  {
+    "name": "Pakistan - TTP Insurgency",
+    "lat": 33.69,
+    "lng": 73.04,
+    "type": "insurgency",
+    "parties": ["Pakistani Government", "TTP", "BLA"],
+    "casualties": 8000,
+    "refugees": 1500000,
+    "startYear": 2007,
+    "description": "Taliban-aligned TTP attacks surging alongside Baloch separatist insurgency",
+    "source": "ACLED"
+  },
+  {
+    "name": "Iraq - ISIS Remnants",
+    "lat": 33.31,
+    "lng": 44.37,
+    "type": "insurgency",
+    "parties": ["Iraqi Government", "PMF", "ISIS cells"],
+    "casualties": 3000,
+    "refugees": 1200000,
+    "startYear": 2017,
+    "description": "ISIS sleeper cells conducting attacks in rural areas despite territorial defeat",
+    "source": "ACLED"
+  },
+  {
+    "name": "Lebanon - Israel Border",
+    "lat": 33.89,
+    "lng": 35.50,
+    "type": "interstate",
+    "parties": ["Israel", "Hezbollah", "Lebanon"],
+    "casualties": 5000,
+    "refugees": 1200000,
+    "startYear": 2023,
+    "description": "Escalation along the Blue Line with Israeli operations in southern Lebanon",
+    "source": "ACLED"
+  },
+  {
+    "name": "Mozambique - Cabo Delgado",
+    "lat": -12.97,
+    "lng": 40.52,
+    "type": "insurgency",
+    "parties": ["Mozambique Government", "ISIS-Mozambique", "SADC forces"],
+    "casualties": 5000,
+    "refugees": 950000,
+    "startYear": 2017,
+    "description": "Islamist insurgency threatening LNG projects in resource-rich northern province",
+    "source": "ACLED",
+    "economicImpact": {
+      "warCost": "$20B",
+      "warCostNote": "TotalEnergies $20B LNG project suspended indefinitely",
+      "stocks": [
+        { "ticker": "TTE", "name": "TotalEnergies", "change": -8.0, "since": "2021" }
+      ],
+      "commodities": [
+        { "name": "LNG (Mozambique)", "change": -100.0 }
+      ],
+      "news": [
+        { "headline": "TotalEnergies suspends $20B Mozambique LNG project indefinitely due to insurgency", "headline_ko": "TotalEnergies, 반란으로 $200억 모잠비크 LNG 프로젝트 무기한 중단", "date": "2026-01-15", "source": "Reuters" }
+      ]
+    }
+  },
+  {
+    "name": "Cameroon - Anglophone Crisis",
+    "lat": 5.95,
+    "lng": 10.15,
+    "type": "separatist",
+    "parties": ["Cameroon Government", "Ambazonia separatists"],
+    "casualties": 6000,
+    "refugees": 770000,
+    "startYear": 2017,
+    "description": "English-speaking separatists fighting for independence from francophone majority",
+    "source": "ACLED"
+  },
+  {
+    "name": "India - Kashmir & Naxalite",
+    "lat": 34.08,
+    "lng": 74.80,
+    "type": "insurgency",
+    "parties": ["Indian Government", "Kashmiri militants", "Naxalites"],
+    "casualties": 5000,
+    "refugees": 200000,
+    "startYear": 1989,
+    "description": "Low-intensity conflict in Kashmir and Maoist insurgency in central-eastern states",
+    "source": "ACLED"
+  },
+  {
+    "name": "Philippines - NPA & Abu Sayyaf",
+    "lat": 7.19,
+    "lng": 125.46,
+    "type": "insurgency",
+    "parties": ["Philippine Government", "NPA", "Abu Sayyaf"],
+    "casualties": 4000,
+    "refugees": 300000,
+    "startYear": 1969,
+    "description": "Communist insurgency and Islamist militancy in Mindanao",
+    "source": "ACLED"
+  },
+  {
+    "name": "Central African Republic",
+    "lat": 6.61,
+    "lng": 20.94,
+    "type": "civil war",
+    "parties": ["CAR Government", "Wagner Group", "CPC rebels"],
+    "casualties": 8000,
+    "refugees": 740000,
+    "startYear": 2012,
+    "description": "Government forces with Russian mercenaries fighting rebel coalition",
+    "source": "ACLED"
+  }
+]

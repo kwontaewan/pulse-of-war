@@ -1,0 +1,153 @@
+{
+  "lastUpdated": "2026-04-16",
+  "sectors": [
+    { "id": "defense", "name": "Defense & Aerospace", "name_ko": "방산/항공", "icon": "🛡️", "outlook": "bullish", "outlookNote": "Trump's $1.5T defense budget + NATO 2% spending surge. Multi-year order backlog at record highs.", "outlookNote_ko": "트럼프 $1.5조 국방예산 + NATO 2% 지출 급증. 수주 잔고 역대 최고" },
+    { "id": "energy", "name": "Energy & Oil", "name_ko": "에너지/석유", "icon": "⛽", "outlook": "bullish", "outlookNote": "Hormuz ceasefire fragile — any escalation sends oil past $120 again. Supply remains tight.", "outlookNote_ko": "호르무즈 휴전 불안정 — 재확전 시 유가 $120 재돌파. 공급 여전히 타이트" },
+    { "id": "shipping", "name": "Shipping & Logistics", "name_ko": "해운/물류", "icon": "🚢", "outlook": "neutral", "outlookNote": "Red Sea rerouting continues but Hormuz reopening may ease pressure. Watch Houthi activity.", "outlookNote_ko": "홍해 우회 지속 중이나 호르무즈 재개통으로 압력 완화 가능. 후티 동향 주시" },
+    { "id": "commodity", "name": "Commodities & Mining", "name_ko": "원자재/광물", "icon": "⚡", "outlook": "bullish", "outlookNote": "Gold safe-haven demand + coltan supply disruption from Congo. Rare earths critical.", "outlookNote_ko": "금 안전자산 수요 + 콩고 콜탄 공급 차질. 희토류 공급 위기 심화" },
+    { "id": "cyber", "name": "Cybersecurity", "name_ko": "사이버보안", "icon": "🔒", "outlook": "bullish", "outlookNote": "State-sponsored cyberattacks surging post Iran conflict. Government spending accelerating.", "outlookNote_ko": "이란 분쟁 이후 국가 지원 사이버공격 급증. 정부 보안 지출 가속화" },
+    { "id": "security", "name": "Security & Surveillance", "name_ko": "보안/감시", "icon": "📡", "outlook": "neutral", "outlookNote": "Domestic security demand steady. Mexico cartel war driving border tech spending.", "outlookNote_ko": "국내 보안 수요 안정적. 멕시코 카르텔 전쟁으로 국경 기술 지출 증가" }
+  ],
+  "stocks": [
+    {
+      "ticker": "LMT", "name": "Lockheed Martin", "name_ko": "록히드마틴",
+      "sector": "defense", "exchange": "NYSE",
+      "ytdReturn": 24.4, "warReturn": 67.2, "warReturnSince": "2022-02",
+      "marketCap": "$120B", "price": "$582",
+      "conflicts": ["US-Iran", "Ukraine"],
+      "description": "F-35 fighter jets, missile defense systems, hypersonic weapons",
+      "description_ko": "F-35 전투기, 미사일 방어 체계, 극초음속 무기",
+      "rank": 1, "trending": true
+    },
+    {
+      "ticker": "RTX", "name": "RTX Corp", "name_ko": "레이시온",
+      "sector": "defense", "exchange": "NYSE",
+      "ytdReturn": 7.0, "warReturn": 48.1, "warReturnSince": "2022-02",
+      "marketCap": "$165B", "price": "$128",
+      "conflicts": ["US-Iran", "Ukraine", "Gaza"],
+      "description": "Patriot missiles, Stinger missiles, Pratt & Whitney engines",
+      "description_ko": "패트리어트 미사일, 스팅어 미사일, P&W 엔진",
+      "rank": 2, "trending": true
+    },
+    {
+      "ticker": "RHMT.ME", "name": "Rheinmetall", "name_ko": "라인메탈",
+      "sector": "defense", "exchange": "XETRA",
+      "ytdReturn": 45.0, "warReturn": 312.0, "warReturnSince": "2022-02",
+      "marketCap": "$42B", "price": "$890",
+      "conflicts": ["Ukraine"],
+      "description": "European defense champion — tanks, ammunition, military vehicles",
+      "description_ko": "유럽 방산 대장주 — 탱크, 탄약, 군용 차량",
+      "rank": 3, "trending": true
+    },
+    {
+      "ticker": "NOC", "name": "Northrop Grumman", "name_ko": "노스롭 그루먼",
+      "sector": "defense", "exchange": "NYSE",
+      "ytdReturn": 12.0, "warReturn": 41.8, "warReturnSince": "2022-02",
+      "marketCap": "$78B", "price": "$520",
+      "conflicts": ["US-Iran", "Ukraine"],
+      "description": "B-21 stealth bomber, nuclear deterrence, space systems",
+      "description_ko": "B-21 스텔스 폭격기, 핵 억제력, 우주 시스템",
+      "rank": 4, "trending": false
+    },
+    {
+      "ticker": "ESLT", "name": "Elbit Systems", "name_ko": "엘빗 시스템즈",
+      "sector": "defense", "exchange": "NASDAQ",
+      "ytdReturn": 18.0, "warReturn": 52.3, "warReturnSince": "2023-10",
+      "marketCap": "$12B", "price": "$280",
+      "conflicts": ["Gaza", "US-Iran"],
+      "description": "Israeli defense electronics, drones, cyber intelligence",
+      "description_ko": "이스라엘 방산 전자장비, 드론, 사이버 정보",
+      "rank": 5, "trending": true
+    },
+    {
+      "ticker": "ITA", "name": "iShares Aerospace & Defense ETF", "name_ko": "방산 ETF",
+      "sector": "defense", "exchange": "NYSE",
+      "ytdReturn": 55.0, "warReturn": 55.0, "warReturnSince": "2025-04",
+      "marketCap": "$7.5B", "price": "$156",
+      "conflicts": ["US-Iran", "Ukraine", "Gaza"],
+      "description": "Top defense ETF — LMT, RTX, NOC, BA, GD weighted",
+      "description_ko": "대표 방산 ETF — LMT, RTX, NOC, BA, GD 가중",
+      "rank": 6, "trending": true
+    },
+    {
+      "ticker": "XOM", "name": "Exxon Mobil", "name_ko": "엑손모빌",
+      "sector": "energy", "exchange": "NYSE",
+      "ytdReturn": 42.0, "warReturn": 42.0, "warReturnSince": "2026-01",
+      "marketCap": "$520B", "price": "$161",
+      "conflicts": ["US-Iran"],
+      "description": "World's largest oil company — Hormuz closure direct beneficiary",
+      "description_ko": "세계 최대 석유회사 — 호르무즈 봉쇄 직접 수혜",
+      "rank": 7, "trending": true
+    },
+    {
+      "ticker": "CVX", "name": "Chevron", "name_ko": "쉐브론",
+      "sector": "energy", "exchange": "NYSE",
+      "ytdReturn": 37.1, "warReturn": 37.1, "warReturnSince": "2026-01",
+      "marketCap": "$310B", "price": "$196",
+      "conflicts": ["US-Iran"],
+      "description": "39-year consecutive dividend increase, Permian Basin dominance",
+      "description_ko": "39년 연속 배당 인상, 퍼미안 분지 지배력",
+      "rank": 8, "trending": false
+    },
+    {
+      "ticker": "OXY", "name": "Occidental Petroleum", "name_ko": "옥시덴탈",
+      "sector": "energy", "exchange": "NYSE",
+      "ytdReturn": 35.0, "warReturn": 35.0, "warReturnSince": "2026-01",
+      "marketCap": "$52B", "price": "$72",
+      "conflicts": ["US-Iran"],
+      "description": "Buffett-backed oil producer — high upstream exposure to oil prices",
+      "description_ko": "버핏이 투자한 석유 생산업체 — 유가 상승 민감도 최고",
+      "rank": 9, "trending": false
+    },
+    {
+      "ticker": "ZIM", "name": "ZIM Shipping", "name_ko": "ZIM 해운",
+      "sector": "shipping", "exchange": "NYSE",
+      "ytdReturn": 80.0, "warReturn": 180.0, "warReturnSince": "2023-11",
+      "marketCap": "$4.5B", "price": "$38",
+      "conflicts": ["Yemen", "Gaza"],
+      "description": "Israeli shipping company — Red Sea rerouting massive beneficiary",
+      "description_ko": "이스라엘 해운사 — 홍해 우회 항로로 운임 폭등 수혜",
+      "rank": 10, "trending": true
+    },
+    {
+      "ticker": "GLD", "name": "SPDR Gold Trust", "name_ko": "금 ETF",
+      "sector": "commodity", "exchange": "NYSE",
+      "ytdReturn": 18.0, "warReturn": 28.0, "warReturnSince": "2023-04",
+      "marketCap": "$75B", "price": "$232",
+      "conflicts": ["US-Iran", "Sudan"],
+      "description": "Safe haven asset — surges during geopolitical uncertainty",
+      "description_ko": "안전자산 — 지정학적 불확실성 시 급등",
+      "rank": 11, "trending": false
+    },
+    {
+      "ticker": "CRWD", "name": "CrowdStrike", "name_ko": "크라우드스트라이크",
+      "sector": "cyber", "exchange": "NASDAQ",
+      "ytdReturn": 22.0, "warReturn": 35.0, "warReturnSince": "2022-02",
+      "marketCap": "$85B", "price": "$345",
+      "conflicts": ["Ukraine", "US-Iran"],
+      "description": "Leading endpoint security — cyber warfare drives demand",
+      "description_ko": "엔드포인트 보안 선두 — 사이버전 수요 급증",
+      "rank": 12, "trending": true
+    },
+    {
+      "ticker": "PANW", "name": "Palo Alto Networks", "name_ko": "팔로알토 네트웍스",
+      "sector": "cyber", "exchange": "NASDAQ",
+      "ytdReturn": 15.0, "warReturn": 28.0, "warReturnSince": "2022-02",
+      "marketCap": "$120B", "price": "$380",
+      "conflicts": ["Ukraine", "US-Iran"],
+      "description": "Next-gen firewall leader — government contracts surging",
+      "description_ko": "차세대 방화벽 선두 — 정부 계약 급증",
+      "rank": 13, "trending": false
+    },
+    {
+      "ticker": "AXON", "name": "Axon Enterprise", "name_ko": "액손",
+      "sector": "security", "exchange": "NASDAQ",
+      "ytdReturn": 25.0, "warReturn": 180.0, "warReturnSince": "2020-01",
+      "marketCap": "$45B", "price": "$580",
+      "conflicts": ["Mexico"],
+      "description": "Tasers, body cameras, AI-powered law enforcement tech",
+      "description_ko": "테이저건, 바디캠, AI 기반 법집행 기술",
+      "rank": 14, "trending": false
+    }
+  ]
+}
