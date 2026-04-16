@@ -245,7 +245,11 @@ async function main() {
 
   // Step 12: Deep linking — unified slug function
   function toSlug(name) {
-    return name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    return name.toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[^a-z0-9-]/g, '')
+      .replace(/-+/g, '-')
+      .replace(/^-|-$/g, '');
   }
 
   function handleDeepLink() {
