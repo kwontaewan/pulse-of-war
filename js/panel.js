@@ -1,7 +1,24 @@
 // Conflict detail panel with economic impact + clickable news
 
-import { t } from './i18n.js';
+import { t, getLang } from './i18n.js';
 import { openShareModal } from './share-modal.js';
+
+const TV_MINI_URL = 'https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js';
+let _tvSymbols = null;
+async function loadTVSymbols() {
+  if (_tvSymbols) return _tvSymbols;
+  try {
+    const r = await fetch('./data/tv-symbols.json');
+    if (r.ok) _tvSymbols = await r.json();
+  } catch {}
+  return _tvSymbols;
+}
+
+function resolveTVSymbol(ticker, map) {
+  if (!ticker) return null;
+  if (map && map[ticker]) return map[ticker];
+  return `NASDAQ:${ticker}`;  // fallback for un-mapped US tickers
+}
 
 export class DetailPanel {
   constructor(panelEl) {
@@ -66,6 +83,7 @@ export class DetailPanel {
       this.renderStocks(econ.stocks || []);
       this.renderCommodities(econ.commodities || []);
       this.renderNews(econ.news || []);
+      this.renderTopChart(econ.stocks || []);
 
       // Hide share button if no stocks to render
       const shareBtn = this.el.querySelector('.panel__share-pnl');
@@ -74,6 +92,7 @@ export class DetailPanel {
       }
     } else {
       econSections.forEach(el => el.style.display = 'none');
+      this.destroyTopChart();
     }
 
     this.el.classList.add('panel--open');
@@ -165,6 +184,56 @@ export class DetailPanel {
 
   close() {
     this.el.classList.remove('panel--open');
+    this.destroyTopChart();
+  }
+
+  async renderTopChart(stocks) {
+    const container = this.el.querySelector('[data-econ="chart"]');
+    if (!container) return;
+    // Destroy any previous chart first so switching conflicts doesn't pile up.
+    container.innerHTML = '';
+    if (!stocks.length) return;
+
+    const top = [...stocks]
+      .filter(s => typeof s.change === 'number')
+      .sort((a, b) => Math.abs(b.change) - Math.abs(a.change))[0];
+    if (!top) return;
+
+    const syms = await loadTVSymbols();
+    const symbol = resolveTVSymbol(top.ticker, syms?.mapping);
+    if (!symbol) return;
+
+    const lang = (getLang && getLang()) || 'en';
+    const wrap = document.createElement('div');
+    wrap.className = 'tradingview-widget-container';
+    wrap.style.height = '200px';
+    const widget = document.createElement('div');
+    widget.className = 'tradingview-widget-container__widget';
+    wrap.appendChild(widget);
+
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.src = TV_MINI_URL;
+    script.innerHTML = JSON.stringify({
+      symbol,
+      width: '100%',
+      height: '200',
+      locale: lang === 'ko' ? 'kr' : 'en',
+      dateRange: '12M',
+      colorTheme: 'dark',
+      isTransparent: true,
+      autosize: true,
+      trendLineColor: 'rgba(255,32,32,1)',
+      underLineColor: 'rgba(255,32,32,0.18)',
+    });
+    wrap.appendChild(script);
+    container.appendChild(wrap);
+  }
+
+  destroyTopChart() {
+    const container = this.el.querySelector('[data-econ="chart"]');
+    if (container) container.innerHTML = '';  // explicit iframe + script removal
   }
 }
 
