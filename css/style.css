@@ -131,17 +131,19 @@ html, body {
   left: 0;
   right: 0;
   z-index: 10;
-  padding: 24px 32px;
+  padding: 12px 24px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  min-height: 56px;
   pointer-events: none;
 }
 
 .header__left {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 14px;
 }
 
 .header__conflicts {
@@ -159,28 +161,34 @@ html, body {
 }
 
 .header__right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   text-align: right;
   pointer-events: auto;
 }
 
-/* Casualty Counter */
+/* Casualty Counter — inline single row on desktop so header stays 56px */
 .counter {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 4px;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  gap: 10px;
 }
 
 .counter__label {
-  font-size: 10px;
-  letter-spacing: 0.15em;
+  font-size: 8px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--text-dim);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .counter__number {
-  font-size: 36px;
-  font-weight: 700;
+  font-family: 'Bebas Neue', 'Space Mono', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1;
   font-variant-numeric: tabular-nums;
   color: var(--pulse-red);
   text-shadow: 0 0 20px rgba(255, 32, 32, 0.4);
@@ -415,29 +423,48 @@ html, body {
 }
 
 /* Stats Bar */
+/* Stats bar — Bloomberg-terminal density. Border dividers, no gaps, compare
+   hidden by default. Positioned below actual header height (Bebas cap
+   metrics stretch the header to ~68px, not the nominal 56px). */
 .stats-bar {
   position: fixed;
-  top: 90px;
+  top: 72px;
   left: 0;
   right: 0;
   z-index: 8;
   display: flex;
-  justify-content: center;
-  gap: 32px;
-  padding: 12px 24px;
+  padding: 8px 24px 10px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
   pointer-events: none;
 }
 
+body.has-ticker-bar .stats-bar {
+  top: 104px; /* ticker 32 + header 68 + 4 breathing */
+}
+body.has-ticker-bar .sidebar-toggles {
+  top: 184px; /* stats-bar bottom (104 + 61) + ~16 gap */
+}
+
 .stats-bar__item {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  padding: 0 20px;
+  border-right: 1px solid var(--border);
+  gap: 3px;
 }
+.stats-bar__item:last-child { border-right: none; }
 
 .stats-bar__number {
-  font-size: 22px;
-  font-weight: 700;
+  font-family: 'Bebas Neue', 'Space Mono', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.02em;
   font-variant-numeric: tabular-nums;
   color: var(--text);
 }
@@ -448,10 +475,10 @@ html, body {
 }
 
 .stats-bar__label {
-  font-size: 9px;
-  letter-spacing: 0.12em;
+  font-size: 8px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--text-dim);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 /* Auto Tour Tooltip */
@@ -543,10 +570,12 @@ html, body {
   color: #7eb8ff;
 }
 
-/* Sidebar Toggle Buttons */
+/* Sidebar Toggle Buttons — anchored below stats-bar by a fixed 16px gap.
+   See stats-bar for its top positioning; this chases it.
+   No-ticker: header 68 + stats 61 + 16 gap = 145. Round to 148. */
 .sidebar-toggles {
   position: fixed;
-  top: 185px;
+  top: 148px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 15;
@@ -1354,17 +1383,18 @@ html, body {
 }
 
 /* LIVE Session Counter */
+/* Compact inline live counter — single row, ambient not headline */
 .live-counter {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 4px;
+  gap: 10px;
   pointer-events: none;
 }
 
 .live-counter__badge {
-  font-size: 9px;
-  letter-spacing: 0.15em;
+  font-size: 8px;
+  letter-spacing: 0.18em;
   color: var(--pulse-red);
   animation: blink-live 1.5s ease-in-out infinite;
 }
@@ -1381,24 +1411,34 @@ html, body {
 }
 
 .live-counter__number {
-  font-size: 28px;
-  font-weight: 700;
+  font-family: 'Bebas Neue', 'Space Mono', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1;
   font-variant-numeric: tabular-nums;
   color: var(--pulse-red);
   text-shadow: 0 0 20px rgba(255, 32, 32, 0.4);
 }
 
 .live-counter__unit {
-  font-size: 10px;
+  font-size: 9px;
+  line-height: 1.3;
+  max-width: 140px;
   color: var(--text-dim);
 }
 
-/* Stats Bar Compare Text */
+/* Hide the in-counter flash line — it competed with stats-bar and added
+   vertical weight we don't need. Keep the class so app.js writes to it
+   without errors; just never render. */
+.live-comparison {
+  display: none;
+}
+
+/* Stats Bar Compare Text — hidden in v2 density pass. Numbers + labels
+   are the primary scan; context moves to hover/panel. */
 .stats-bar__compare {
-  font-size: 9px;
-  letter-spacing: 0.06em;
-  color: rgba(255, 255, 255, 0.5);
-  margin-top: 2px;
+  display: none;
 }
 
 .stats-bar__number--green {
