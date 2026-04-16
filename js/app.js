@@ -377,6 +377,11 @@ async function main() {
         if (!tourActive) startTour();
       }, 3000);
     }
+
+    // Handle address-bar hash changes without full reload
+    window.addEventListener('hashchange', () => {
+      if (location.hash.startsWith('#conflict=')) handleDeepLink();
+    });
   }, 500);
 }
 
