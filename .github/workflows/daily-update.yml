@@ -1,0 +1,38 @@
+name: Daily Stock & News Update
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # UTC 06:00 = KST 15:00 (after US market close)
+  workflow_dispatch:       # Manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Update stock data
+        run: python scripts/update-stocks.py
+
+      - name: Update news
+        run: python scripts/update-news.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/stocks.json data/conflicts.json
+          git diff --cached --quiet || git commit -m "chore: daily stock/news update $(date +%Y-%m-%d)"
+          git push

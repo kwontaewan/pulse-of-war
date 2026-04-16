@@ -1,11 +1,18 @@
 [
   {
     "name": "US-Iran Conflict 2026",
-    "lat": 32.50,
-    "lng": 53.00,
+    "lat": 32.5,
+    "lng": 53.0,
     "type": "interstate",
     "featured": true,
-    "parties": ["United States", "Israel", "Iran", "Hezbollah", "Houthis", "Iraqi PMF"],
+    "parties": [
+      "United States",
+      "Israel",
+      "Iran",
+      "Hezbollah",
+      "Houthis",
+      "Iraqi PMF"
+    ],
     "casualties": 12000,
     "refugees": 500000,
     "startYear": 2026,
@@ -16,26 +23,80 @@
       "warCost": "$450B",
       "warCostNote": "군사비 + 글로벌 공급망 차질 + 유가 쇼크 (2026 Q2 GDP -2.9%)",
       "stocks": [
-        { "ticker": "LMT", "name": "Lockheed Martin", "change": 24.4, "since": "2026" },
-        { "ticker": "RTX", "name": "RTX Corp", "change": 7.0, "since": "2026" },
-        { "ticker": "ITA", "name": "iShares Aerospace ETF", "change": 55.0, "since": "2025" },
-        { "ticker": "XOM", "name": "Exxon Mobil", "change": 42.0, "since": "2026" },
-        { "ticker": "CVX", "name": "Chevron", "change": 37.1, "since": "2026" },
-        { "ticker": "OXY", "name": "Occidental Petroleum", "change": 35.0, "since": "2026" }
+        {
+          "ticker": "LMT",
+          "name": "Lockheed Martin",
+          "change": 24.4,
+          "since": "2026"
+        },
+        {
+          "ticker": "RTX",
+          "name": "RTX Corp",
+          "change": 7.0,
+          "since": "2026"
+        },
+        {
+          "ticker": "ITA",
+          "name": "iShares Aerospace ETF",
+          "change": 55.0,
+          "since": "2025"
+        },
+        {
+          "ticker": "XOM",
+          "name": "Exxon Mobil",
+          "change": 42.0,
+          "since": "2026"
+        },
+        {
+          "ticker": "CVX",
+          "name": "Chevron",
+          "change": 37.1,
+          "since": "2026"
+        },
+        {
+          "ticker": "OXY",
+          "name": "Occidental Petroleum",
+          "change": 35.0,
+          "since": "2026"
+        }
       ],
       "commodities": [
-        { "name": "Brent Crude Oil", "change": 34.0 },
-        { "name": "WTI Crude Oil", "change": 30.0 },
-        { "name": "Natural Gas (LNG)", "change": 25.0 },
-        { "name": "Gold", "change": 18.0 }
+        {
+          "name": "Brent Crude Oil",
+          "change": 34.0
+        },
+        {
+          "name": "WTI Crude Oil",
+          "change": 30.0
+        },
+        {
+          "name": "Natural Gas (LNG)",
+          "change": 25.0
+        },
+        {
+          "name": "Gold",
+          "change": 18.0
+        }
       ],
       "news": [
-        { "headline": "US-Israeli airstrikes kill Iran's Supreme Leader, escalate regional war", "headline_ko": "미국-이스라엘 공습으로 이란 최고지도자 사망, 중동 전면전 확대", "date": "2026-02-28", "source": "Reuters", "url": "https://www.reuters.com/world/middle-east/iran-strikes-2026" },
-        { "headline": "Iran closes Strait of Hormuz — oil surges past $120/barrel", "headline_ko": "이란 호르무즈 해협 봉쇄 — 유가 $120 돌파", "date": "2026-03-04", "source": "Bloomberg", "url": "https://www.bloomberg.com/graphics/2026-iran-war-hormuz-closure-oil-shock/" },
-        { "headline": "Trump proposes $1.5T defense budget funded by tariff revenue", "headline_ko": "트럼프, 관세 수입으로 $1.5조 국방 예산 제안", "date": "2026-01-15", "source": "Motley Fool", "url": "https://www.fool.com/investing/2026/04/15/does-trumps-record-defense-budget-make-lockheed-ma/" },
-        { "headline": "Supreme Court strikes down IEEPA tariffs 6-3; $175B in refunds pending", "headline_ko": "대법원 IEEPA 관세 6-3 위헌 판결, $1,750억 환불 대기 중", "date": "2026-02-20", "source": "Holland & Knight", "url": "https://www.hklaw.com/en/insights/publications/2026/02/supreme-court-strikes-down-ieepa-tariffs" },
-        { "headline": "US-Iran ceasefire after 40 days; Hormuz shipping corridor reopening", "headline_ko": "미국-이란 40일 만에 휴전, 호르무즈 해협 재개통 시작", "date": "2026-04-08", "source": "CNN", "url": "https://www.cnn.com/2026/04/14/world/live-news/iran-war-blockade-us-trump" },
-        { "headline": "Defense ETF ITA up 55% in 12 months — biggest rally since 9/11", "headline_ko": "방산 ETF ITA 12개월간 +55% — 9/11 이후 최대 랠리", "date": "2026-04-10", "source": "24/7 Wall St", "url": "https://247wallst.com/investing/2026/04/01/ppa-is-up-about-35-in-2026/" }
+        {
+          "headline": "Iran war live: US ‘to restart combat if Iran does not agree to a deal’",
+          "date": "2026-04-16",
+          "source": "Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTFVwMUNnVWN0QWdEeUJCMWlEUnBUczFHOFFrZVYycUlzN1gyTEZWUkdXakNsM2ZPekhwSzRDUjZaRmJWd1BPd2ZxTlhFNUV5QzNqMUtPajIxSFRRZTdFSUR2eXFERUpXVE5qdDRrMFhTNGo2TFN3SHN2cUk4SUhjbGZhQXhxYTlQRHBwaS1SU3JJUm9pU3M0SUlNVWdMZVRVUXpLVktGb19YVE0wSmV4TzRpajhjZzFScFFIbnVsT3BtZ9IBxwFBVV95cUxPenc5THpMMi1tWDFxYThELWVlRzk3LXZmT0NSa1QxRDVPZFJzSmhzNUJZcm43aEJlYWpLa2NyTDNIYmxYbXJKZlR0UHM1ckFWVkl1dVJLMFh3NXdXN1hDMk1hdi1qRzlrcTJZblp5UjFZQ2g3TEV1TXhOd0d6a2xtZFphZ2s4VUpxaTNWZnV1NEUySEY1SXByS3lCTjRqbzJCVU1yX2JEWnZPdDdGZ1hRVXVubXlQVjBlYXdVSDhwbWlpS0x3bDE4?oc=5"
+        },
+        {
+          "headline": "White House optimistic about Iran deal as key Pakistani negotiator visits Tehran",
+          "date": "2026-04-16",
+          "source": "CNN",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PRWlLT0Q4MnJ4OGlCMGk5R3JfbGlKVUo3RjE4Z3NPcWluZHdqZFVaaFB6cmJCUG9RSFhUZEx5TkdXNmdsaFVXb0RaR0I2b1N5R3VkY3pVQnBKYnY5TllVcGc4N1BzR1prTmI5UkIzQm83SFNqQWxPdUw3X2kxdw?oc=5"
+        },
+        {
+          "headline": "Iran war 'very close to over,' Trump says — and the stock market 'is going to boom'",
+          "date": "2026-04-15",
+          "source": "CNBC",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZXpUNktCNVQyMFNEa3dvWTdncVV6bEZ1cGRONjRLR1VMN29yeU5DSF9hMGt0ZkxaREZSN053UGMwRng0THV0bDRSM0NWNjlQUk9oRGo4T2ltMDhWNUx4UXRBOEdPMDVEbURyUFVCODlqRnJJMFJBNmZ4TUZCMm5pR2t0am0xMmFFeDFJY3g5c3IwSkhGbWVRX3FLYTPSAaIBQVVfeXFMTnFJVjdVdjExaHNHTkFzR2x0X19pSkkwdlRaekxJR0I0MzA0cVVWNUxPaHgwNGRXTGNzUkQtY3VzOUh6TGt6Skl0a1V4MUc5VFNJMV9HQktrY0k3MmhTY052dl9tdHQ2Q0FwOWRVWUVXNmtFNjAyWlg0Z3o0XzJ0eFZ4NzhHRnhiaGdyZ0pxYW5vZHFUcG02eFh0MzhrMXBHNVpB?oc=5"
+        }
       ]
     }
   },
@@ -44,7 +105,10 @@
     "lat": 48.38,
     "lng": 31.17,
     "type": "interstate",
-    "parties": ["Ukraine", "Russia"],
+    "parties": [
+      "Ukraine",
+      "Russia"
+    ],
     "casualties": 300000,
     "refugees": 6400000,
     "startYear": 2022,
@@ -55,21 +119,68 @@
       "warCost": "$1.3T",
       "warCostNote": "Cumulative economic damage since 2022 — World Bank",
       "stocks": [
-        { "ticker": "LMT", "name": "Lockheed Martin", "change": 67.2, "since": "2022" },
-        { "ticker": "RTX", "name": "RTX Corp", "change": 48.1, "since": "2022" },
-        { "ticker": "NOC", "name": "Northrop Grumman", "change": 41.8, "since": "2022" },
-        { "ticker": "RHMT.ME", "name": "Rheinmetall", "change": 312.0, "since": "2022" }
+        {
+          "ticker": "LMT",
+          "name": "Lockheed Martin",
+          "change": 67.2,
+          "since": "2022"
+        },
+        {
+          "ticker": "RTX",
+          "name": "RTX Corp",
+          "change": 48.1,
+          "since": "2022"
+        },
+        {
+          "ticker": "NOC",
+          "name": "Northrop Grumman",
+          "change": 41.8,
+          "since": "2022"
+        },
+        {
+          "ticker": "RHMT.ME",
+          "name": "Rheinmetall",
+          "change": 312.0,
+          "since": "2022"
+        }
       ],
       "commodities": [
-        { "name": "Natural Gas (EU)", "change": 180.0 },
-        { "name": "Wheat", "change": 32.0 },
-        { "name": "WTI Crude Oil", "change": 22.4 },
-        { "name": "Uranium", "change": 95.0 }
+        {
+          "name": "Natural Gas (EU)",
+          "change": 180.0
+        },
+        {
+          "name": "Wheat",
+          "change": 32.0
+        },
+        {
+          "name": "WTI Crude Oil",
+          "change": 22.4
+        },
+        {
+          "name": "Uranium",
+          "change": 95.0
+        }
       ],
       "news": [
-        { "headline": "NATO defense spending hits record — 23 members meet 2% GDP target", "headline_ko": "NATO 방위비 역대 최고 — 23개국 GDP 2% 달성", "date": "2026-03-12", "source": "Reuters", "url": "https://www.reuters.com/world/europe/nato-defense-spending-2026-03-12/" },
-        { "headline": "Ukraine reconstruction cost estimated at $486B", "headline_ko": "우크라이나 재건 비용 $4,860억 추산", "date": "2026-02-28", "source": "World Bank", "url": "https://www.worldbank.org/en/news/press-release/2026/02/28/ukraine-reconstruction" },
-        { "headline": "Rheinmetall stock up 312% since invasion — largest defense rally in decades", "headline_ko": "라인메탈 주가 침공 이후 +312% — 수십년 만의 최대 방산 랠리", "date": "2026-04-01", "source": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-04-01/rheinmetall-defense-rally" }
+        {
+          "headline": "Ukraine-Russia war latest: Zelensky says Putin ‘is a global threat’ after huge wave of deadly strikes",
+          "date": "2026-04-16",
+          "source": "The Independent",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQLWZ6OHI4UWladXZMZXZiRGZLM0tXSGM2aWJjU0dsa08yaWFvTmZ6d3pERjNpT1dIa29aVjdXMmJkX0tvNS1VczNpVWJOVzRLQ0lHUEEyaG8xX2I1b3VudmNhdW5teEVzWWRaVDlweHNuZlNwOVRmNmMtNS02Ul8tV0EtNTJGbURDUjN2RVViS0o3WlhBY214SkNtVnRUMXlNblpaOW5mU3Z4dFZzM0JQTmx3SUZEY3dHTDR3?oc=5"
+        },
+        {
+          "headline": "Russian Offensive Campaign Assessment, April 14, 2026",
+          "date": "2026-04-14",
+          "source": "Institute for the Study of War",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVzh1QXRiUmJVLVdLMm9wWXAxWFdSbjlUa2JzUExwOW82UkdZaDFEMVNNeEo3VTBYZHJrQTZqZjVWQkRVSzl6TExfMnJXY08tVVNORjhNN0lRSUI5UWNGUGtKVnJ0eDcwcXJTdk1RelRTOG5CSDludTJqNFBmalQyMm1yenFMak5faWJwMHd3R0NIOVo3aWo1bTRZVF9RYzNOb3U1ajZTWVo?oc=5"
+        },
+        {
+          "headline": "Russian Offensive Campaign Assessment, April 15, 2026",
+          "date": "2026-04-15",
+          "source": "Institute for the Study of War",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcGhadWJZS3QycDNZMW9zVEpySW1jX3VVQWdtWk9uZHlZV1Z3SmdjMTViMFFhU0ZubzVOMjdrVFA2REJDX2thNUZxalRycFA0T1NHbUNGMHpXMF9RaThPNGlNeE41YmxhYkRZVFNuUS1xaFF5eGlTaHp2NF9nQXkyM3duQ1dWQkQ4Q0lpSGxFYlRwRUVwY3RjOTdxdVV1Q0xBNlpwZ3BlT3Y?oc=5"
+        }
       ]
     }
   },
@@ -78,7 +189,11 @@
     "lat": 31.35,
     "lng": 34.31,
     "type": "interstate",
-    "parties": ["Israel", "Hamas", "Palestine"],
+    "parties": [
+      "Israel",
+      "Hamas",
+      "Palestine"
+    ],
     "casualties": 46000,
     "refugees": 1900000,
     "startYear": 2023,
@@ -89,27 +204,70 @@
       "warCost": "$80B",
       "warCostNote": "Israel's estimated war costs + Gaza reconstruction needs",
       "stocks": [
-        { "ticker": "ESLT", "name": "Elbit Systems", "change": 52.3, "since": "2023" },
-        { "ticker": "LMT", "name": "Lockheed Martin", "change": 28.0, "since": "2023" },
-        { "ticker": "CL=F", "name": "Crude Oil Futures", "change": 18.5, "since": "2023" }
+        {
+          "ticker": "ESLT",
+          "name": "Elbit Systems",
+          "change": 52.3,
+          "since": "2023"
+        },
+        {
+          "ticker": "LMT",
+          "name": "Lockheed Martin",
+          "change": 28.0,
+          "since": "2023"
+        },
+        {
+          "ticker": "CL=F",
+          "name": "Crude Oil Futures",
+          "change": 18.5,
+          "since": "2023"
+        }
       ],
       "commodities": [
-        { "name": "Brent Crude", "change": 18.5 },
-        { "name": "Gold", "change": 35.0 },
-        { "name": "Shipping Rates (Red Sea)", "change": 250.0 }
+        {
+          "name": "Brent Crude",
+          "change": 18.5
+        },
+        {
+          "name": "Gold",
+          "change": 35.0
+        },
+        {
+          "name": "Shipping Rates (Red Sea)",
+          "change": 250.0
+        }
       ],
       "news": [
-        { "headline": "Red Sea shipping costs up 250% as Houthi attacks continue", "headline_ko": "후티 공격 지속으로 홍해 해운비 250% 급등", "date": "2026-03-20", "source": "Lloyd's List", "url": "https://www.lloydslist.com/LL/sector/ship-operations/article/red-sea-shipping-costs-2026/" },
-        { "headline": "Gaza GDP drops 80% — UN declares worst economic collapse in modern history", "headline_ko": "가자 GDP 80% 폭락 — UN '현대사 최악의 경제 붕괴' 선언", "date": "2026-04-05", "source": "UNCTAD", "url": "https://unctad.org/news/gaza-economic-collapse-2026" }
+        {
+          "headline": "Israeli attacks kill 11, including two children, in day of strikes on Gaza",
+          "date": "2026-04-15",
+          "source": "Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYmRhcF9NMXpQTHM4YUNVSlVpdFlQQUh4Q0w5dWhHMmJHY2ROOUZJQ2c5N3FsU1o1Qm05VldpQWlnZkxYVGtQaEpxeW13M2gxT29TODJTdnBZUUJ2MDdmcmpHMkVUODhndDBaazFTV2xVQ3VHY0dBeTFvV24zaEdjRTZCYVRmSjhnekQtOEJmQ1lSTlVDYmZxRHRyZGNEMk83aFo1WDNTMUQyWFItNXIxb2dCa9IBuAFBVV95cUxNd1J1TG10UzBjMzFEZ3k2TWxyaDM0bXBURUk3dTZ6U0RkTlpQOTQ2OTU5bjc0c2F4ZGhIRTIybHdUYXQwWjh1MHFLWU5aWmZpU096bGxfTnExczRFNXRtcERZQndjU3VYQm5abEdVd2VfRXJ2cWE2TnJDWmJlN2RObWc4RGpoWWR2UXl5dGxvRk1Hamg5RmxCWHY5NUROcklsRnFUakg0bkxDaW5QWmo2RS1HOS1TNmVD?oc=5"
+        },
+        {
+          "headline": "No more US military aid to Israel | Bernie Sanders",
+          "date": "2026-04-15",
+          "source": "The Guardian",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNczlMaXQxR2IwQi1GcjJiQjVENlNZVVhOTkI0c3dGVnFXSGpKckpfeEU3cDVXVmdMTGN4akRBOXNNTzFCMDZ5ejlQd0hxOWduUG1zelpGNEpsX1pRb0pGT2JVbS1jejhuTllWZWY0bVNOdzdWOVRFRWhiVlppNWVoMUdxOHRsb200RUIyMDJWYVc?oc=5"
+        },
+        {
+          "headline": "Hamas rejects Gaza disarmament plan, Palestinian official says",
+          "date": "2026-04-14",
+          "source": "BBC",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Gd1ItUkNXdWFTQ3RXWkpGLTNxcVlwVEtIaUJjS3J6UzFvUGpfSEprRTN4NWRBdW9vYUdkNWN5WFphNGZZeHI2WHc4SV9OYVBLME03ZGFwb2dLZw?oc=5"
+        }
       ]
     }
   },
   {
     "name": "Sudan Civil War",
-    "lat": 15.50,
+    "lat": 15.5,
     "lng": 32.56,
     "type": "civil war",
-    "parties": ["SAF", "RSF"],
+    "parties": [
+      "SAF",
+      "RSF"
+    ],
     "casualties": 150000,
     "refugees": 8600000,
     "startYear": 2023,
@@ -120,16 +278,48 @@
       "warCost": "$42B",
       "warCostNote": "GDP collapse + humanitarian aid costs",
       "stocks": [
-        { "ticker": "ADM", "name": "Archer-Daniels (grain)", "change": -12.0, "since": "2023" },
-        { "ticker": "GLD", "name": "SPDR Gold Trust", "change": 28.0, "since": "2023" }
+        {
+          "ticker": "ADM",
+          "name": "Archer-Daniels (grain)",
+          "change": -12.0,
+          "since": "2023"
+        },
+        {
+          "ticker": "GLD",
+          "name": "SPDR Gold Trust",
+          "change": 28.0,
+          "since": "2023"
+        }
       ],
       "commodities": [
-        { "name": "Gold (Sudan supply)", "change": 28.0 },
-        { "name": "Gum Arabic", "change": 120.0 }
+        {
+          "name": "Gold (Sudan supply)",
+          "change": 28.0
+        },
+        {
+          "name": "Gum Arabic",
+          "change": 120.0
+        }
       ],
       "news": [
-        { "headline": "Sudan surpasses Ukraine as world's largest displacement crisis — 8.6M fled", "headline_ko": "수단, 우크라이나 넘어 세계 최대 난민 위기 — 860만 명 탈출", "date": "2026-03-15", "source": "UNHCR" },
-        { "headline": "Gum Arabic prices double as Sudan conflict disrupts 70% of global supply", "headline_ko": "수단 분쟁으로 아라비아 검 가격 2배 — 세계 공급의 70% 차질", "date": "2026-02-10", "source": "FT" }
+        {
+          "headline": "Three years of messages at once - a chronicle of Sudan's war pours in as trapped reporter's phone turns on",
+          "date": "2026-04-15",
+          "source": "BBC",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1zSlUtdGdvUW9URk5KQTZPVWdVTko4dnFKSlV1a1p5QjZVNUpPWlBrYzJ4OGVlcjhETS10VnRPQ1k1LVZpWkJTZThUZGNfVTA2dTFGazl6bGNVZw?oc=5"
+        },
+        {
+          "headline": "3 years since Sudan civil war began",
+          "date": "2026-04-15",
+          "source": "CBS News",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5vSGdZVjkxVVhGVWEwWUw4dTNxNllCbDJWYXJqOERsVHVGZmhCMzVXRVpKclN4TC1hUFgyRm9RYks4bnJ2dzJsdUliTG9EZE5MRHgxb2VKb1dfbDc5eDljYTNBSmxwSmhLTDdVS3VPVmc0YWJ3?oc=5"
+        },
+        {
+          "headline": "Sudan’s Third Year of Civil War",
+          "date": "2026-04-15",
+          "source": "Georgetown Institute for Women",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1wMHpyTlpvR3ZYMFBEeVNGWnhVY2ZKV0sxY3dDWVlXYmRiVW1EV1VxcERoLXFKU3Rla3BobkhzUEtuRnlacVlkc3pZb1pxQmFTS3g5NVVCMjdUQkQ4RkV1SDhPanY3T0M4NkZ4ZFVhVDliYUlZVEE?oc=5"
+        }
       ]
     }
   },
@@ -138,7 +328,11 @@
     "lat": 19.76,
     "lng": 96.07,
     "type": "civil war",
-    "parties": ["Military Junta", "NUG", "Ethnic Armed Organizations"],
+    "parties": [
+      "Military Junta",
+      "NUG",
+      "Ethnic Armed Organizations"
+    ],
     "casualties": 50000,
     "refugees": 2600000,
     "startYear": 2021,
@@ -149,15 +343,46 @@
       "warCost": "$18B",
       "warCostNote": "GDP contraction + lost FDI since coup",
       "stocks": [
-        { "ticker": "TIN", "name": "Tin Futures", "change": 45.0, "since": "2021" }
+        {
+          "ticker": "TIN",
+          "name": "Tin Futures",
+          "change": 45.0,
+          "since": "2021"
+        }
       ],
       "commodities": [
-        { "name": "Rare Earths (Myanmar)", "change": 60.0 },
-        { "name": "Tin", "change": 45.0 },
-        { "name": "Jade", "change": -80.0 }
+        {
+          "name": "Rare Earths (Myanmar)",
+          "change": 60.0
+        },
+        {
+          "name": "Tin",
+          "change": 45.0
+        },
+        {
+          "name": "Jade",
+          "change": -80.0
+        }
       ],
       "news": [
-        { "headline": "Resistance forces control 60% of Myanmar territory — junta losing ground", "headline_ko": "저항군, 미얀마 영토 60% 장악 — 군부 수세", "date": "2026-04-08", "source": "AP" }
+        {
+          "headline": "Who is fighting in Myanmar’s multi-front civil war?",
+          "date": "2026-03-27",
+          "source": "Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQzNsNkwzbDdNaTR0cFAxRk0taEdsb0I1THhfSjhYVUxrM1RyX29LZlAyeWpQRTJVbU1qVG1nb0RLMlJheGFwdEU3M2VzejhBWUNQX3RpcC1iTVc4TTVqUWNtU3JZQk5mWWd5MU9HZFdPdUpUckNvVzJJUGFLd0t0dmc4V05TTVpJcW9uNjRrWk5zT3czT2hLZ2xB0gGfAUFVX3lxTE1kdUNNd1ZmZHdVMWZGR2txTWlPeEpXdjdkaTZWYlEzMlVyMVdqQXNyTGRRc3lvcGkxdTNiTFAyZkpKeVlVdmNnc0VtYnlJY3ViQXB4amRxYVlTdHlSRzRlMUF5SmdSNWZ4WWFhNUFFejJDNTRlNDFQdG5lSkxiOWhQdkN5MmMtNGRKZ3RQMG9PT0FZakMyN24yOG95TkxJNA?oc=5"
+        },
+        {
+          "headline": "Where Even Flowers Stoke Fear",
+          "date": "2026-04-13",
+          "source": "The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPWkduQmFuZDA2YWR6S3BFSTBTTE5zMTNsSklkN0ZUMjltcG1EbFp4aU43bmVvWnk1QTFxLXBsYnZiRDhEajNpQjl6OUUycmVLbDhScVZNaHViNDV2MjZyYkh2UG5zQ3hEbDA5cmRTVGx4LVllcXFTSU52X3BWeHhsbGd3?oc=5"
+        },
+        {
+          "headline": "Min Aung Hlaing: Myanmar's coup leader becomes president",
+          "date": "2026-04-02",
+          "source": "BBC",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1PSVN2TnE1bDBhLXZSUlRsRGVsUW1BSGdVckRfNld0bzA4amJSQzgyVXFaTk5HNWhEQjVhNmRQT2RzSkJfQjNtRHJ2MVRTSkxaWVZlU2dULUtZQQ?oc=5"
+        }
       ]
     }
   },
@@ -166,7 +391,11 @@
     "lat": 9.15,
     "lng": 40.49,
     "type": "civil war",
-    "parties": ["Ethiopian Government", "Fano Militia", "OLA"],
+    "parties": [
+      "Ethiopian Government",
+      "Fano Militia",
+      "OLA"
+    ],
     "casualties": 20000,
     "refugees": 4500000,
     "startYear": 2020,
@@ -175,10 +404,15 @@
   },
   {
     "name": "Syrian Civil War",
-    "lat": 34.80,
+    "lat": 34.8,
     "lng": 38.99,
     "type": "civil war",
-    "parties": ["HTS-led Government", "SDF", "ISIS remnants", "Turkey"],
+    "parties": [
+      "HTS-led Government",
+      "SDF",
+      "ISIS remnants",
+      "Turkey"
+    ],
     "casualties": 500000,
     "refugees": 6800000,
     "startYear": 2011,
@@ -189,15 +423,36 @@
       "warCost": "$1.2T",
       "warCostNote": "15 years of cumulative destruction — World Bank",
       "stocks": [
-        { "ticker": "BA", "name": "Boeing (defense)", "change": 15.0, "since": "2011" },
-        { "ticker": "TAP.L", "name": "TAP Pipeline", "change": 42.0, "since": "2015" }
+        {
+          "ticker": "BA",
+          "name": "Boeing (defense)",
+          "change": 15.0,
+          "since": "2011"
+        },
+        {
+          "ticker": "TAP.L",
+          "name": "TAP Pipeline",
+          "change": 42.0,
+          "since": "2015"
+        }
       ],
       "commodities": [
-        { "name": "Syrian Lira", "change": -99.5 },
-        { "name": "Phosphate", "change": 35.0 }
+        {
+          "name": "Syrian Lira",
+          "change": -99.5
+        },
+        {
+          "name": "Phosphate",
+          "change": 35.0
+        }
       ],
       "news": [
-        { "headline": "Syria reconstruction needs estimated at $400B — most unfunded", "headline_ko": "시리아 재건 $4,000억 필요 — 대부분 미조달", "date": "2026-01-20", "source": "UN" }
+        {
+          "headline": "Syria reconstruction needs estimated at $400B — most unfunded",
+          "headline_ko": "시리아 재건 $4,000억 필요 — 대부분 미조달",
+          "date": "2026-01-20",
+          "source": "UN"
+        }
       ]
     }
   },
@@ -206,7 +461,11 @@
     "lat": 15.55,
     "lng": 48.52,
     "type": "civil war",
-    "parties": ["Houthis", "Saudi-backed Government", "STC"],
+    "parties": [
+      "Houthis",
+      "Saudi-backed Government",
+      "STC"
+    ],
     "casualties": 377000,
     "refugees": 4500000,
     "startYear": 2014,
@@ -217,24 +476,61 @@
       "warCost": "$126B",
       "warCostNote": "Global shipping disruption + Saudi military spending",
       "stocks": [
-        { "ticker": "ZIM", "name": "ZIM Shipping", "change": 180.0, "since": "2023" },
-        { "ticker": "MAERSK.CO", "name": "Maersk", "change": 42.0, "since": "2023" }
+        {
+          "ticker": "ZIM",
+          "name": "ZIM Shipping",
+          "change": 180.0,
+          "since": "2023"
+        },
+        {
+          "ticker": "MAERSK.CO",
+          "name": "Maersk",
+          "change": 42.0,
+          "since": "2023"
+        }
       ],
       "commodities": [
-        { "name": "Container Shipping Rates", "change": 250.0 },
-        { "name": "Suez Canal Revenue", "change": -50.0 }
+        {
+          "name": "Container Shipping Rates",
+          "change": 250.0
+        },
+        {
+          "name": "Suez Canal Revenue",
+          "change": -50.0
+        }
       ],
       "news": [
-        { "headline": "Houthi Red Sea attacks force 90% of shipping to reroute via Cape of Good Hope", "headline_ko": "후티 홍해 공격으로 90% 선박 희망봉 우회 항로 전환", "date": "2026-03-01", "source": "Reuters" }
+        {
+          "headline": "Weakened and Reluctant, Yemen’s Houthis Belatedly Enter War",
+          "date": "2026-04-07",
+          "source": "The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeTVwRmppU2stZ1pBSXc1MzNjZTBGNVlEZzZpbUxrMDZlQVgwcGcxdHZoNTQ5MjRNcWFFaDJkM2lIakNud194WDlRNXRTV0xOZDU0QkVpN2JZYkpBdkVPaThtTEpFTENxOWhieU84ekpoU2w0VHlFQ3NQV1prYVl5c1lDRmpYdw?oc=5"
+        },
+        {
+          "headline": "Yemen’s civilians fear fallout after Houthis enter Iran war",
+          "date": "2026-04-06",
+          "source": "Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZWdoLVBnYzFxMFVjckt2aElQdndMV3labjNEQlItV2hBMmp1c2ZWa2QtdVQ2TGNCSWk0eFFzdlkycHVSbkpvQ2psYWowVmtYT3ltQ1NlMjFwN1U2RGFoRHBSQl9XUHZtelYxVXNSdUtEclN3d2RvQjYwNFFNMnNtRGlKOVVydFJoRlRfMWZmYXVKaFAwTklaRDg5R3A4cHPSAaQBQVVfeXFMT3ZCRGFTM3JwRmpBS2lKVXhQVXU0MkkwejN0ZzdCNHZySjhxaGxITEZteUExX3VIQllwRC1MaEphT3p3OHMtMFc5N0d6WW9SVlR4eXpaNS14ckstWHZOdFoyZllQR3hLeG1zdHBWN2JqY1NDck1XZWZXcGo0dWFnWE9Hajl6akdkejBqUFdXSmhjUkxiazViRWRXRTcyUWFZdkRJZmg?oc=5"
+        },
+        {
+          "headline": "Yemen’s Houthis threaten potential closure of key Red Sea strait if Gulf states join war",
+          "date": "2026-04-02",
+          "source": "The Times of Israel",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRUdHU09HV2ZnNnhmeHZrMnlZUmM4TzE0bk9OcHhHTWdYUFVBU081ZEpoeTZKVlhnQXRNNVFXYXhCV2FBU2JmbFg1ekFNSURObThJMmhoaDV0bFV0NFlTRi1Mdk45M2kySGdVTVVjbFl5dkE4cVVPRDB6enZIQjI0V1JWQkxLVEZZSThHYUNqVVRhM2FmZlV3TVpUNVRoR295em8zSFFrWWZJc2ZvOFdNeFlnMEhHREZxdkHSAb8BQVVfeXFMT1NPVEQtUzV0em56eVpsMTdZRmd4NGRoancxeVE3di1tREdyaHVTcDFtenZoODA3YTRVVVJSNkgyNzFmRWI0NGduNzI1bDdxWnpXUnp4OWdQcEYySmZ2SlkxYkxhcTBrSGktM21FdGdtZWpMTlFCUGhiLTBSTTM2aFd5MnkzQjhzb3BQRjhuY0JaczRiUWZOMGoxbElyMTR3SmJ5aDZLQ3lpRFNfbDJpTkFZcjdlTWw1VVJ2UXY3dWc?oc=5"
+        }
       ]
     }
   },
   {
     "name": "Somalia - Al-Shabaab",
     "lat": 5.15,
-    "lng": 46.20,
+    "lng": 46.2,
     "type": "insurgency",
-    "parties": ["Somali Government", "Al-Shabaab", "ATMIS"],
+    "parties": [
+      "Somali Government",
+      "Al-Shabaab",
+      "ATMIS"
+    ],
     "casualties": 30000,
     "refugees": 3800000,
     "startYear": 2006,
@@ -246,7 +542,12 @@
     "lat": -1.68,
     "lng": 29.22,
     "type": "civil war",
-    "parties": ["DRC Government", "M23", "ADF", "Rwanda"],
+    "parties": [
+      "DRC Government",
+      "M23",
+      "ADF",
+      "Rwanda"
+    ],
     "casualties": 120000,
     "refugees": 6900000,
     "startYear": 2021,
@@ -257,16 +558,52 @@
       "warCost": "$32B",
       "warCostNote": "Lost mining revenue + humanitarian costs",
       "stocks": [
-        { "ticker": "CMCL", "name": "Caledonia Mining", "change": -25.0, "since": "2021" },
-        { "ticker": "COBA.L", "name": "Cobalt Blue", "change": -40.0, "since": "2021" }
+        {
+          "ticker": "CMCL",
+          "name": "Caledonia Mining",
+          "change": -25.0,
+          "since": "2021"
+        },
+        {
+          "ticker": "COBA.L",
+          "name": "Cobalt Blue",
+          "change": -40.0,
+          "since": "2021"
+        }
       ],
       "commodities": [
-        { "name": "Cobalt", "change": -55.0 },
-        { "name": "Coltan/Tantalum", "change": 85.0 },
-        { "name": "Gold (artisanal)", "change": 40.0 }
+        {
+          "name": "Cobalt",
+          "change": -55.0
+        },
+        {
+          "name": "Coltan/Tantalum",
+          "change": 85.0
+        },
+        {
+          "name": "Gold (artisanal)",
+          "change": 40.0
+        }
       ],
       "news": [
-        { "headline": "M23 captures key coltan mines — 60% of global phone mineral supply at risk", "headline_ko": "M23, 핵심 콜탄 광산 점령 — 세계 휴대폰 광물 60% 위협", "date": "2026-04-10", "source": "FT" }
+        {
+          "headline": "Congo War Security Review, April 15, 2026",
+          "date": "2026-04-15",
+          "source": "Critical Threats",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQazl0SUV4NHgtWHk5QlUzTERUeDJkUW9odEVyMjlhbWVzLWdtcy1XQ2VXeHdSWlZmdTZXVWlFZkwzbkp5WTViMEUtbS1xM3pjQjdFYW9lZFBIQmVVemVhVWdWMkF5SzJoMkExQzF1Y1VGd1FRM19kYldwTDRmTklxdkNKSWY?oc=5"
+        },
+        {
+          "headline": "DRC peace talks open as violence shifts to remote highlands",
+          "date": "2026-04-14",
+          "source": "RFI",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQX3dnaUc2S21ZRXNVVEZ2MG1pSHUxMTlyWW1fdGtnNzZfdEVPaUJNUzZoNzItdS0xenA1eTlrTmY0cS1fYVFUSDFlbkg2WGVKclZtZFNoeGVBNF9pc05xekYxX1JQWHlHNjhxaTFOS2N5SUNYVHZwOTBzUWZjWl9MVDFRdmgxTUc1XzJCdndEZlBMZ25Ua29GVTZ4UTVUdw?oc=5"
+        },
+        {
+          "headline": "Conflict in the Democratic Republic of Congo | Global Conflict Tracker",
+          "date": "2026-02-18",
+          "source": "Council on Foreign Relations",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSG9La2pKSXhlanRJOFoxTWZ2aWFmWkR0Rkx4U3RyeWVXVnBXZFlyN1ZlWThiM3JHMzVlcERuYzRSOUtkRUlMYy1vQ1A3R295UG9rTlppbGN1M202TGhta3pSSWEzZi13SzhsTVJwTlNpaDFBZTl0bTlNblhSSmFDQ0d6OUgySURLcFh0V1NQX1Y?oc=5"
+        }
       ]
     }
   },
@@ -275,7 +612,11 @@
     "lat": 12.37,
     "lng": -1.52,
     "type": "insurgency",
-    "parties": ["Military Junta", "JNIM", "ISSP"],
+    "parties": [
+      "Military Junta",
+      "JNIM",
+      "ISSP"
+    ],
     "casualties": 26000,
     "refugees": 2000000,
     "startYear": 2015,
@@ -287,7 +628,12 @@
     "lat": 17.57,
     "lng": -3.99,
     "type": "insurgency",
-    "parties": ["Military Junta", "Wagner Group", "JNIM", "Tuareg rebels"],
+    "parties": [
+      "Military Junta",
+      "Wagner Group",
+      "JNIM",
+      "Tuareg rebels"
+    ],
     "casualties": 15000,
     "refugees": 400000,
     "startYear": 2012,
@@ -299,7 +645,11 @@
     "lat": 13.51,
     "lng": 2.11,
     "type": "insurgency",
-    "parties": ["Military Junta", "JNIM", "IS Sahel"],
+    "parties": [
+      "Military Junta",
+      "JNIM",
+      "IS Sahel"
+    ],
     "casualties": 5000,
     "refugees": 350000,
     "startYear": 2015,
@@ -311,7 +661,12 @@
     "lat": 9.08,
     "lng": 7.49,
     "type": "insurgency",
-    "parties": ["Nigerian Government", "Boko Haram", "ISWAP", "Bandits"],
+    "parties": [
+      "Nigerian Government",
+      "Boko Haram",
+      "ISWAP",
+      "Bandits"
+    ],
     "casualties": 50000,
     "refugees": 3200000,
     "startYear": 2009,
@@ -323,7 +678,11 @@
     "lat": 18.54,
     "lng": -72.34,
     "type": "gang warfare",
-    "parties": ["Gangs", "Transitional Government", "Kenya-led MSS"],
+    "parties": [
+      "Gangs",
+      "Transitional Government",
+      "Kenya-led MSS"
+    ],
     "casualties": 8000,
     "refugees": 700000,
     "startYear": 2021,
@@ -333,9 +692,14 @@
   {
     "name": "Colombia - Armed Groups",
     "lat": 4.57,
-    "lng": -74.30,
+    "lng": -74.3,
     "type": "insurgency",
-    "parties": ["Colombian Government", "ELN", "FARC dissidents", "Gulf Clan"],
+    "parties": [
+      "Colombian Government",
+      "ELN",
+      "FARC dissidents",
+      "Gulf Clan"
+    ],
     "casualties": 7000,
     "refugees": 5800000,
     "startYear": 1964,
@@ -347,7 +711,11 @@
     "lat": 23.63,
     "lng": -102.55,
     "type": "drug war",
-    "parties": ["Mexican Government", "Sinaloa Cartel", "CJNG"],
+    "parties": [
+      "Mexican Government",
+      "Sinaloa Cartel",
+      "CJNG"
+    ],
     "casualties": 40000,
     "refugees": 380000,
     "startYear": 2006,
@@ -358,15 +726,48 @@
       "warCost": "$50B",
       "warCostNote": "Annual cost of drug war to Mexican economy — UNAM",
       "stocks": [
-        { "ticker": "AXON", "name": "Axon Enterprise", "change": 180.0, "since": "2020" },
-        { "ticker": "SWBI", "name": "Smith & Wesson", "change": 45.0, "since": "2020" }
+        {
+          "ticker": "AXON",
+          "name": "Axon Enterprise",
+          "change": 180.0,
+          "since": "2020"
+        },
+        {
+          "ticker": "SWBI",
+          "name": "Smith & Wesson",
+          "change": 45.0,
+          "since": "2020"
+        }
       ],
       "commodities": [
-        { "name": "Fentanyl precursors", "change": 300.0 },
-        { "name": "Avocado (cartel-controlled)", "change": 60.0 }
+        {
+          "name": "Fentanyl precursors",
+          "change": 300.0
+        },
+        {
+          "name": "Avocado (cartel-controlled)",
+          "change": 60.0
+        }
       ],
       "news": [
-        { "headline": "Sinaloa cartel civil war kills 3,000+ in 6 months", "headline_ko": "시날로아 카르텔 내전으로 6개월간 3,000명 이상 사망", "date": "2026-03-28", "source": "AP" }
+        {
+          "headline": "Arizona’s guns are feeding the bloodshed in Mexico’s cartel war",
+          "date": "2026-03-24",
+          "source": "The Guardian",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNXEyNnZoYVpqZTFDdU0xOUVvSjcxYjFJd1ZUU0ZneXRpYXVCY2NkZGVUcWlNVUoyeVhUS2Vsdm5DNjlyWjNkdUVRS2NLM0FsMElHaHlhSERsUHJBR1U1MlhwVVd2dnR5T3RQNFhlb1cxUlowYmZEZjY3OEpGdUNlbFlOQUNmZHlKMVRrTg?oc=5"
+        },
+        {
+          "headline": "Civilians that were under siege by a Mexican cartel fight back with AK-47s and grenades",
+          "date": "2026-03-20",
+          "source": "PBS",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbzJ1RnZrUW9RRGtCdXVueUlSUUFST01OcGppRDg5WXhqWHZtOEhSRS1LcE5VeVNxUFQzN1ZYdTJjcXhmc0hiZ0dHd2Ezc0hlelF2UHZwX1A1aWhSQ2h4OExFekprWmRsNDZsMUpNM0w4cnJMaXpNcF9LcjdqXy0wWk94cWpuTHNibFQyb2N0YjBSc0JJWmFVUDNZVks3M1JXOElMb0dXOHJOMzlDUkZhRDdqVG9WQVM0Ui0xMFpPWdIBxAFBVV95cUxPTzI5andFNlJFOWV0ZVRqMUVETmJPVnB5SENxZjJjZUhYUTBOcFYyVmJwaU9zdTBlSDdxVy12MGVIeC0wSUt6V1lZY0tEQXU4SGdvVDJrSVZabzFZblNqMzR4T1pYRU1SUk51VjkxTTdwbkQyTndTdGlXSUl2eFVKaGV0YVBwMVNSYURFUWhLS0JjbG1OQjZlMG5MMlhkZGJ3WWtlcW5RY2hrN1pWcEFGenVMVDFSczdaa1YzWmZtekI2OE1S?oc=5"
+        },
+        {
+          "headline": "When Cartels Fight Back: El Mencho and the NIAC Question in Mexico",
+          "date": "2026-03-23",
+          "source": "Lieber Institute West Point",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZEs5ODloZ3VPUHRYb0dES3cwdVg1YzFfSVQ1VDZmN1c0VmszalJoMEJ6djJCYmNDMDZuaXVIOHVZMVBGVncyTW5uSllOaVM2Vjlnbzhvai1CdVhocUhkd1ZkS3NKTVRQTkNxdTg4dXNXZUtGeXU0Q2FxZXpVaUhkTHdZQXR5RWNnb2x6Nw?oc=5"
+        }
       ]
     }
   },
@@ -375,7 +776,11 @@
     "lat": 33.94,
     "lng": 67.71,
     "type": "insurgency",
-    "parties": ["Taliban Government", "ISIS-K", "NRF"],
+    "parties": [
+      "Taliban Government",
+      "ISIS-K",
+      "NRF"
+    ],
     "casualties": 10000,
     "refugees": 6400000,
     "startYear": 2021,
@@ -387,7 +792,11 @@
     "lat": 33.69,
     "lng": 73.04,
     "type": "insurgency",
-    "parties": ["Pakistani Government", "TTP", "BLA"],
+    "parties": [
+      "Pakistani Government",
+      "TTP",
+      "BLA"
+    ],
     "casualties": 8000,
     "refugees": 1500000,
     "startYear": 2007,
@@ -399,7 +808,11 @@
     "lat": 33.31,
     "lng": 44.37,
     "type": "insurgency",
-    "parties": ["Iraqi Government", "PMF", "ISIS cells"],
+    "parties": [
+      "Iraqi Government",
+      "PMF",
+      "ISIS cells"
+    ],
     "casualties": 3000,
     "refugees": 1200000,
     "startYear": 2017,
@@ -409,9 +822,13 @@
   {
     "name": "Lebanon - Israel Border",
     "lat": 33.89,
-    "lng": 35.50,
+    "lng": 35.5,
     "type": "interstate",
-    "parties": ["Israel", "Hezbollah", "Lebanon"],
+    "parties": [
+      "Israel",
+      "Hezbollah",
+      "Lebanon"
+    ],
     "casualties": 5000,
     "refugees": 1200000,
     "startYear": 2023,
@@ -423,7 +840,11 @@
     "lat": -12.97,
     "lng": 40.52,
     "type": "insurgency",
-    "parties": ["Mozambique Government", "ISIS-Mozambique", "SADC forces"],
+    "parties": [
+      "Mozambique Government",
+      "ISIS-Mozambique",
+      "SADC forces"
+    ],
     "casualties": 5000,
     "refugees": 950000,
     "startYear": 2017,
@@ -433,13 +854,26 @@
       "warCost": "$20B",
       "warCostNote": "TotalEnergies $20B LNG project suspended indefinitely",
       "stocks": [
-        { "ticker": "TTE", "name": "TotalEnergies", "change": -8.0, "since": "2021" }
+        {
+          "ticker": "TTE",
+          "name": "TotalEnergies",
+          "change": -8.0,
+          "since": "2021"
+        }
       ],
       "commodities": [
-        { "name": "LNG (Mozambique)", "change": -100.0 }
+        {
+          "name": "LNG (Mozambique)",
+          "change": -100.0
+        }
       ],
       "news": [
-        { "headline": "TotalEnergies suspends $20B Mozambique LNG project indefinitely due to insurgency", "headline_ko": "TotalEnergies, 반란으로 $200억 모잠비크 LNG 프로젝트 무기한 중단", "date": "2026-01-15", "source": "Reuters" }
+        {
+          "headline": "TotalEnergies suspends $20B Mozambique LNG project indefinitely due to insurgency",
+          "headline_ko": "TotalEnergies, 반란으로 $200억 모잠비크 LNG 프로젝트 무기한 중단",
+          "date": "2026-01-15",
+          "source": "Reuters"
+        }
       ]
     }
   },
@@ -448,7 +882,10 @@
     "lat": 5.95,
     "lng": 10.15,
     "type": "separatist",
-    "parties": ["Cameroon Government", "Ambazonia separatists"],
+    "parties": [
+      "Cameroon Government",
+      "Ambazonia separatists"
+    ],
     "casualties": 6000,
     "refugees": 770000,
     "startYear": 2017,
@@ -458,9 +895,13 @@
   {
     "name": "India - Kashmir & Naxalite",
     "lat": 34.08,
-    "lng": 74.80,
+    "lng": 74.8,
     "type": "insurgency",
-    "parties": ["Indian Government", "Kashmiri militants", "Naxalites"],
+    "parties": [
+      "Indian Government",
+      "Kashmiri militants",
+      "Naxalites"
+    ],
     "casualties": 5000,
     "refugees": 200000,
     "startYear": 1989,
@@ -472,7 +913,11 @@
     "lat": 7.19,
     "lng": 125.46,
     "type": "insurgency",
-    "parties": ["Philippine Government", "NPA", "Abu Sayyaf"],
+    "parties": [
+      "Philippine Government",
+      "NPA",
+      "Abu Sayyaf"
+    ],
     "casualties": 4000,
     "refugees": 300000,
     "startYear": 1969,
@@ -484,7 +929,11 @@
     "lat": 6.61,
     "lng": 20.94,
     "type": "civil war",
-    "parties": ["CAR Government", "Wagner Group", "CPC rebels"],
+    "parties": [
+      "CAR Government",
+      "Wagner Group",
+      "CPC rebels"
+    ],
     "casualties": 8000,
     "refugees": 740000,
     "startYear": 2012,
