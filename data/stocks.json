@@ -6,7 +6,9 @@
     { "id": "shipping", "name": "Shipping & Logistics", "name_ko": "해운/물류", "icon": "🚢", "outlook": "neutral", "outlookNote": "Red Sea rerouting continues but Hormuz reopening may ease pressure. Watch Houthi activity.", "outlookNote_ko": "홍해 우회 지속 중이나 호르무즈 재개통으로 압력 완화 가능. 후티 동향 주시" },
     { "id": "commodity", "name": "Commodities & Mining", "name_ko": "원자재/광물", "icon": "⚡", "outlook": "bullish", "outlookNote": "Gold safe-haven demand + coltan supply disruption from Congo. Rare earths critical.", "outlookNote_ko": "금 안전자산 수요 + 콩고 콜탄 공급 차질. 희토류 공급 위기 심화" },
     { "id": "cyber", "name": "Cybersecurity", "name_ko": "사이버보안", "icon": "🔒", "outlook": "bullish", "outlookNote": "State-sponsored cyberattacks surging post Iran conflict. Government spending accelerating.", "outlookNote_ko": "이란 분쟁 이후 국가 지원 사이버공격 급증. 정부 보안 지출 가속화" },
-    { "id": "security", "name": "Security & Surveillance", "name_ko": "보안/감시", "icon": "📡", "outlook": "neutral", "outlookNote": "Domestic security demand steady. Mexico cartel war driving border tech spending.", "outlookNote_ko": "국내 보안 수요 안정적. 멕시코 카르텔 전쟁으로 국경 기술 지출 증가" }
+    { "id": "security", "name": "Security & Surveillance", "name_ko": "보안/감시", "icon": "📡", "outlook": "neutral", "outlookNote": "Domestic security demand steady. Mexico cartel war driving border tech spending.", "outlookNote_ko": "국내 보안 수요 안정적. 멕시코 카르텔 전쟁으로 국경 기술 지출 증가" },
+    { "id": "crypto", "name": "Crypto & Digital Assets", "name_ko": "크립토/디지털자산", "icon": "₿", "outlook": "bullish", "outlookNote": "Sanctions evasion demand + safe-haven narrative during geopolitical crisis. BTC correlation with gold increasing.", "outlookNote_ko": "제재 우회 수요 + 지정학 위기 시 안전자산 내러티브. BTC-금 상관관계 상승" },
+    { "id": "kr-defense", "name": "Korean Defense", "name_ko": "한국 방산", "icon": "🇰🇷", "outlook": "bullish", "outlookNote": "K-defense exports surging — Poland, UAE, Saudi deals. NATO allies diversifying from US suppliers.", "outlookNote_ko": "K-방산 수출 급증 — 폴란드, UAE, 사우디 계약. NATO 동맹국 미국 외 공급처 다변화" }
   ],
   "stocks": [
     {
@@ -148,6 +150,96 @@
       "description": "Tasers, body cameras, AI-powered law enforcement tech",
       "description_ko": "테이저건, 바디캠, AI 기반 법집행 기술",
       "rank": 14, "trending": false
+    },
+    {
+      "ticker": "012450.KS", "name": "Hanwha Aerospace", "name_ko": "한화에어로스페이스",
+      "sector": "kr-defense", "exchange": "KRX",
+      "ytdReturn": 38.0, "warReturn": 280.0, "warReturnSince": "2022-02",
+      "marketCap": "₩25조", "price": "₩350,000",
+      "conflicts": ["Ukraine", "US-Iran"],
+      "description": "K9 self-propelled howitzer, aircraft engines — largest Korean defense exporter",
+      "description_ko": "K9 자주포, 항공엔진 — 한국 최대 방산 수출 기업. 폴란드 수출 대박",
+      "rank": 15, "trending": true
+    },
+    {
+      "ticker": "079550.KS", "name": "LIG Nex1", "name_ko": "LIG넥스원",
+      "sector": "kr-defense", "exchange": "KRX",
+      "ytdReturn": 22.0, "warReturn": 150.0, "warReturnSince": "2022-02",
+      "marketCap": "₩5조", "price": "₩180,000",
+      "conflicts": ["Ukraine", "US-Iran"],
+      "description": "Guided missiles, precision munitions, naval combat systems",
+      "description_ko": "유도무기, 정밀탄약, 해군 전투체계 — 한국형 미사일 핵심 제조사",
+      "rank": 16, "trending": true
+    },
+    {
+      "ticker": "064350.KS", "name": "Hyundai Rotem", "name_ko": "현대로템",
+      "sector": "kr-defense", "exchange": "KRX",
+      "ytdReturn": 45.0, "warReturn": 200.0, "warReturnSince": "2022-02",
+      "marketCap": "₩4조", "price": "₩55,000",
+      "conflicts": ["Ukraine"],
+      "description": "K2 Black Panther tank, armored vehicles, defense systems",
+      "description_ko": "K2 흑표 전차, 장갑차 — 폴란드 K2 1000대 수출 계약",
+      "rank": 17, "trending": true
+    },
+    {
+      "ticker": "BA.L", "name": "BAE Systems", "name_ko": "BAE 시스템즈",
+      "sector": "defense", "exchange": "LSE",
+      "ytdReturn": 30.0, "warReturn": 120.0, "warReturnSince": "2022-02",
+      "marketCap": "$50B", "price": "£15.20",
+      "conflicts": ["Ukraine", "US-Iran"],
+      "description": "UK's largest defense company — submarines, fighter jets, cyber",
+      "description_ko": "영국 최대 방산업체 — 잠수함, 전투기, 사이버전",
+      "rank": 18, "trending": false
+    },
+    {
+      "ticker": "LDOF.MI", "name": "Leonardo", "name_ko": "레오나르도",
+      "sector": "defense", "exchange": "MIL",
+      "ytdReturn": 35.0, "warReturn": 95.0, "warReturnSince": "2022-02",
+      "marketCap": "$18B", "price": "€30.50",
+      "conflicts": ["Ukraine"],
+      "description": "Italian defense champion — helicopters, electronics, cyber security",
+      "description_ko": "이탈리아 방산 대장 — 헬기, 전자장비, 사이버보안",
+      "rank": 19, "trending": false
+    },
+    {
+      "ticker": "BTC-USD", "name": "Bitcoin", "name_ko": "비트코인",
+      "sector": "crypto", "exchange": "CRYPTO",
+      "ytdReturn": 15.0, "warReturn": 45.0, "warReturnSince": "2022-02",
+      "marketCap": "$2T", "price": "$92,000",
+      "conflicts": ["US-Iran", "Ukraine"],
+      "description": "Digital gold — safe-haven during geopolitical crisis, sanctions evasion tool",
+      "description_ko": "디지털 금 — 지정학 위기 시 안전자산, 제재 우회 수단",
+      "rank": 20, "trending": true
+    },
+    {
+      "ticker": "ETH-USD", "name": "Ethereum", "name_ko": "이더리움",
+      "sector": "crypto", "exchange": "CRYPTO",
+      "ytdReturn": 8.0, "warReturn": 25.0, "warReturnSince": "2022-02",
+      "marketCap": "$380B", "price": "$3,200",
+      "conflicts": ["US-Iran"],
+      "description": "Smart contract platform — DeFi infrastructure for sanctions-resistant finance",
+      "description_ko": "스마트 컨트랙트 플랫폼 — 제재 우회 금융 인프라",
+      "rank": 21, "trending": false
+    },
+    {
+      "ticker": "IBIT", "name": "iShares Bitcoin Trust", "name_ko": "비트코인 ETF",
+      "sector": "crypto", "exchange": "NASDAQ",
+      "ytdReturn": 14.0, "warReturn": 40.0, "warReturnSince": "2024-01",
+      "marketCap": "$55B", "price": "$58",
+      "conflicts": ["US-Iran"],
+      "description": "Largest spot Bitcoin ETF — institutional gateway to crypto during war premium",
+      "description_ko": "최대 현물 비트코인 ETF — 전쟁 프리미엄 시 기관 투자 관문",
+      "rank": 22, "trending": true
+    },
+    {
+      "ticker": "PPA", "name": "Invesco Aerospace & Defense", "name_ko": "방산 ETF (PPA)",
+      "sector": "defense", "exchange": "NYSE",
+      "ytdReturn": 35.0, "warReturn": 35.0, "warReturnSince": "2026-01",
+      "marketCap": "$4.2B", "price": "$112",
+      "conflicts": ["US-Iran", "Ukraine"],
+      "description": "Broad defense ETF — includes mid-cap defense names ITA misses",
+      "description_ko": "광범위 방산 ETF — ITA가 놓치는 중형 방산주 포함",
+      "rank": 23, "trending": false
     }
   ]
 }
