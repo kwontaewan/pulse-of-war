@@ -296,6 +296,43 @@ async function main() {
       ];
 
   let lastComparison = '';
+  const dramaEl = document.getElementById('js-live-drama');
+  // Rotating conflict highlight (subset with economicImpact only — those are
+  // the ones with narrative weight). Reuse sorted list from sidebar step.
+  const spotlightPool = sorted.filter(c => c.economicImpact && c.casualties > 0);
+  let dramaTick = 0;
+
+  // Pre-compute global interval between deaths, e.g. "1 person every ~2 min".
+  const secPerDeath = deathsPerSecond > 0 ? Math.round(1 / deathsPerSecond) : 0;
+
+  function renderDramaLine() {
+    if (!dramaEl) return;
+    // Alternate between (a) rolling prediction and (b) spotlighted conflict.
+    const phase = dramaTick % 2;
+    if (phase === 0 && secPerDeath > 0) {
+      const interval = secPerDeath < 60
+        ? (lang === 'ko' ? `${secPerDeath}초` : `${secPerDeath}s`)
+        : (lang === 'ko' ? `약 ${Math.round(secPerDeath / 60)}분` : `about ${Math.round(secPerDeath / 60)} min`);
+      dramaEl.textContent = lang === 'ko'
+        ? `⏱ ${interval}마다 전쟁으로 1명 사망`
+        : `⏱ 1 death every ${interval} in active conflicts`;
+    } else if (spotlightPool.length > 0) {
+      const c = spotlightPool[dramaTick % spotlightPool.length];
+      const name = (lang === 'ko' && c.name_ko) ? c.name_ko : c.name;
+      const cas = c.casualties.toLocaleString('en-US');
+      dramaEl.textContent = lang === 'ko'
+        ? `🎯 ${name} · 누적 사망자 ${cas}`
+        : `🎯 ${name} · ${cas} total dead`;
+    }
+    dramaEl.classList.remove('live-drama--flash');
+    // force reflow so animation restarts
+    void dramaEl.offsetWidth;
+    dramaEl.classList.add('live-drama--flash');
+    dramaTick += 1;
+  }
+  // First frame immediately so the UI isn't empty.
+  renderDramaLine();
+
   function updateComparison() {
     setInterval(() => {
       const deaths = getSessionDeaths();
@@ -310,6 +347,8 @@ async function main() {
         setTimeout(() => comparisonEl.classList.remove('live-comparison--flash'), 1000);
       }
     }, 2000);
+    // Drama line rotates every 7s (separate cadence, not disruptive).
+    setInterval(renderDramaLine, 7000);
   }
 
   // Step 15: Exit overlay — show stats when user leaves

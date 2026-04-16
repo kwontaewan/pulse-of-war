@@ -1,5 +1,27 @@
 /* Pulse of War — Global Conflict Visualization */
 
+/* Live drama line — rolling conflict / death-rate narration under counter */
+.live-drama {
+  margin-top: 4px;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.55);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+.live-drama--flash {
+  color: rgba(255, 64, 64, 0.9);
+  animation: live-drama-pulse 1.2s ease-out;
+}
+@keyframes live-drama-pulse {
+  0%   { opacity: 0.3; transform: translateY(-2px); }
+  40%  { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0.85; transform: translateY(0); }
+}
+
 * {
   margin: 0;
   padding: 0;
