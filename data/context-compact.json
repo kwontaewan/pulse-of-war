@@ -1,0 +1,819 @@
+{
+  "generatedAt": "2026-04-16T18:47:09.132712+00:00",
+  "conflictCount": 26,
+  "conflictsWithImpact": [
+    {
+      "name": "US-Iran Conflict 2026",
+      "start": "2026-02-28",
+      "parties": [
+        "United States",
+        "Israel",
+        "Iran",
+        "Hezbollah"
+      ],
+      "casualties": 12000,
+      "refugees": 500000,
+      "warCost": "$450B",
+      "topStocks": [
+        {
+          "t": "ITA",
+          "c": 55.0,
+          "since": "2025"
+        },
+        {
+          "t": "XOM",
+          "c": 42.0,
+          "since": "2026"
+        },
+        {
+          "t": "CVX",
+          "c": 37.1,
+          "since": "2026"
+        },
+        {
+          "t": "OXY",
+          "c": 35.0,
+          "since": "2026"
+        },
+        {
+          "t": "LMT",
+          "c": 24.4,
+          "since": "2026"
+        }
+      ],
+      "commodities": [
+        {
+          "n": "Brent Crude Oil",
+          "c": 34.0
+        },
+        {
+          "n": "WTI Crude Oil",
+          "c": 30.0
+        },
+        {
+          "n": "Natural Gas (LNG)",
+          "c": 25.0
+        },
+        {
+          "n": "Gold",
+          "c": 18.0
+        }
+      ]
+    },
+    {
+      "name": "Ukraine-Russia War",
+      "start": "2022-02-24",
+      "parties": [
+        "Ukraine",
+        "Russia"
+      ],
+      "casualties": 300000,
+      "refugees": 6400000,
+      "warCost": "$1.3T",
+      "topStocks": [
+        {
+          "t": "RHMT.ME",
+          "c": 312.0,
+          "since": "2022"
+        },
+        {
+          "t": "LMT",
+          "c": 67.2,
+          "since": "2022"
+        },
+        {
+          "t": "RTX",
+          "c": 48.1,
+          "since": "2022"
+        },
+        {
+          "t": "NOC",
+          "c": 41.8,
+          "since": "2022"
+        }
+      ],
+      "commodities": [
+        {
+          "n": "Natural Gas (EU)",
+          "c": 180.0
+        },
+        {
+          "n": "Wheat",
+          "c": 32.0
+        },
+        {
+          "n": "WTI Crude Oil",
+          "c": 22.4
+        },
+        {
+          "n": "Uranium",
+          "c": 95.0
+        }
+      ]
+    },
+    {
+      "name": "Gaza War",
+      "start": "2023-10-07",
+      "parties": [
+        "Israel",
+        "Hamas",
+        "Palestine"
+      ],
+      "casualties": 46000,
+      "refugees": 1900000,
+      "warCost": "$80B",
+      "topStocks": [
+        {
+          "t": "ESLT",
+          "c": 52.3,
+          "since": "2023"
+        },
+        {
+          "t": "LMT",
+          "c": 28.0,
+          "since": "2023"
+        },
+        {
+          "t": "CL=F",
+          "c": 18.5,
+          "since": "2023"
+        }
+      ],
+      "commodities": [
+        {
+          "n": "Brent Crude",
+          "c": 18.5
+        },
+        {
+          "n": "Gold",
+          "c": 35.0
+        },
+        {
+          "n": "Shipping Rates (Red Sea)",
+          "c": 250.0
+        }
+      ]
+    },
+    {
+      "name": "Sudan Civil War",
+      "start": "2023-04-15",
+      "parties": [
+        "SAF",
+        "RSF"
+      ],
+      "casualties": 150000,
+      "refugees": 8600000,
+      "warCost": "$42B",
+      "topStocks": [
+        {
+          "t": "GLD",
+          "c": 28.0,
+          "since": "2023"
+        },
+        {
+          "t": "ADM",
+          "c": -12.0,
+          "since": "2023"
+        }
+      ],
+      "commodities": [
+        {
+          "n": "Gold (Sudan supply)",
+          "c": 28.0
+        },
+        {
+          "n": "Gum Arabic",
+          "c": 120.0
+        }
+      ]
+    },
+    {
+      "name": "Myanmar Civil War",
+      "start": "2021-02-01",
+      "parties": [
+        "Military Junta",
+        "NUG",
+        "Ethnic Armed Organizations"
+      ],
+      "casualties": 50000,
+      "refugees": 2600000,
+      "warCost": "$18B",
+      "topStocks": [
+        {
+          "t": "TIN",
+          "c": 45.0,
+          "since": "2021"
+        }
+      ],
+      "commodities": [
+        {
+          "n": "Rare Earths (Myanmar)",
+          "c": 60.0
+        },
+        {
+          "n": "Tin",
+          "c": 45.0
+        },
+        {
+          "n": "Jade",
+          "c": -80.0
+        }
+      ]
+    },
+    {
+      "name": "Syrian Civil War",
+      "start": "2011-03-15",
+      "parties": [
+        "HTS-led Government",
+        "SDF",
+        "ISIS remnants",
+        "Turkey"
+      ],
+      "casualties": 500000,
+      "refugees": 6800000,
+      "warCost": "$1.2T",
+      "topStocks": [
+        {
+          "t": "TAP.L",
+          "c": 42.0,
+          "since": "2015"
+        },
+        {
+          "t": "BA",
+          "c": 15.0,
+          "since": "2011"
+        }
+      ],
+      "commodities": [
+        {
+          "n": "Syrian Lira",
+          "c": -99.5
+        },
+        {
+          "n": "Phosphate",
+          "c": 35.0
+        }
+      ]
+    },
+    {
+      "name": "Yemen Civil War",
+      "start": "2014-09-21",
+      "parties": [
+        "Houthis",
+        "Saudi-backed Government",
+        "STC"
+      ],
+      "casualties": 377000,
+      "refugees": 4500000,
+      "warCost": "$126B",
+      "topStocks": [
+        {
+          "t": "ZIM",
+          "c": 180.0,
+          "since": "2023"
+        },
+        {
+          "t": "MAERSK.CO",
+          "c": 42.0,
+          "since": "2023"
+        }
+      ],
+      "commodities": [
+        {
+          "n": "Container Shipping Rates",
+          "c": 250.0
+        },
+        {
+          "n": "Suez Canal Revenue",
+          "c": -50.0
+        }
+      ]
+    },
+    {
+      "name": "DR Congo - M23 & ADF",
+      "start": "2021-11-07",
+      "parties": [
+        "DRC Government",
+        "M23",
+        "ADF",
+        "Rwanda"
+      ],
+      "casualties": 120000,
+      "refugees": 6900000,
+      "warCost": "$32B",
+      "topStocks": [
+        {
+          "t": "COBA.L",
+          "c": -40.0,
+          "since": "2021"
+        },
+        {
+          "t": "CMCL",
+          "c": -25.0,
+          "since": "2021"
+        }
+      ],
+      "commodities": [
+        {
+          "n": "Cobalt",
+          "c": -55.0
+        },
+        {
+          "n": "Coltan/Tantalum",
+          "c": 85.0
+        },
+        {
+          "n": "Gold (artisanal)",
+          "c": 40.0
+        }
+      ]
+    },
+    {
+      "name": "Mexico Drug War",
+      "start": "2006-12-11",
+      "parties": [
+        "Mexican Government",
+        "Sinaloa Cartel",
+        "CJNG"
+      ],
+      "casualties": 40000,
+      "refugees": 380000,
+      "warCost": "$50B",
+      "topStocks": [
+        {
+          "t": "AXON",
+          "c": 180.0,
+          "since": "2020"
+        },
+        {
+          "t": "SWBI",
+          "c": 45.0,
+          "since": "2020"
+        }
+      ],
+      "commodities": [
+        {
+          "n": "Fentanyl precursors",
+          "c": 300.0
+        },
+        {
+          "n": "Avocado (cartel-controlled)",
+          "c": 60.0
+        }
+      ]
+    },
+    {
+      "name": "Mozambique - Cabo Delgado",
+      "start": "2017-10-05",
+      "parties": [
+        "Mozambique Government",
+        "ISIS-Mozambique",
+        "SADC forces"
+      ],
+      "casualties": 5000,
+      "refugees": 950000,
+      "warCost": "$20B",
+      "topStocks": [
+        {
+          "t": "TTE",
+          "c": -8.0,
+          "since": "2021"
+        }
+      ],
+      "commodities": [
+        {
+          "n": "LNG (Mozambique)",
+          "c": -100.0
+        }
+      ]
+    }
+  ],
+  "stocks": [
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "price": "$610",
+      "dod": -0.2,
+      "mom": -4.2,
+      "ytdReturn": 23.3,
+      "weekHigh52": 692.0,
+      "weekLow52": 410.11,
+      "sector": "defense"
+    },
+    {
+      "ticker": "RTX",
+      "name": "RTX Corp",
+      "price": "$199",
+      "dod": 0.3,
+      "mom": -2.1,
+      "ytdReturn": 6.6,
+      "weekHigh52": 214.5,
+      "weekLow52": 112.63,
+      "sector": "defense"
+    },
+    {
+      "ticker": "RHMT.ME",
+      "name": "Rheinmetall",
+      "price": "€1,518",
+      "dod": 0.2,
+      "mom": -6.5,
+      "ytdReturn": -5.2,
+      "weekHigh52": 2008.0,
+      "weekLow52": 1322.0,
+      "sector": "defense"
+    },
+    {
+      "ticker": "NOC",
+      "name": "Northrop Grumman",
+      "price": "$677",
+      "dod": -0.2,
+      "mom": -6.5,
+      "ytdReturn": 15.9,
+      "weekHigh52": 774.0,
+      "weekLow52": 450.13,
+      "sector": "defense"
+    },
+    {
+      "ticker": "ESLT",
+      "name": "Elbit Systems",
+      "price": "$885",
+      "dod": -1.5,
+      "mom": -12.6,
+      "ytdReturn": 49.7,
+      "weekHigh52": 1016.06,
+      "weekLow52": 369.0,
+      "sector": "defense"
+    },
+    {
+      "ticker": "ITA",
+      "name": "iShares Aerospace & Defense ETF",
+      "price": "$234",
+      "dod": 0.1,
+      "mom": 0.4,
+      "ytdReturn": 5.4,
+      "weekHigh52": 250.65,
+      "weekLow52": 143.48,
+      "sector": "defense"
+    },
+    {
+      "ticker": "XOM",
+      "name": "Exxon Mobil",
+      "price": "$150",
+      "dod": 0.9,
+      "mom": -5.3,
+      "ytdReturn": 23.4,
+      "weekHigh52": 176.41,
+      "weekLow52": 101.19,
+      "sector": "energy"
+    },
+    {
+      "ticker": "CVX",
+      "name": "Chevron",
+      "price": "$186",
+      "dod": 0.7,
+      "mom": -6.0,
+      "ytdReturn": 20.5,
+      "weekHigh52": 214.71,
+      "weekLow52": 132.33,
+      "sector": "energy"
+    },
+    {
+      "ticker": "OXY",
+      "name": "Occidental Petroleum",
+      "price": "$56.17",
+      "dod": 0.6,
+      "mom": -2.7,
+      "ytdReturn": 33.2,
+      "weekHigh52": 67.45,
+      "weekLow52": 38.36,
+      "sector": "energy"
+    },
+    {
+      "ticker": "ZIM",
+      "name": "ZIM Shipping",
+      "price": "$27.00",
+      "dod": 1.1,
+      "mom": 1.8,
+      "ytdReturn": 27.4,
+      "weekHigh52": 29.97,
+      "weekLow52": 12.33,
+      "sector": "shipping"
+    },
+    {
+      "ticker": "GLD",
+      "name": "SPDR Gold Trust",
+      "price": "$442",
+      "dod": 0.4,
+      "mom": -3.7,
+      "ytdReturn": 11.0,
+      "weekHigh52": 509.7,
+      "weekLow52": 291.78,
+      "sector": "commodity"
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike",
+      "price": "$419",
+      "dod": 2.0,
+      "mom": -3.2,
+      "ytdReturn": -7.6,
+      "weekHigh52": 566.9,
+      "weekLow52": 342.72,
+      "sector": "cyber"
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks",
+      "price": "$168",
+      "dod": 2.1,
+      "mom": -1.0,
+      "ytdReturn": -6.6,
+      "weekHigh52": 223.61,
+      "weekLow52": 139.57,
+      "sector": "cyber"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "price": "$408",
+      "dod": 1.6,
+      "mom": -19.4,
+      "ytdReturn": -27.5,
+      "weekHigh52": 885.92,
+      "weekLow52": 339.01,
+      "sector": "security"
+    },
+    {
+      "ticker": "012450.KS",
+      "name": "Hanwha Aerospace",
+      "price": "₩1,519,000",
+      "dod": 0.7,
+      "mom": 9.3,
+      "ytdReturn": 60.6,
+      "weekHigh52": 1655000.0,
+      "weekLow52": 751000.0,
+      "sector": "kr-defense"
+    },
+    {
+      "ticker": "079550.KS",
+      "name": "LIG Nex1",
+      "price": "₩883,000",
+      "dod": -1.1,
+      "mom": 28.7,
+      "ytdReturn": 101.9,
+      "weekHigh52": 979000.0,
+      "weekLow52": 285000.0,
+      "sector": "kr-defense"
+    },
+    {
+      "ticker": "064350.KS",
+      "name": "Hyundai Rotem",
+      "price": "₩215,000",
+      "dod": 2.4,
+      "mom": 11.8,
+      "ytdReturn": 11.5,
+      "weekHigh52": 274000.0,
+      "weekLow52": 101000.0,
+      "sector": "kr-defense"
+    },
+    {
+      "ticker": "BA.L",
+      "name": "BAE Systems",
+      "price": "£2,250",
+      "dod": -0.1,
+      "mom": -3.1,
+      "ytdReturn": 28.3,
+      "weekHigh52": 2360.0,
+      "weekLow52": 1588.0,
+      "sector": "defense"
+    },
+    {
+      "ticker": "LDOF.MI",
+      "name": "Leonardo",
+      "price": "€58.31",
+      "dod": 0.8,
+      "mom": -8.6,
+      "ytdReturn": 13.8,
+      "weekHigh52": 66.26,
+      "weekLow52": 42.92,
+      "sector": "defense"
+    },
+    {
+      "ticker": "BTC-USD",
+      "name": "Bitcoin",
+      "price": "$74,510",
+      "dod": -0.4,
+      "mom": 8.3,
+      "ytdReturn": -16.0,
+      "weekHigh52": 126198.07,
+      "weekLow52": 60074.2,
+      "sector": "crypto"
+    },
+    {
+      "ticker": "ETH-USD",
+      "name": "Ethereum",
+      "price": "$2,334",
+      "dod": -1.1,
+      "mom": 13.3,
+      "ytdReturn": -22.2,
+      "weekHigh52": 4953.73,
+      "weekLow52": 1542.0,
+      "sector": "crypto"
+    },
+    {
+      "ticker": "IBIT",
+      "name": "iShares Bitcoin Trust",
+      "price": "$42.22",
+      "dod": -0.8,
+      "mom": -0.1,
+      "ytdReturn": -17.1,
+      "weekHigh52": 71.82,
+      "weekLow52": 35.3,
+      "sector": "crypto"
+    },
+    {
+      "ticker": "PPA",
+      "name": "Invesco Aerospace & Defense",
+      "price": "$177",
+      "dod": 0.3,
+      "mom": 0.6,
+      "ytdReturn": 10.0,
+      "weekHigh52": 186.3,
+      "weekLow52": 111.44,
+      "sector": "defense"
+    },
+    {
+      "ticker": "047810.KS",
+      "name": "Korea Aerospace Industries",
+      "price": "₩189,900",
+      "dod": -0.1,
+      "mom": -2.0,
+      "ytdReturn": 63.1,
+      "weekHigh52": 215500.0,
+      "weekLow52": 79800.0,
+      "sector": "kr-defense"
+    },
+    {
+      "ticker": "103140.KS",
+      "name": "Poongsan",
+      "price": "₩102,100",
+      "dod": 1.5,
+      "mom": 1.6,
+      "ytdReturn": -2.5,
+      "weekHigh52": 172200.0,
+      "weekLow52": 53700.0,
+      "sector": "kr-defense"
+    },
+    {
+      "ticker": "329180.KS",
+      "name": "HD Hyundai Heavy Industries",
+      "price": "₩493,500",
+      "dod": 4.0,
+      "mom": -16.4,
+      "ytdReturn": -1.4,
+      "weekHigh52": 652000.0,
+      "weekLow52": 347000.0,
+      "sector": "kr-defense"
+    },
+    {
+      "ticker": "272210.KS",
+      "name": "Hanwha Systems",
+      "price": "₩131,800",
+      "dod": 0.2,
+      "mom": -5.4,
+      "ytdReturn": 139.2,
+      "weekHigh52": 184000.0,
+      "weekLow52": 37050.0,
+      "sector": "kr-defense"
+    },
+    {
+      "ticker": "042660.KS",
+      "name": "Hanwha Ocean",
+      "price": "₩131,900",
+      "dod": 4.8,
+      "mom": -0.8,
+      "ytdReturn": 15.0,
+      "weekHigh52": 154800.0,
+      "weekLow52": 71500.0,
+      "sector": "kr-defense"
+    },
+    {
+      "ticker": "096770.KS",
+      "name": "SK Innovation",
+      "price": "₩126,500",
+      "dod": 4.0,
+      "mom": 10.7,
+      "ytdReturn": 26.6,
+      "weekHigh52": 141300.0,
+      "weekLow52": 80800.0,
+      "sector": "kr-energy"
+    },
+    {
+      "ticker": "011200.KS",
+      "name": "HMM",
+      "price": "₩21,200",
+      "dod": 0.5,
+      "mom": 0.5,
+      "ytdReturn": 8.2,
+      "weekHigh52": 26250.0,
+      "weekLow52": 18010.0,
+      "sector": "kr-shipping"
+    },
+    {
+      "ticker": "005490.KS",
+      "name": "POSCO Holdings",
+      "price": "₩370,000",
+      "dod": 0.5,
+      "mom": 5.9,
+      "ytdReturn": 25.1,
+      "weekHigh52": 427500.0,
+      "weekLow52": 230000.0,
+      "sector": "kr-energy"
+    },
+    {
+      "ticker": "010120.KS",
+      "name": "LS Electric",
+      "price": "₩188,600",
+      "dod": 1.0,
+      "mom": 13.2,
+      "ytdReturn": 92.2,
+      "weekHigh52": 200000.0,
+      "weekLow52": 33500.0,
+      "sector": "kr-defense"
+    },
+    {
+      "ticker": "000880.KS",
+      "name": "Hanwha",
+      "price": "₩133,600",
+      "dod": 5.4,
+      "mom": 7.4,
+      "ytdReturn": 66.2,
+      "weekHigh52": 148500.0,
+      "weekLow52": 41950.0,
+      "sector": "kr-defense"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "defense",
+      "name": "Defense & Aerospace",
+      "outlook": "bullish",
+      "note": "Trump's $1.5T defense budget + NATO 2% spending surge. Multi-year order backlog at record highs."
+    },
+    {
+      "id": "energy",
+      "name": "Energy & Oil",
+      "outlook": "bullish",
+      "note": "Hormuz ceasefire fragile — any escalation sends oil past $120 again. Supply remains tight."
+    },
+    {
+      "id": "shipping",
+      "name": "Shipping & Logistics",
+      "outlook": "neutral",
+      "note": "Red Sea rerouting continues but Hormuz reopening may ease pressure. Watch Houthi activity."
+    },
+    {
+      "id": "commodity",
+      "name": "Commodities & Mining",
+      "outlook": "bullish",
+      "note": "Gold safe-haven demand + coltan supply disruption from Congo. Rare earths critical."
+    },
+    {
+      "id": "cyber",
+      "name": "Cybersecurity",
+      "outlook": "bullish",
+      "note": "State-sponsored cyberattacks surging post Iran conflict. Government spending accelerating."
+    },
+    {
+      "id": "security",
+      "name": "Security & Surveillance",
+      "outlook": "neutral",
+      "note": "Domestic security demand steady. Mexico cartel war driving border tech spending."
+    },
+    {
+      "id": "crypto",
+      "name": "Crypto & Digital Assets",
+      "outlook": "bullish",
+      "note": "Sanctions evasion demand + safe-haven narrative during geopolitical crisis. BTC correlation with gold increasing."
+    },
+    {
+      "id": "kr-defense",
+      "name": "Korean Defense",
+      "outlook": "bullish",
+      "note": "K-defense exports surging — Poland, UAE, Saudi deals. NATO allies diversifying from US suppliers."
+    },
+    {
+      "id": "kr-shipping",
+      "name": "Korean Shipping",
+      "outlook": "neutral",
+      "note": "Red Sea rerouting + Hormuz reopening. HMM strong on container rates."
+    },
+    {
+      "id": "kr-energy",
+      "name": "Korean Energy & Materials",
+      "outlook": "bullish",
+      "note": "Oil premium from Iran war + defense material demand surge. POSCO rare earth play."
+    }
+  ],
+  "note": "This is a compact projection. Full conflict/stock data lives at conflicts.json / stocks.json. Only reference numbers, tickers, and conflict names that appear in this object."
+}
