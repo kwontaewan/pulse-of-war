@@ -98,7 +98,8 @@
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZXpUNktCNVQyMFNEa3dvWTdncVV6bEZ1cGRONjRLR1VMN29yeU5DSF9hMGt0ZkxaREZSN053UGMwRng0THV0bDRSM0NWNjlQUk9oRGo4T2ltMDhWNUx4UXRBOEdPMDVEbURyUFVCODlqRnJJMFJBNmZ4TUZCMm5pR2t0am0xMmFFeDFJY3g5c3IwSkhGbWVRX3FLYTPSAaIBQVVfeXFMTnFJVjdVdjExaHNHTkFzR2x0X19pSkkwdlRaekxJR0I0MzA0cVVWNUxPaHgwNGRXTGNzUkQtY3VzOUh6TGt6Skl0a1V4MUc5VFNJMV9HQktrY0k3MmhTY052dl9tdHQ2Q0FwOWRVWUVXNmtFNjAyWlg0Z3o0XzJ0eFZ4NzhHRnhiaGdyZ0pxYW5vZHFUcG02eFh0MzhrMXBHNVpB?oc=5"
         }
       ]
-    }
+    },
+    "startDate": "2026-02-28"
   },
   {
     "name": "Ukraine-Russia War",
@@ -182,7 +183,8 @@
           "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcGhadWJZS3QycDNZMW9zVEpySW1jX3VVQWdtWk9uZHlZV1Z3SmdjMTViMFFhU0ZubzVOMjdrVFA2REJDX2thNUZxalRycFA0T1NHbUNGMHpXMF9RaThPNGlNeE41YmxhYkRZVFNuUS1xaFF5eGlTaHp2NF9nQXkyM3duQ1dWQkQ4Q0lpSGxFYlRwRUVwY3RjOTdxdVV1Q0xBNlpwZ3BlT3Y?oc=5"
         }
       ]
-    }
+    },
+    "startDate": "2022-02-24"
   },
   {
     "name": "Gaza War",
@@ -257,7 +259,8 @@
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Gd1ItUkNXdWFTQ3RXWkpGLTNxcVlwVEtIaUJjS3J6UzFvUGpfSEprRTN4NWRBdW9vYUdkNWN5WFphNGZZeHI2WHc4SV9OYVBLME03ZGFwb2dLZw?oc=5"
         }
       ]
-    }
+    },
+    "startDate": "2023-10-07"
   },
   {
     "name": "Sudan Civil War",
@@ -321,7 +324,8 @@
           "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1wMHpyTlpvR3ZYMFBEeVNGWnhVY2ZKV0sxY3dDWVlXYmRiVW1EV1VxcERoLXFKU3Rla3BobkhzUEtuRnlacVlkc3pZb1pxQmFTS3g5NVVCMjdUQkQ4RkV1SDhPanY3T0M4NkZ4ZFVhVDliYUlZVEE?oc=5"
         }
       ]
-    }
+    },
+    "startDate": "2023-04-15"
   },
   {
     "name": "Myanmar Civil War",
@@ -384,7 +388,8 @@
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1PSVN2TnE1bDBhLXZSUlRsRGVsUW1BSGdVckRfNld0bzA4amJSQzgyVXFaTk5HNWhEQjVhNmRQT2RzSkJfQjNtRHJ2MVRTSkxaWVZlU2dULUtZQQ?oc=5"
         }
       ]
-    }
+    },
+    "startDate": "2021-02-01"
   },
   {
     "name": "Ethiopian Conflicts",
@@ -400,7 +405,8 @@
     "refugees": 4500000,
     "startYear": 2020,
     "description": "Multiple insurgencies in Amhara and Oromia regions despite Tigray ceasefire",
-    "source": "ACLED"
+    "source": "ACLED",
+    "startDate": "2020-11-04"
   },
   {
     "name": "Syrian Civil War",
@@ -454,7 +460,8 @@
           "source": "UN"
         }
       ]
-    }
+    },
+    "startDate": "2011-03-15"
   },
   {
     "name": "Yemen Civil War",
@@ -519,7 +526,8 @@
           "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRUdHU09HV2ZnNnhmeHZrMnlZUmM4TzE0bk9OcHhHTWdYUFVBU081ZEpoeTZKVlhnQXRNNVFXYXhCV2FBU2JmbFg1ekFNSURObThJMmhoaDV0bFV0NFlTRi1Mdk45M2kySGdVTVVjbFl5dkE4cVVPRDB6enZIQjI0V1JWQkxLVEZZSThHYUNqVVRhM2FmZlV3TVpUNVRoR295em8zSFFrWWZJc2ZvOFdNeFlnMEhHREZxdkHSAb8BQVVfeXFMT1NPVEQtUzV0em56eVpsMTdZRmd4NGRoancxeVE3di1tREdyaHVTcDFtenZoODA3YTRVVVJSNkgyNzFmRWI0NGduNzI1bDdxWnpXUnp4OWdQcEYySmZ2SlkxYkxhcTBrSGktM21FdGdtZWpMTlFCUGhiLTBSTTM2aFd5MnkzQjhzb3BQRjhuY0JaczRiUWZOMGoxbElyMTR3SmJ5aDZLQ3lpRFNfbDJpTkFZcjdlTWw1VVJ2UXY3dWc?oc=5"
         }
       ]
-    }
+    },
+    "startDate": "2014-09-21"
   },
   {
     "name": "Somalia - Al-Shabaab",
@@ -535,7 +543,8 @@
     "refugees": 3800000,
     "startYear": 2006,
     "description": "Islamist insurgency controlling rural areas of southern Somalia",
-    "source": "ACLED"
+    "source": "ACLED",
+    "startDate": "2006-12-24"
   },
   {
     "name": "DR Congo - M23 & ADF",
@@ -605,7 +614,8 @@
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSG9La2pKSXhlanRJOFoxTWZ2aWFmWkR0Rkx4U3RyeWVXVnBXZFlyN1ZlWThiM3JHMzVlcERuYzRSOUtkRUlMYy1vQ1A3R295UG9rTlppbGN1M202TGhta3pSSWEzZi13SzhsTVJwTlNpaDFBZTl0bTlNblhSSmFDQ0d6OUgySURLcFh0V1NQX1Y?oc=5"
         }
       ]
-    }
+    },
+    "startDate": "2021-11-07"
   },
   {
     "name": "Sahel Insurgency - Burkina Faso",
@@ -621,7 +631,8 @@
     "refugees": 2000000,
     "startYear": 2015,
     "description": "Jihadist insurgency controlling ~40% of national territory",
-    "source": "ACLED"
+    "source": "ACLED",
+    "startDate": "2015-08-23"
   },
   {
     "name": "Sahel Insurgency - Mali",
@@ -638,7 +649,8 @@
     "refugees": 400000,
     "startYear": 2012,
     "description": "Multi-sided conflict with Russian mercenary involvement after French withdrawal",
-    "source": "ACLED"
+    "source": "ACLED",
+    "startDate": "2012-01-17"
   },
   {
     "name": "Sahel Insurgency - Niger",
@@ -654,7 +666,8 @@
     "refugees": 350000,
     "startYear": 2015,
     "description": "Jihadist groups expanding from border regions after 2023 coup",
-    "source": "ACLED"
+    "source": "ACLED",
+    "startDate": "2015-02-06"
   },
   {
     "name": "Nigeria - Boko Haram & Banditry",
@@ -671,7 +684,8 @@
     "refugees": 3200000,
     "startYear": 2009,
     "description": "Islamist insurgency in the northeast and widespread banditry in the northwest",
-    "source": "ACLED"
+    "source": "ACLED",
+    "startDate": "2009-07-26"
   },
   {
     "name": "Haiti Gang War",
@@ -687,7 +701,8 @@
     "refugees": 700000,
     "startYear": 2021,
     "description": "Armed gangs control 80% of Port-au-Prince despite multinational intervention",
-    "source": "UN"
+    "source": "UN",
+    "startDate": "2021-07-07"
   },
   {
     "name": "Colombia - Armed Groups",
@@ -704,7 +719,8 @@
     "refugees": 5800000,
     "startYear": 1964,
     "description": "Peace process stalled with ELN, FARC dissident groups expanding coca territory",
-    "source": "ACLED"
+    "source": "ACLED",
+    "startDate": "1964-05-27"
   },
   {
     "name": "Mexico Drug War",
@@ -769,7 +785,8 @@
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZEs5ODloZ3VPUHRYb0dES3cwdVg1YzFfSVQ1VDZmN1c0VmszalJoMEJ6djJCYmNDMDZuaXVIOHVZMVBGVncyTW5uSllOaVM2Vjlnbzhvai1CdVhocUhkd1ZkS3NKTVRQTkNxdTg4dXNXZUtGeXU0Q2FxZXpVaUhkTHdZQXR5RWNnb2x6Nw?oc=5"
         }
       ]
-    }
+    },
+    "startDate": "2006-12-11"
   },
   {
     "name": "Afghanistan - Taliban vs ISIS-K",
@@ -785,7 +802,8 @@
     "refugees": 6400000,
     "startYear": 2021,
     "description": "ISIS-K attacks against Taliban rule, resistance pockets in Panjshir",
-    "source": "ACLED"
+    "source": "ACLED",
+    "startDate": "2021-08-15"
   },
   {
     "name": "Pakistan - TTP Insurgency",
@@ -801,7 +819,8 @@
     "refugees": 1500000,
     "startYear": 2007,
     "description": "Taliban-aligned TTP attacks surging alongside Baloch separatist insurgency",
-    "source": "ACLED"
+    "source": "ACLED",
+    "startDate": "2007-12-14"
   },
   {
     "name": "Iraq - ISIS Remnants",
@@ -817,7 +836,8 @@
     "refugees": 1200000,
     "startYear": 2017,
     "description": "ISIS sleeper cells conducting attacks in rural areas despite territorial defeat",
-    "source": "ACLED"
+    "source": "ACLED",
+    "startDate": "2017-12-09"
   },
   {
     "name": "Lebanon - Israel Border",
@@ -833,7 +853,8 @@
     "refugees": 1200000,
     "startYear": 2023,
     "description": "Escalation along the Blue Line with Israeli operations in southern Lebanon",
-    "source": "ACLED"
+    "source": "ACLED",
+    "startDate": "2023-10-08"
   },
   {
     "name": "Mozambique - Cabo Delgado",
@@ -875,7 +896,8 @@
           "source": "Reuters"
         }
       ]
-    }
+    },
+    "startDate": "2017-10-05"
   },
   {
     "name": "Cameroon - Anglophone Crisis",
@@ -890,7 +912,8 @@
     "refugees": 770000,
     "startYear": 2017,
     "description": "English-speaking separatists fighting for independence from francophone majority",
-    "source": "ACLED"
+    "source": "ACLED",
+    "startDate": "2017-10-01"
   },
   {
     "name": "India - Kashmir & Naxalite",
@@ -906,7 +929,8 @@
     "refugees": 200000,
     "startYear": 1989,
     "description": "Low-intensity conflict in Kashmir and Maoist insurgency in central-eastern states",
-    "source": "ACLED"
+    "source": "ACLED",
+    "startDate": "1989-07-13"
   },
   {
     "name": "Philippines - NPA & Abu Sayyaf",
@@ -922,7 +946,8 @@
     "refugees": 300000,
     "startYear": 1969,
     "description": "Communist insurgency and Islamist militancy in Mindanao",
-    "source": "ACLED"
+    "source": "ACLED",
+    "startDate": "1969-03-29"
   },
   {
     "name": "Central African Republic",
@@ -938,6 +963,7 @@
     "refugees": 740000,
     "startYear": 2012,
     "description": "Government forces with Russian mercenaries fighting rebel coalition",
-    "source": "ACLED"
+    "source": "ACLED",
+    "startDate": "2012-12-10"
   }
 ]
