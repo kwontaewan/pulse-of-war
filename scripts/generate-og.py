@@ -350,14 +350,17 @@ def main() -> int:
         written += 1
         print(f"  ✓ {out.relative_to(ROOT)}")
 
-    # Per-article
+    # Per-article — also write to repo root so `/og-article-<slug>.png`
+    # resolves directly on Vercel (project uses outputDirectory: "."
+    # without a public/ rewrite, matching the root-level og.png pattern).
     article_written = 0
     for a in ARTICLES:
         img = render_article(a)
-        out = PUBLIC / f"og-article-{a['slug']}.png"
-        img.save(out, "PNG", optimize=True)
+        filename = f"og-article-{a['slug']}.png"
+        for out in (PUBLIC / filename, ROOT / filename):
+            img.save(out, "PNG", optimize=True)
+            print(f"  ✓ {out.relative_to(ROOT)}")
         article_written += 1
-        print(f"  ✓ {out.relative_to(ROOT)}")
 
     print(
         f"\nog:images generated: 1 homepage + {written} per-conflict "
