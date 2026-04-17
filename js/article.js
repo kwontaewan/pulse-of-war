@@ -25,6 +25,8 @@ async function main() {
   setupLangNotice(lang);
   setupProgressBar();
   setupSkipLink();
+  setupToc();
+  setupBackToTop();
 
   // Seed counter with fallback so the emotional close renders even if
   // conflicts.json never resolves (eng review CQ1).
@@ -138,6 +140,57 @@ function setupSkipLink() {
       tgt.scrollIntoView({ behavior: 'smooth' });
     }
   });
+}
+
+// Long-form TOC active-section highlighting via IntersectionObserver.
+// No-op on the short article (no TOC). Degrades silently on old browsers.
+function setupToc() {
+  const tocLinks = document.querySelectorAll('.article__toc a[data-toc-target]');
+  if (!tocLinks.length || typeof IntersectionObserver === 'undefined') return;
+  const byId = new Map();
+  tocLinks.forEach(a => byId.set(a.getAttribute('data-toc-target'), a));
+  const sections = [];
+  byId.forEach((_, id) => {
+    const el = document.getElementById(id);
+    if (el) sections.push(el);
+  });
+  if (!sections.length) return;
+
+  let active = null;
+  const observer = new IntersectionObserver((entries) => {
+    // Pick the topmost section currently in view.
+    const visible = entries.filter(e => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+    if (visible.length && visible[0].target.id !== active) {
+      if (active) byId.get(active)?.classList.remove('is-active');
+      active = visible[0].target.id;
+      byId.get(active)?.classList.add('is-active');
+    }
+  }, { rootMargin: '-20% 0px -65% 0px', threshold: 0 });
+  sections.forEach(s => observer.observe(s));
+}
+
+// Back-to-top button — visible after 40% scroll. Degrades silently if
+// the element isn't in the DOM (short article omits it).
+function setupBackToTop() {
+  const btn = document.querySelector('.article-back-to-top');
+  if (!btn) return;
+  function update() {
+    const h = document.documentElement;
+    const ratio = h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight);
+    if (ratio > 0.4) btn.hidden = false;
+    else btn.hidden = true;
+  }
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(() => { update(); ticking = false; });
+    }
+  }, { passive: true });
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  update();
 }
 
 function startEndCtaCounter(getAnnual, startMs) {

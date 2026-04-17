@@ -551,6 +551,172 @@ button:focus-visible {
 .exit-overlay__share:hover { background: var(--pulse-red); color: #000; }
 .exit-overlay__close:hover { background: var(--text); color: #000; }
 
+/* Long-form layout — TOC sidebar + body */
+.article-layout {
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.article__toc {
+  display: none;
+}
+.article--full {
+  padding-top: 72px;
+}
+.article__title-sub {
+  display: block;
+  margin-top: 18px;
+  font-family: 'Space Mono', monospace;
+  font-size: 15px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--text-meta);
+  font-weight: 400;
+}
+.article__h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: .04em;
+  color: var(--text);
+  margin: 40px 0 16px;
+  font-weight: 400;
+}
+.article__hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 48px 0;
+  max-width: 480px;
+}
+.article__list {
+  margin: 16px 0 24px 20px;
+  padding: 0;
+  list-style: none;
+  max-width: 680px;
+}
+.article__list li {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-body);
+  margin-bottom: 10px;
+  padding-left: 14px;
+  position: relative;
+}
+.article__list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--pulse-red);
+  font-weight: 700;
+}
+
+/* TOC sidebar (desktop only, ≥1100px) */
+@media (min-width: 1100px) {
+  .article-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 56px;
+    padding: 0 32px;
+  }
+  .article__toc {
+    display: block;
+    position: sticky;
+    top: 88px;
+    align-self: start;
+    max-height: calc(100vh - 108px);
+    overflow-y: auto;
+    padding: 32px 0 32px 0;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .article__toc-header {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .2em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    padding-left: 12px;
+  }
+  .article__toc a {
+    display: block;
+    color: var(--text-meta);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-left: 2px solid transparent;
+    transition: color .15s, border-color .15s;
+  }
+  .article__toc a:hover {
+    color: var(--text);
+  }
+  .article__toc a.is-active {
+    color: var(--pulse-red);
+    border-left-color: var(--pulse-red);
+    font-weight: 700;
+  }
+  .article--full {
+    max-width: 720px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Back-to-top button — visible after 40% scroll */
+.article-back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--pulse-red);
+  background: rgba(0, 0, 0, .85);
+  color: var(--pulse-red);
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .25s, transform .2s, background .2s;
+}
+.article-back-to-top[hidden] {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  display: flex;
+}
+.article-back-to-top:hover,
+.article-back-to-top:focus-visible {
+  background: var(--pulse-red);
+  color: #000;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .article-back-to-top {
+    bottom: 20px;
+    right: 16px;
+  }
+}
+
+/* End CTA secondary link (long-form only) */
+.article-end-cta__secondary {
+  display: inline-block;
+  margin-top: 28px;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--text-meta);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--border-strong);
+}
+.article-end-cta__secondary:hover {
+  color: var(--text);
+  border-bottom-color: var(--text);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .article { padding: 48px 20px 96px; }
