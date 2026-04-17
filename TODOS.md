@@ -1,6 +1,24 @@
 # TODOS
 
 
+## [2026-04-17] DESIGN.md 생성 (/design-consultation)
+
+**Priority**: P2 — 블로커 아님, 일관성용
+
+**What**: `/design-consultation` 스킬 실행 후 `DESIGN.md` 생성. Pulse of War 의 시각 언어(aesthetic, typography, color, layout, spacing, motion)를 철학 + 토큰으로 문서화.
+
+**Why**: 기사 페이지 / 메인 지구본 / 미래 P&L card generator / daily briefing 이 모두 같은 시각 언어 공유 필요. 현재 CSS 변수(`--pulse-red`, `--bg`, 등)는 style.css 에 있지만 의도와 철학이 문서화 안 됨. plan-design-review 가 보편 원칙(Don Norman, Dieter Rams 등)으로 판단하는 상황 — 프로젝트-specific 원칙이 없으면 future 리뷰 들이 매번 같은 질문을 반복하게 됨.
+
+**Pros**: future /design-review, /plan-design-review, agent 협업 시 DESIGN.md 로 자동 calibrate. "왜 Space Mono 만 쓰는가", "왜 센터 정렬 금지인가" 같은 맥락을 매번 설명할 필요 없음. 기사 페이지 구현 후 다른 페이지 추가될 때 시각 drift 방지.
+
+**Cons**: 작성 ~30분. 당장 ship 블로커 아님.
+
+**Context**: Design review 2026-04-17 (articles page plan) 에서 식별. 지금 plan-articles-page.md 는 보편 원칙 5개 조항을 inline 으로 잠금("Emoji 금지", "centered everything 금지", etc.) — 이걸 프로젝트 레벨로 끌어올리는 작업.
+
+**Depends on**: 안 얽매임. 기사 페이지 구현 후 실행 OK.
+
+**Where to start**: `/design-consultation` 호출. 결과물은 프로젝트 루트 `DESIGN.md`.
+
 ## [2026-04-17] conflicts.json 에 startDate ISO 필드 백필
 
 **What**: 26개 conflict 중 현재 `startYear` (숫자만) 보유. 정확한 ISO 날짜 (`"startDate": "2022-02-24"`) 필드 추가.
