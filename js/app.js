@@ -6,6 +6,13 @@ import { DetailPanel } from './panel.js';
 import { HeartbeatSound } from './sound.js';
 import { initI18n, t, getLang, setLang } from './i18n.js';
 import { StocksPanel } from './stocks.js';
+import {
+  calculateAnnualDeathRate,
+  deathsPerSecond as computeDeathsPerSecond,
+  dailyDeaths as computeDailyDeaths,
+  getSessionStartMs,
+  getSessionDeaths as computeSessionDeaths,
+} from './deaths.js';
 
 async function main() {
   const loadingEl = document.querySelector('.loading');
@@ -44,28 +51,25 @@ async function main() {
   const totalRefugees = conflicts.reduce((sum, c) => sum + c.refugees, 0);
   const conflictCount = conflicts.length;
 
-  // Annual conflict-death rate — sum of each conflict's own per-year rate
-  // (c.casualties / years_active). Previous buggy math divided the cumulative
-  // multi-year totalCasualties by a single year, overstating the rate ~5x.
-  const currentYear = new Date().getFullYear();
-  const annualDeathRate = conflicts.reduce((sum, c) => {
-    const yearsActive = Math.max(1, currentYear - (c.startYear || currentYear));
-    return sum + c.casualties / yearsActive;
-  }, 0);
-  const dailyDeaths = Math.round(annualDeathRate / 365);
+  // Annual conflict-death rate — extracted to js/deaths.js so the article
+  // page and globe produce byte-identical counter values (eng review A3).
+  const annualDeathRate = calculateAnnualDeathRate(conflicts);
+  const dailyDeaths = computeDailyDeaths(annualDeathRate);
 
   // Step 4: Counter
   const counterEl = document.querySelector('.counter__number');
   const counter = new CasualtyCounter(counterEl, totalCasualties);
 
-  // Step 4b: Session death counter — throttled to 1/sec
+  // Step 4b: Session death counter — throttled to 1/sec. Timing moved from
+  // performance.now() to Date.now() via sessionStorage so the counter
+  // survives cross-page navigation (globe ↔ article) and reflects deaths
+  // that happened while the tab was backgrounded (OV1 accepted).
   const sessionDeathEl = document.getElementById('js-session-deaths');
-  const deathsPerSecond = annualDeathRate / (365.25 * 24 * 3600);
-  const sessionStart = performance.now();
+  const sessionStartMs = getSessionStartMs();
   function updateSessionDeaths() {
     setInterval(() => {
-      const elapsed = (performance.now() - sessionStart) / 1000;
-      sessionDeathEl.textContent = Math.floor(deathsPerSecond * elapsed).toLocaleString('en-US');
+      sessionDeathEl.textContent =
+        computeSessionDeaths(annualDeathRate, sessionStartMs).toLocaleString('en-US');
     }, 1000);
   }
 
@@ -165,7 +169,7 @@ async function main() {
 
   // Step 10: Share (with session death count)
   function getSessionDeaths() {
-    return Math.floor(deathsPerSecond * ((performance.now() - sessionStart) / 1000));
+    return computeSessionDeaths(annualDeathRate, sessionStartMs);
   }
 
   document.querySelector('[data-share="twitter"]').addEventListener('click', () => {
