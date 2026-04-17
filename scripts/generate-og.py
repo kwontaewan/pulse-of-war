@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Generate og:image PNGs for homepage + each conflict.
+"""Generate og:image PNGs for homepage + each conflict + long-form articles.
 
 Output:
-  public/og.png                     — homepage (existing, now auto-gen)
-  public/og-<slug>.png              — per-conflict cards (e.g. og-ukraine-russia-war.png)
+  public/og.png                         — homepage
+  public/og-<slug>.png                  — per-conflict cards
+  public/og-article-<slug>.png          — per-article cards (2026-04-17+)
 
-Twitter/X + Meta og:image standard: 1200x630. Same ratio as P&L card.
+Twitter/X + Meta og:image standard: 1200x630.
 
 Runs daily via .github/workflows/daily-update.yml after stocks are updated.
 Depends on: Pillow. Installed via scripts/requirements.txt.
@@ -225,6 +226,107 @@ def render_conflict(conflict: dict) -> Image.Image | None:
     return img
 
 
+def render_article(article: dict) -> Image.Image:
+    """Article og:image — variant-A mono-terminal spirit adapted to
+    Pillow (no Bebas Neue / Space Mono available in CI, so bold DejaVu
+    stands in). Article title and subtitle are English for broader share
+    reach; Korean wordmark kept small at bottom to echo the origin."""
+    img, d = base_canvas()
+
+    # Slight red glow in the top-left — a nod to the on-site ambient glow.
+    # Pillow can't do CSS radial gradients cheaply, so we paint concentric
+    # translucent ellipses instead (≤ 60 ms render).
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    gd = ImageDraw.Draw(glow)
+    for radius, alpha in [(360, 14), (260, 22), (160, 34), (80, 44)]:
+        gd.ellipse(
+            [(-radius // 2, -radius // 2), (radius * 2, radius * 2)],
+            fill=(255, 32, 32, alpha),
+        )
+    img = Image.alpha_composite(img.convert("RGBA"), glow).convert("RGB")
+    d = ImageDraw.Draw(img)
+    # Re-draw the left brand strip on top of the glow.
+    d.rectangle([(0, 0), (8, H)], fill=BRAND_RED)
+
+    pad_x = 72
+    y = 54
+
+    f_brand = load_font(22, bold=True)
+    f_live = load_font(18, bold=True)
+    f_title = load_font(96, bold=True)
+    f_deck = load_font(28)
+    f_card_label = load_font(16)
+    f_card_value = load_font(56, bold=True)
+    f_meta = load_font(18)
+    f_watermark = load_font(18)
+
+    draw_text(d, (pad_x, y), "PULSE OF WAR", f_brand, fill=TEXT_DIM)
+    tag = "● ARTICLE"
+    draw_text(d, (W - pad_x - text_w(d, tag, f_live), y), tag, f_live, fill=BRAND_RED)
+
+    # Title — English headline, two lines. Subtitle (deck) below.
+    y += 84
+    title_lines = article.get("og_title_lines") or ["WAR IS A", "BUSINESS MODEL"]
+    for line in title_lines:
+        draw_text(d, (pad_x, y), line, f_title, fill=TEXT)
+        y += 96
+    y += 4
+
+    deck = article.get("og_deck", "Same event, two eyes. The news counts the dead. Wall Street counts the returns.")
+    draw_text(d, (pad_x, y), deck, f_deck, fill=TEXT_DIM)
+
+    # Inline data-card echo — 1px red box with the anchor stat.
+    card_x = pad_x
+    card_y = H - 230
+    card_w = 460
+    card_h = 120
+    d.rectangle(
+        [(card_x, card_y), (card_x + card_w, card_y + card_h)],
+        outline=BRAND_RED,
+        width=2,
+    )
+    draw_text(d, (card_x + 24, card_y + 18), article.get("og_card_label", "LOCKHEED MARTIN (LMT)"), f_card_label, fill=TEXT_DIM)
+    draw_text(d, (card_x + 24, card_y + 44), article.get("og_card_value", "+24.4%"), f_card_value, fill=TEXT)
+    draw_text(
+        d,
+        (card_x + 24, card_y + card_h - 28),
+        f"AS OF {article.get('published', '2026.04.17')}",
+        f_meta,
+        fill=TEXT_DIM,
+    )
+
+    # Footer
+    y = H - 72
+    d.line([(pad_x, y - 12), (W - pad_x, y - 12)], fill=RULE, width=1)
+    kicker = article.get("og_kicker", "LONG READ · 26 CONFLICTS · LIVE")
+    draw_text(d, (pad_x, y), kicker, f_meta, fill=TEXT_DIM)
+    wm = f"pulseofwar.com/articles/{article['slug']}"
+    draw_text(
+        d,
+        (W - pad_x - text_w(d, wm, f_watermark), y + 4),
+        wm,
+        f_watermark,
+        fill=TEXT_DIM,
+    )
+
+    return img
+
+
+# Article registry — add new essays here. The HTML head pulls
+# og:image=/og-article-<slug>.png, so slug must match the HTML path.
+ARTICLES: list[dict] = [
+    {
+        "slug": "war-is-a-business-model",
+        "og_title_lines": ["WAR IS A", "BUSINESS MODEL"],
+        "og_deck": "Same event, two eyes. The news counts the dead. Wall Street counts the returns.",
+        "og_card_label": "LOCKHEED MARTIN (LMT)",
+        "og_card_value": "+24.4%",
+        "published": "2026.04.17",
+        "og_kicker": "LONG READ · 26 CONFLICTS · LIVE",
+    },
+]
+
+
 def main() -> int:
     conflicts = json.loads(CONFLICTS_JSON.read_text())
     print(f"Loaded {len(conflicts)} conflicts.")
@@ -248,7 +350,19 @@ def main() -> int:
         written += 1
         print(f"  ✓ {out.relative_to(ROOT)}")
 
-    print(f"\nog:images generated: 1 homepage + {written} per-conflict ({skipped} skipped — no economicImpact).")
+    # Per-article
+    article_written = 0
+    for a in ARTICLES:
+        img = render_article(a)
+        out = PUBLIC / f"og-article-{a['slug']}.png"
+        img.save(out, "PNG", optimize=True)
+        article_written += 1
+        print(f"  ✓ {out.relative_to(ROOT)}")
+
+    print(
+        f"\nog:images generated: 1 homepage + {written} per-conflict "
+        f"({skipped} skipped — no economicImpact) + {article_written} article."
+    )
     return 0
 
 
