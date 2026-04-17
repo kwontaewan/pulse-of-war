@@ -442,10 +442,10 @@ html, body {
 }
 
 body.has-ticker-bar .stats-bar {
-  top: 104px; /* ticker 32 + header 68 + 4 breathing */
+  top: 118px; /* ticker 46 + header 68 + 4 breathing */
 }
 body.has-ticker-bar .sidebar-toggles {
-  top: 184px; /* stats-bar bottom (104 + 61) + ~16 gap */
+  top: 198px; /* stats-bar bottom (118 + 61) + ~19 gap */
 }
 
 .stats-bar__item {
