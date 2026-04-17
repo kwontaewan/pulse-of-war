@@ -6,7 +6,7 @@ let currentLang = 'en';
 export async function initI18n(lang) {
   let all;
   try {
-    const res = await fetch('./data/i18n.json');
+    const res = await fetch('/data/i18n.json');
     if (!res.ok) throw new Error(`i18n HTTP ${res.status}`);
     all = await res.json();
   } catch (err) {
