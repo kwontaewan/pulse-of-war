@@ -7,5 +7,17 @@
     "api/chat.ts": {
       "maxDuration": 30
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/articles",
+      "destination": "/articles/war-is-a-business-model",
+      "permanent": true
+    },
+    {
+      "source": "/articles/",
+      "destination": "/articles/war-is-a-business-model",
+      "permanent": true
+    }
+  ]
 }

@@ -1372,6 +1372,30 @@ body.has-ticker-bar .sidebar-toggles {
   color: var(--text);
 }
 
+/* Entry CTA to /articles — placed between brand and subtitle so it
+ * surfaces in the first viewport without competing with the live
+ * counter. Plan-design-review 1A. */
+.header__read-cta {
+  display: inline-block;
+  margin-top: 2px;
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pulse-red);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 32, 32, 0.5);
+  padding-bottom: 2px;
+  transition: color 0.15s, border-color 0.15s, text-shadow 0.15s;
+}
+.header__read-cta:hover,
+.header__read-cta:focus-visible {
+  color: #ff4040;
+  border-bottom-color: var(--pulse-red);
+  text-shadow: 0 0 8px rgba(255, 32, 32, 0.6);
+  outline: none;
+}
+
 .header__subtitle {
   font-size: 11px;
   color: var(--text-dim);

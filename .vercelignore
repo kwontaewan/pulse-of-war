@@ -1,0 +1,5 @@
+content/
+scripts/
+test/
+*.md
+!CLAUDE.md
