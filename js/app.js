@@ -13,6 +13,7 @@ import {
   getSessionStartMs,
   getSessionDeaths as computeSessionDeaths,
 } from './deaths.js';
+import { setupExitOverlay } from './exit-overlay.js';
 
 async function main() {
   const loadingEl = document.querySelector('.loading');
@@ -316,56 +317,10 @@ async function main() {
     }, 2000);
   }
 
-  // Step 15: Exit overlay — show stats when user leaves
-  let exitShown = false;
-  document.addEventListener('visibilitychange', () => {
-    if (document.hidden && !exitShown) {
-      exitShown = true;
-      // When they come back, show the overlay
-      const onReturn = () => {
-        document.removeEventListener('visibilitychange', onReturn);
-        showExitOverlay();
-      };
-      document.addEventListener('visibilitychange', onReturn);
-    }
-  });
-
-  function showExitOverlay() {
-    const deaths = getSessionDeaths();
-    if (deaths < 1) return;
-    const overlay = document.createElement('div');
-    overlay.className = 'exit-overlay';
-    const msg = lang === 'ko'
-      ? `이 페이지를 보는 동안<br><span class="exit-overlay__number">${deaths.toLocaleString('en-US')}</span><br>명이 전쟁으로 사망했습니다`
-      : `While you were reading this page<br><span class="exit-overlay__number">${deaths.toLocaleString('en-US')}</span><br>people died in armed conflicts`;
-    const subMsg = lang === 'ko' ? '이 숫자는 멈추지 않습니다.' : 'This number never stops.';
-    overlay.innerHTML = `
-      <div class="exit-overlay__content">
-        <div class="exit-overlay__text">${msg}</div>
-        <div class="exit-overlay__sub">${subMsg}</div>
-        <div class="exit-overlay__actions">
-          <button class="exit-overlay__share">${lang === 'ko' ? 'X에 공유' : 'SHARE ON X'}</button>
-          <button class="exit-overlay__close">${lang === 'ko' ? '닫기' : 'CLOSE'}</button>
-        </div>
-      </div>
-    `;
-    document.body.appendChild(overlay);
-    setTimeout(() => overlay.classList.add('exit-overlay--visible'), 50);
-
-    overlay.querySelector('.exit-overlay__close').addEventListener('click', () => {
-      overlay.classList.remove('exit-overlay--visible');
-      setTimeout(() => overlay.remove(), 500);
-    });
-
-    overlay.querySelector('.exit-overlay__share').addEventListener('click', () => {
-      const text = encodeURIComponent(
-        (lang === 'ko'
-          ? `이 페이지를 보는 동안 ${deaths}명이 전쟁으로 사망했습니다.\n이 숫자는 멈추지 않습니다.`
-          : `${deaths} people died in armed conflicts while I was reading this page.\nThis number never stops.`)
-      );
-      window.open(`https://twitter.com/intent/tweet?text=${text}&url=${encodeURIComponent(location.origin)}`, '_blank');
-    });
-  }
+  // Step 15: Exit overlay — show stats when user leaves and returns.
+  // Extracted to js/exit-overlay.js so /articles pages can reuse the
+  // same moment. The closure here owns getSessionDeaths and lang.
+  setupExitOverlay({ getSessionDeaths, lang });
 
   // Done — start everything. Auto-tour is OFF by default; user toggles with
   // the "▶ AUTO FOCUS" button. Previous behavior (auto-start after 3s) was
