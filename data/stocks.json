@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25",
+  "lastUpdated": "2026-04-26",
   "sectors": [
     {
       "id": "defense",
@@ -173,8 +173,8 @@
       "dod": -6.2,
       "mom": -10.3,
       "yoy": -4.1,
-      "pe": 63.3,
-      "dividendYield": 82.0,
+      "pe": 59.2,
+      "dividendYield": 87.0,
       "weekHigh52": 2008.0,
       "weekLow52": 1309.8,
       "priceNumeric": 1319.2,
@@ -645,11 +645,11 @@
       "name_ko": "비트코인",
       "sector": "crypto",
       "exchange": "CRYPTO",
-      "ytdReturn": -12.6,
+      "ytdReturn": -12.1,
       "warReturn": 45,
       "warReturnSince": "2022-02",
       "marketCap": "$1.6T",
-      "price": "$77,552",
+      "price": "$77,995",
       "conflicts": [
         "US-Iran",
         "Ukraine"
@@ -658,15 +658,15 @@
       "description_ko": "디지털 금 — 지정학 위기 시 안전자산, 제재 우회 수단",
       "rank": 20,
       "trending": true,
-      "dod": 0.1,
-      "mom": 15.9,
-      "yoy": -18.1,
+      "dod": 0.5,
+      "mom": 13.1,
+      "yoy": -17.6,
       "pe": null,
       "dividendYield": null,
       "weekHigh52": 126198.07,
       "weekLow52": 60074.2,
-      "priceNumeric": 77552.32,
-      "volume": "30B"
+      "priceNumeric": 77995.12,
+      "volume": "16B"
     },
     {
       "ticker": "ETH-USD",
@@ -674,11 +674,11 @@
       "name_ko": "이더리움",
       "sector": "crypto",
       "exchange": "CRYPTO",
-      "ytdReturn": -22.8,
+      "ytdReturn": -22.3,
       "warReturn": 25,
       "warReturnSince": "2022-02",
-      "marketCap": "$279B",
-      "price": "$2,316",
+      "marketCap": "$281B",
+      "price": "$2,331",
       "conflicts": [
         "US-Iran"
       ],
@@ -686,15 +686,15 @@
       "description_ko": "스마트 컨트랙트 플랫폼 — 제재 우회 금융 인프라",
       "rank": 21,
       "trending": false,
-      "dod": 0.0,
-      "mom": 12.8,
-      "yoy": 29.7,
+      "dod": 0.5,
+      "mom": 10.6,
+      "yoy": 28.0,
       "pe": null,
       "dividendYield": null,
       "weekHigh52": 4953.73,
       "weekLow52": 1736.14,
-      "priceNumeric": 2316.6,
-      "volume": "12B"
+      "priceNumeric": 2331.9,
+      "volume": "7B"
     },
     {
       "ticker": "IBIT",
@@ -972,7 +972,7 @@
       "dod": 1.1,
       "mom": 21.2,
       "yoy": 66.9,
-      "pe": 13.9,
+      "pe": 14.4,
       "dividendYield": 241.0,
       "weekHigh52": 427500.0,
       "weekLow52": 230000.0,
