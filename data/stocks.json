@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02",
+  "lastUpdated": "2026-05-03",
   "sectors": [
     {
       "id": "defense",
@@ -290,7 +290,7 @@
       "mom": -5.0,
       "yoy": 48.8,
       "pe": 25.7,
-      "dividendYield": 267.0,
+      "dividendYield": 270.0,
       "weekHigh52": 176.41,
       "weekLow52": 101.19,
       "priceNumeric": 152.75,
@@ -318,7 +318,7 @@
       "mom": -3.4,
       "yoy": 43.8,
       "pe": 33.2,
-      "dividendYield": 368.0,
+      "dividendYield": 373.0,
       "weekHigh52": 214.71,
       "weekLow52": 133.77,
       "priceNumeric": 190.63,
@@ -649,7 +649,7 @@
       "warReturn": 45,
       "warReturnSince": "2022-02",
       "marketCap": "$1.6T",
-      "price": "$78,203",
+      "price": "$78,213",
       "conflicts": [
         "US-Iran",
         "Ukraine"
@@ -658,15 +658,15 @@
       "description_ko": "디지털 금 — 지정학 위기 시 안전자산, 제재 우회 수단",
       "rank": 20,
       "trending": true,
-      "dod": -0.0,
-      "mom": 7.0,
-      "yoy": -19.3,
+      "dod": -0.6,
+      "mom": 10.5,
+      "yoy": -18.4,
       "pe": null,
       "dividendYield": null,
       "weekHigh52": 126198.07,
       "weekLow52": 60074.2,
-      "priceNumeric": 78203.64,
-      "volume": "36B"
+      "priceNumeric": 78213.48,
+      "volume": "16B"
     },
     {
       "ticker": "ETH-USD",
@@ -674,11 +674,11 @@
       "name_ko": "이더리움",
       "sector": "crypto",
       "exchange": "CRYPTO",
-      "ytdReturn": -23.3,
+      "ytdReturn": -23.2,
       "warReturn": 25,
       "warReturnSince": "2022-02",
-      "marketCap": "$277B",
-      "price": "$2,300",
+      "marketCap": "$278B",
+      "price": "$2,303",
       "conflicts": [
         "US-Iran"
       ],
@@ -686,15 +686,15 @@
       "description_ko": "스마트 컨트랙트 플랫폼 — 제재 우회 금융 인프라",
       "rank": 21,
       "trending": false,
-      "dod": 0.2,
-      "mom": 0.7,
-      "yoy": 24.8,
+      "dod": -0.6,
+      "mom": 5.1,
+      "yoy": 25.6,
       "pe": null,
       "dividendYield": null,
       "weekHigh52": 4953.73,
       "weekLow52": 1748.63,
-      "priceNumeric": 2300.43,
-      "volume": "12B"
+      "priceNumeric": 2303.06,
+      "volume": "7B"
     },
     {
       "ticker": "IBIT",
