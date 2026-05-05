@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T07:02:40.758826+00:00",
+  "generatedAt": "2026-05-05T06:46:49.962699+00:00",
   "conflictCount": 26,
   "conflictsWithImpact": [
     {
@@ -392,10 +392,10 @@
     {
       "ticker": "LMT",
       "name": "Lockheed Martin",
-      "price": "$513",
-      "dod": -1.0,
-      "mom": -17.0,
-      "ytdReturn": 3.7,
+      "price": "$518",
+      "dod": 1.0,
+      "mom": -16.8,
+      "ytdReturn": 4.8,
       "weekHigh52": 692.0,
       "weekLow52": 410.11,
       "sector": "defense"
@@ -403,10 +403,10 @@
     {
       "ticker": "RTX",
       "name": "RTX Corp",
-      "price": "$174",
-      "dod": -1.2,
-      "mom": -10.6,
-      "ytdReturn": -6.8,
+      "price": "$173",
+      "dod": -0.6,
+      "mom": -11.9,
+      "ytdReturn": -7.4,
       "weekHigh52": 214.5,
       "weekLow52": 126.03,
       "sector": "defense"
@@ -414,10 +414,10 @@
     {
       "ticker": "RHMT.ME",
       "name": "Rheinmetall",
-      "price": "€1,355",
-      "dod": 1.3,
-      "mom": -3.8,
-      "ytdReturn": -15.4,
+      "price": "€1,388",
+      "dod": 2.4,
+      "mom": -3.9,
+      "ytdReturn": -13.3,
       "weekHigh52": 2008.0,
       "weekLow52": 1309.8,
       "sector": "defense"
@@ -425,10 +425,10 @@
     {
       "ticker": "NOC",
       "name": "Northrop Grumman",
-      "price": "$568",
-      "dod": -2.0,
-      "mom": -18.5,
-      "ytdReturn": -2.7,
+      "price": "$567",
+      "dod": -0.2,
+      "mom": -19.3,
+      "ytdReturn": -2.9,
       "weekHigh52": 774.0,
       "weekLow52": 453.01,
       "sector": "defense"
@@ -436,10 +436,10 @@
     {
       "ticker": "ESLT",
       "name": "Elbit Systems",
-      "price": "$831",
-      "dod": -1.0,
-      "mom": -7.2,
-      "ytdReturn": 40.6,
+      "price": "$858",
+      "dod": 3.2,
+      "mom": -3.4,
+      "ytdReturn": 45.1,
       "weekHigh52": 1016.06,
       "weekLow52": 369.6,
       "sector": "defense"
@@ -447,10 +447,10 @@
     {
       "ticker": "ITA",
       "name": "iShares Aerospace & Defense ETF",
-      "price": "$216",
-      "dod": -1.0,
-      "mom": -3.3,
-      "ytdReturn": -2.5,
+      "price": "$214",
+      "dod": -0.9,
+      "mom": -3.4,
+      "ytdReturn": -3.4,
       "weekHigh52": 250.65,
       "weekLow52": 158.55,
       "sector": "defense"
@@ -458,10 +458,10 @@
     {
       "ticker": "XOM",
       "name": "Exxon Mobil",
-      "price": "$153",
-      "dod": -1.0,
-      "mom": -5.0,
-      "ytdReturn": 25.4,
+      "price": "$154",
+      "dod": 0.6,
+      "mom": -4.4,
+      "ytdReturn": 26.1,
       "weekHigh52": 176.41,
       "weekLow52": 101.19,
       "sector": "energy"
@@ -469,10 +469,10 @@
     {
       "ticker": "CVX",
       "name": "Chevron",
-      "price": "$191",
-      "dod": -1.4,
+      "price": "$192",
+      "dod": 0.9,
       "mom": -3.4,
-      "ytdReturn": 23.5,
+      "ytdReturn": 24.5,
       "weekHigh52": 214.71,
       "weekLow52": 133.77,
       "sector": "energy"
@@ -480,10 +480,10 @@
     {
       "ticker": "OXY",
       "name": "Occidental Petroleum",
-      "price": "$58.71",
-      "dod": -3.1,
-      "mom": -5.7,
-      "ytdReturn": 39.2,
+      "price": "$60.27",
+      "dod": 2.7,
+      "mom": -4.3,
+      "ytdReturn": 42.9,
       "weekHigh52": 67.45,
       "weekLow52": 38.72,
       "sector": "energy"
@@ -491,10 +491,10 @@
     {
       "ticker": "ZIM",
       "name": "ZIM Shipping",
-      "price": "$26.28",
-      "dod": -0.6,
-      "mom": 1.3,
-      "ytdReturn": 24.0,
+      "price": "$26.07",
+      "dod": -0.8,
+      "mom": -0.9,
+      "ytdReturn": 23.0,
       "weekHigh52": 29.97,
       "weekLow52": 12.33,
       "sector": "shipping"
@@ -502,10 +502,10 @@
     {
       "ticker": "GLD",
       "name": "SPDR Gold Trust",
-      "price": "$423",
-      "dod": -0.1,
-      "mom": -3.3,
-      "ytdReturn": 6.3,
+      "price": "$415",
+      "dod": -2.0,
+      "mom": -3.4,
+      "ytdReturn": 4.1,
       "weekHigh52": 509.7,
       "weekLow52": 291.78,
       "sector": "commodity"
@@ -513,10 +513,10 @@
     {
       "ticker": "CRWD",
       "name": "CrowdStrike",
-      "price": "$456",
-      "dod": 2.2,
-      "mom": 15.8,
-      "ytdReturn": 0.5,
+      "price": "$469",
+      "dod": 3.0,
+      "mom": 17.6,
+      "ytdReturn": 3.5,
       "weekHigh52": 566.9,
       "weekLow52": 342.72,
       "sector": "cyber"
@@ -524,10 +524,10 @@
     {
       "ticker": "PANW",
       "name": "Palo Alto Networks",
-      "price": "$181",
-      "dod": 1.0,
-      "mom": 12.7,
-      "ytdReturn": 1.0,
+      "price": "$185",
+      "dod": 1.9,
+      "mom": 13.1,
+      "ytdReturn": 2.9,
       "weekHigh52": 223.61,
       "weekLow52": 139.57,
       "sector": "cyber"
@@ -535,10 +535,10 @@
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "price": "$402",
-      "dod": 0.1,
-      "mom": -5.0,
-      "ytdReturn": -28.6,
+      "price": "$394",
+      "dod": -2.1,
+      "mom": -4.6,
+      "ytdReturn": -30.1,
       "weekHigh52": 885.92,
       "weekLow52": 339.01,
       "sector": "security"
@@ -590,10 +590,10 @@
     {
       "ticker": "LDOF.MI",
       "name": "Leonardo",
-      "price": "€53.02",
-      "dod": 1.7,
-      "mom": -4.7,
-      "ytdReturn": 3.5,
+      "price": "€52.78",
+      "dod": -0.5,
+      "mom": -9.1,
+      "ytdReturn": 3.0,
       "weekHigh52": 66.26,
       "weekLow52": 43.15,
       "sector": "defense"
@@ -601,10 +601,10 @@
     {
       "ticker": "BTC-USD",
       "name": "Bitcoin",
-      "price": "$79,880",
-      "dod": 1.7,
-      "mom": 7.2,
-      "ytdReturn": -10.0,
+      "price": "$80,289",
+      "dod": 2.2,
+      "mom": 9.0,
+      "ytdReturn": -8.9,
       "weekHigh52": 126198.07,
       "weekLow52": 60074.2,
       "sector": "crypto"
@@ -612,10 +612,10 @@
     {
       "ticker": "ETH-USD",
       "name": "Ethereum",
-      "price": "$2,369",
-      "dod": 2.0,
-      "mom": -0.1,
-      "ytdReturn": -21.0,
+      "price": "$2,361",
+      "dod": 1.7,
+      "mom": 2.2,
+      "ytdReturn": -20.8,
       "weekHigh52": 4953.73,
       "weekLow52": 1748.63,
       "sector": "crypto"
@@ -623,10 +623,10 @@
     {
       "ticker": "IBIT",
       "name": "iShares Bitcoin Trust",
-      "price": "$44.47",
-      "dod": 2.7,
-      "mom": 15.1,
-      "ytdReturn": -12.7,
+      "price": "$45.40",
+      "dod": 2.1,
+      "mom": 19.6,
+      "ytdReturn": -10.9,
       "weekHigh52": 71.82,
       "weekLow52": 35.3,
       "sector": "crypto"
@@ -634,10 +634,10 @@
     {
       "ticker": "PPA",
       "name": "Invesco Aerospace & Defense",
-      "price": "$166",
-      "dod": -1.1,
-      "mom": -2.4,
-      "ytdReturn": 2.8,
+      "price": "$165",
+      "dod": -0.5,
+      "mom": -2.9,
+      "ytdReturn": 2.2,
       "weekHigh52": 186.3,
       "weekLow52": 122.57,
       "sector": "defense"
