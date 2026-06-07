@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-06",
+  "lastUpdated": "2026-06-07",
   "sectors": [
     {
       "id": "defense",
@@ -174,7 +174,7 @@
       "mom": -8.9,
       "yoy": -35.1,
       "pe": 54.3,
-      "dividendYield": 97.0,
+      "dividendYield": 95.0,
       "weekHigh52": 2008.0,
       "weekLow52": 1099.2,
       "priceNumeric": 1209.8,
@@ -523,7 +523,7 @@
       "weekHigh52": 1655000.0,
       "weekLow52": 760000.0,
       "priceNumeric": 1049000.0,
-      "volume": "185K"
+      "volume": "203K"
     },
     {
       "ticker": "079550.KS",
@@ -547,12 +547,12 @@
       "dod": -1.0,
       "mom": -26.1,
       "yoy": 62.2,
-      "pe": 29.9,
+      "pe": 30.1,
       "dividendYield": 41.0,
       "weekHigh52": 1118000.0,
       "weekLow52": 360000.0,
       "priceNumeric": 726000.0,
-      "volume": "127K"
+      "volume": "123K"
     },
     {
       "ticker": "064350.KS",
@@ -580,7 +580,7 @@
       "weekHigh52": 282000.0,
       "weekLow52": 148700.0,
       "priceNumeric": 191400.0,
-      "volume": "433K"
+      "volume": "408K"
     },
     {
       "ticker": "BA.L",
@@ -645,11 +645,11 @@
       "name_ko": "비트코인",
       "sector": "crypto",
       "exchange": "CRYPTO",
-      "ytdReturn": -31.5,
+      "ytdReturn": -30.0,
       "warReturn": 45,
       "warReturnSince": "2022-02",
       "marketCap": "$1.2T",
-      "price": "$60,770",
+      "price": "$62,117",
       "conflicts": [
         "US-Iran",
         "Ukraine"
@@ -658,15 +658,15 @@
       "description_ko": "디지털 금 — 지정학 위기 시 안전자산, 제재 우회 수단",
       "rank": 20,
       "trending": true,
-      "dod": -0.4,
-      "mom": -22.2,
-      "yoy": -41.8,
+      "dod": 2.1,
+      "mom": -19.8,
+      "yoy": -41.2,
       "pe": null,
       "dividendYield": null,
       "weekHigh52": 126198.07,
-      "weekLow52": 59496.62,
-      "priceNumeric": 60770.7,
-      "volume": "67B"
+      "weekLow52": 60074.2,
+      "priceNumeric": 62117.07,
+      "volume": "27B"
     },
     {
       "ticker": "ETH-USD",
@@ -674,11 +674,11 @@
       "name_ko": "이더리움",
       "sector": "crypto",
       "exchange": "CRYPTO",
-      "ytdReturn": -48.0,
+      "ytdReturn": -46.4,
       "warReturn": 25,
       "warReturnSince": "2022-02",
-      "marketCap": "$188B",
-      "price": "$1,559",
+      "marketCap": "$194B",
+      "price": "$1,609",
       "conflicts": [
         "US-Iran"
       ],
@@ -686,15 +686,15 @@
       "description_ko": "스마트 컨트랙트 플랫폼 — 제재 우회 금융 인프라",
       "rank": 21,
       "trending": false,
-      "dod": -1.5,
-      "mom": -28.5,
-      "yoy": -37.1,
+      "dod": 2.6,
+      "mom": -24.3,
+      "yoy": -36.3,
       "pe": null,
       "dividendYield": null,
       "weekHigh52": 4953.73,
-      "weekLow52": 1512.37,
-      "priceNumeric": 1559.19,
-      "volume": "37B"
+      "weekLow52": 1564.95,
+      "priceNumeric": 1609.63,
+      "volume": "15B"
     },
     {
       "ticker": "IBIT",
@@ -778,7 +778,7 @@
       "weekHigh52": 215500.0,
       "weekLow52": 83100.0,
       "priceNumeric": 139000.0,
-      "volume": "555K",
+      "volume": "528K",
       "price": "₩139,000",
       "marketCap": "₩14조"
     },
@@ -806,7 +806,7 @@
       "weekHigh52": 172200.0,
       "weekLow52": 64300.0,
       "priceNumeric": 72300.0,
-      "volume": "109K",
+      "volume": "102K",
       "price": "₩72,300",
       "marketCap": "₩2조"
     },
@@ -834,7 +834,7 @@
       "weekHigh52": 765000.0,
       "weekLow52": 370000.0,
       "priceNumeric": 664000.0,
-      "volume": "402K",
+      "volume": "385K",
       "price": "₩664,000",
       "marketCap": "₩70조"
     },
@@ -863,7 +863,7 @@
       "weekHigh52": 184000.0,
       "weekLow52": 41550.0,
       "priceNumeric": 94600.0,
-      "volume": "588K",
+      "volume": "563K",
       "price": "₩94,600",
       "marketCap": "₩18조"
     },
@@ -891,7 +891,7 @@
       "weekHigh52": 154800.0,
       "weekLow52": 71500.0,
       "priceNumeric": 112200.0,
-      "volume": "1.0M",
+      "volume": "999K",
       "price": "₩112,200",
       "marketCap": "₩34조"
     },
@@ -919,7 +919,7 @@
       "weekHigh52": 155400.0,
       "weekLow52": 90300.0,
       "priceNumeric": 114900.0,
-      "volume": "420K",
+      "volume": "400K",
       "price": "₩114,900",
       "marketCap": "₩20조"
     },
@@ -948,7 +948,7 @@
       "weekHigh52": 26250.0,
       "weekLow52": 18660.0,
       "priceNumeric": 19450.0,
-      "volume": "1.3M",
+      "volume": "1.4M",
       "price": "₩19,450",
       "marketCap": "₩18조"
     },
@@ -977,7 +977,7 @@
       "weekHigh52": 542000.0,
       "weekLow52": 246500.0,
       "priceNumeric": 390000.0,
-      "volume": "433K",
+      "volume": "461K",
       "price": "₩390,000",
       "marketCap": "₩29조"
     },
@@ -1005,7 +1005,7 @@
       "weekHigh52": 335000.0,
       "weekLow52": 50600.0,
       "priceNumeric": 227000.0,
-      "volume": "675K",
+      "volume": "703K",
       "price": "₩227,000",
       "marketCap": "₩34조"
     },
@@ -1034,7 +1034,7 @@
       "weekHigh52": 166400.0,
       "weekLow52": 74100.0,
       "priceNumeric": 125300.0,
-      "volume": "261K",
+      "volume": "269K",
       "price": "₩125,300",
       "marketCap": "₩11조"
     }
