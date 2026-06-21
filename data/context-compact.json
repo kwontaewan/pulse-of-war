@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T07:20:30.845061+00:00",
+  "generatedAt": "2026-06-21T07:38:38.353489+00:00",
   "conflictCount": 26,
   "conflictsWithImpact": [
     {
@@ -438,8 +438,8 @@
       "name": "Elbit Systems",
       "price": "$788",
       "dod": -4.1,
-      "mom": NaN,
-      "ytdReturn": NaN,
+      "mom": 2.2,
+      "ytdReturn": 33.3,
       "weekHigh52": 1016.06,
       "weekLow52": 415.9,
       "sector": "defense"
@@ -449,8 +449,8 @@
       "name": "iShares Aerospace & Defense ETF",
       "price": "$239",
       "dod": -1.6,
-      "mom": NaN,
-      "ytdReturn": NaN,
+      "mom": 9.5,
+      "ytdReturn": 7.8,
       "weekHigh52": 250.65,
       "weekLow52": 179.89,
       "sector": "defense"
@@ -493,8 +493,8 @@
       "name": "ZIM Shipping",
       "price": "$24.34",
       "dod": 1.5,
-      "mom": NaN,
-      "ytdReturn": NaN,
+      "mom": -4.7,
+      "ytdReturn": 14.8,
       "weekHigh52": 29.97,
       "weekLow52": 12.33,
       "sector": "shipping"
@@ -601,10 +601,10 @@
     {
       "ticker": "BTC-USD",
       "name": "Bitcoin",
-      "price": "$63,678",
-      "dod": 0.3,
-      "mom": -13.2,
-      "ytdReturn": -28.2,
+      "price": "$64,159",
+      "dod": -0.1,
+      "mom": -12.8,
+      "ytdReturn": -27.7,
       "weekHigh52": 126198.07,
       "weekLow52": 59108.92,
       "sector": "crypto"
@@ -612,10 +612,10 @@
     {
       "ticker": "ETH-USD",
       "name": "Ethereum",
-      "price": "$1,724",
-      "dod": 0.9,
-      "mom": -14.3,
-      "ytdReturn": -42.5,
+      "price": "$1,731",
+      "dod": -0.4,
+      "mom": -14.2,
+      "ytdReturn": -42.3,
       "weekHigh52": 4953.73,
       "weekLow52": 1506.51,
       "sector": "crypto"
@@ -636,8 +636,8 @@
       "name": "Invesco Aerospace & Defense",
       "price": "$175",
       "dod": -1.4,
-      "mom": NaN,
-      "ytdReturn": NaN,
+      "mom": 6.2,
+      "ytdReturn": 8.8,
       "weekHigh52": 186.3,
       "weekLow52": 135.21,
       "sector": "defense"
