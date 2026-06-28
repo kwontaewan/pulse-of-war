@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T07:05:02.378676+00:00",
+  "generatedAt": "2026-06-28T07:21:35.694095+00:00",
   "conflictCount": 26,
   "conflictsWithImpact": [
     {
@@ -408,7 +408,7 @@
       "mom": 6.5,
       "ytdReturn": 1.1,
       "weekHigh52": 214.5,
-      "weekLow52": 141.93,
+      "weekLow52": 142.66,
       "sector": "defense"
     },
     {
@@ -430,7 +430,7 @@
       "mom": -8.9,
       "ytdReturn": -14.0,
       "weekHigh52": 774.0,
-      "weekLow52": 489.26,
+      "weekLow52": 489.52,
       "sector": "defense"
     },
     {
@@ -507,7 +507,7 @@
       "mom": -8.5,
       "ytdReturn": -6.2,
       "weekHigh52": 509.7,
-      "weekLow52": 299.89,
+      "weekLow52": 300.96,
       "sector": "commodity"
     },
     {
@@ -601,10 +601,10 @@
     {
       "ticker": "BTC-USD",
       "name": "Bitcoin",
-      "price": "$60,243",
-      "dod": 0.4,
-      "mom": -1.0,
-      "ytdReturn": -32.1,
+      "price": "$60,047",
+      "dod": 0.2,
+      "mom": -5.0,
+      "ytdReturn": -32.3,
       "weekHigh52": 126198.07,
       "weekLow52": 58075.92,
       "sector": "crypto"
@@ -612,10 +612,10 @@
     {
       "ticker": "ETH-USD",
       "name": "Ethereum",
-      "price": "$1,579",
-      "dod": 0.2,
-      "mom": 0.7,
-      "ytdReturn": -47.4,
+      "price": "$1,570",
+      "dod": -0.1,
+      "mom": -6.9,
+      "ytdReturn": -47.7,
       "weekHigh52": 4953.73,
       "weekLow52": 1506.51,
       "sector": "crypto"
