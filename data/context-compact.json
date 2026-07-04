@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T08:54:47.598681+00:00",
+  "generatedAt": "2026-07-04T08:29:30.041946+00:00",
   "conflictCount": 26,
   "conflictsWithImpact": [
     {
@@ -395,7 +395,7 @@
       "price": "$546",
       "dod": 4.6,
       "mom": 6.3,
-      "ytdReturn": 11.1,
+      "ytdReturn": 10.4,
       "weekHigh52": 692.0,
       "weekLow52": 410.11,
       "sector": "defense"
@@ -414,10 +414,10 @@
     {
       "ticker": "RHMT.ME",
       "name": "Rheinmetall",
-      "price": "€1,098",
-      "dod": -1.5,
-      "mom": -8.5,
-      "ytdReturn": -30.8,
+      "price": "€1,093",
+      "dod": -1.9,
+      "mom": -8.9,
+      "ytdReturn": -31.1,
       "weekHigh52": 2008.0,
       "weekLow52": 928.8,
       "sector": "defense"
@@ -428,7 +428,7 @@
       "price": "$549",
       "dod": 5.6,
       "mom": 2.3,
-      "ytdReturn": -5.5,
+      "ytdReturn": -6.0,
       "weekHigh52": 774.0,
       "weekLow52": 493.84,
       "sector": "defense"
@@ -579,10 +579,10 @@
     {
       "ticker": "BA.L",
       "name": "BAE Systems",
-      "price": "£1,979",
-      "dod": -0.2,
-      "mom": 3.3,
-      "ytdReturn": 12.9,
+      "price": "£1,981",
+      "dod": -0.1,
+      "mom": 3.4,
+      "ytdReturn": 13.0,
       "weekHigh52": 2360.0,
       "weekLow52": 1529.0,
       "sector": "defense"
@@ -590,10 +590,10 @@
     {
       "ticker": "LDOF.MI",
       "name": "Leonardo",
-      "price": "€51.94",
-      "dod": 0.0,
-      "mom": 3.3,
-      "ytdReturn": 2.6,
+      "price": "€52.53",
+      "dod": 1.1,
+      "mom": 4.5,
+      "ytdReturn": 3.8,
       "weekHigh52": 66.26,
       "weekLow52": 43.15,
       "sector": "defense"
@@ -601,10 +601,10 @@
     {
       "ticker": "BTC-USD",
       "name": "Bitcoin",
-      "price": "$61,526",
-      "dod": 0.1,
-      "mom": -3.2,
-      "ytdReturn": -30.7,
+      "price": "$62,510",
+      "dod": -0.1,
+      "mom": -1.6,
+      "ytdReturn": -29.6,
       "weekHigh52": 126198.07,
       "weekLow52": 57747.77,
       "sector": "crypto"
@@ -612,10 +612,10 @@
     {
       "ticker": "ETH-USD",
       "name": "Ethereum",
-      "price": "$1,717",
-      "dod": 1.1,
-      "mom": 3.2,
-      "ytdReturn": -42.7,
+      "price": "$1,757",
+      "dod": 0.0,
+      "mom": 5.5,
+      "ytdReturn": -41.4,
       "weekHigh52": 4953.73,
       "weekLow52": 1506.51,
       "sector": "crypto"
