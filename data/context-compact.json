@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T08:29:30.041946+00:00",
+  "generatedAt": "2026-07-05T08:45:49.963352+00:00",
   "conflictCount": 26,
   "conflictsWithImpact": [
     {
@@ -416,7 +416,7 @@
       "name": "Rheinmetall",
       "price": "€1,093",
       "dod": -1.9,
-      "mom": -8.9,
+      "mom": -8.1,
       "ytdReturn": -31.1,
       "weekHigh52": 2008.0,
       "weekLow52": 928.8,
@@ -592,7 +592,7 @@
       "name": "Leonardo",
       "price": "€52.53",
       "dod": 1.1,
-      "mom": 4.5,
+      "mom": 3.7,
       "ytdReturn": 3.8,
       "weekHigh52": 66.26,
       "weekLow52": 43.15,
@@ -601,10 +601,10 @@
     {
       "ticker": "BTC-USD",
       "name": "Bitcoin",
-      "price": "$62,510",
-      "dod": -0.1,
-      "mom": -1.6,
-      "ytdReturn": -29.6,
+      "price": "$62,878",
+      "dod": -0.3,
+      "mom": -2.4,
+      "ytdReturn": -29.1,
       "weekHigh52": 126198.07,
       "weekLow52": 57747.77,
       "sector": "crypto"
@@ -612,10 +612,10 @@
     {
       "ticker": "ETH-USD",
       "name": "Ethereum",
-      "price": "$1,757",
-      "dod": 0.0,
-      "mom": 5.5,
-      "ytdReturn": -41.4,
+      "price": "$1,766",
+      "dod": -0.7,
+      "mom": 5.1,
+      "ytdReturn": -41.1,
       "weekHigh52": 4953.73,
       "weekLow52": 1506.51,
       "sector": "crypto"
@@ -672,7 +672,7 @@
       "mom": -11.4,
       "ytdReturn": 15.3,
       "weekHigh52": 765000.0,
-      "weekLow52": 370000.0,
+      "weekLow52": 370500.0,
       "sector": "kr-defense"
     },
     {
