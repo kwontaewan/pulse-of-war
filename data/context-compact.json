@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T07:40:18.413658+00:00",
+  "generatedAt": "2026-07-19T08:07:17.930621+00:00",
   "conflictCount": 26,
   "conflictsWithImpact": [
     {
@@ -416,8 +416,8 @@
       "name": "Rheinmetall",
       "price": "€984",
       "dod": 2.1,
-      "mom": NaN,
-      "ytdReturn": NaN,
+      "mom": -16.5,
+      "ytdReturn": -38.0,
       "weekHigh52": 2008.0,
       "weekLow52": 928.8,
       "sector": "defense"
@@ -441,7 +441,7 @@
       "mom": -9.7,
       "ytdReturn": 25.6,
       "weekHigh52": 1016.06,
-      "weekLow52": 427.09,
+      "weekLow52": 432.85,
       "sector": "defense"
     },
     {
@@ -581,8 +581,8 @@
       "name": "BAE Systems",
       "price": "£1,880",
       "dod": 2.5,
-      "mom": NaN,
-      "ytdReturn": NaN,
+      "mom": 2.2,
+      "ytdReturn": 7.2,
       "weekHigh52": 2360.0,
       "weekLow52": 1529.0,
       "sector": "defense"
@@ -592,8 +592,8 @@
       "name": "Leonardo",
       "price": "€50.75",
       "dod": 2.3,
-      "mom": NaN,
-      "ytdReturn": NaN,
+      "mom": -0.8,
+      "ytdReturn": 0.3,
       "weekHigh52": 66.26,
       "weekLow52": 43.15,
       "sector": "defense"
@@ -601,10 +601,10 @@
     {
       "ticker": "BTC-USD",
       "name": "Bitcoin",
-      "price": "$63,958",
-      "dod": 0.1,
-      "mom": 6.7,
-      "ytdReturn": -27.9,
+      "price": "$64,652",
+      "dod": -0.2,
+      "mom": 8.6,
+      "ytdReturn": -27.1,
       "weekHigh52": 126198.07,
       "weekLow52": 57747.77,
       "sector": "crypto"
@@ -612,10 +612,10 @@
     {
       "ticker": "ETH-USD",
       "name": "Ethereum",
-      "price": "$1,843",
-      "dod": 0.2,
-      "mom": 17.3,
-      "ytdReturn": -38.5,
+      "price": "$1,868",
+      "dod": 0.4,
+      "mom": 19.0,
+      "ytdReturn": -37.7,
       "weekHigh52": 4953.73,
       "weekLow52": 1506.51,
       "sector": "crypto"
@@ -672,7 +672,7 @@
       "mom": -31.5,
       "ytdReturn": -3.3,
       "weekHigh52": 765000.0,
-      "weekLow52": 396500.0,
+      "weekLow52": 403500.0,
       "sector": "kr-defense"
     },
     {
@@ -715,7 +715,7 @@
       "dod": -0.2,
       "mom": -9.3,
       "ytdReturn": 2.3,
-      "weekHigh52": 25300.0,
+      "weekHigh52": 25100.0,
       "weekLow52": 17910.0,
       "sector": "kr-shipping"
     },
