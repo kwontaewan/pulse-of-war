@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T08:10:55.339048+00:00",
+  "generatedAt": "2026-08-02T08:12:35.993522+00:00",
   "conflictCount": 26,
   "conflictsWithImpact": [
     {
@@ -397,7 +397,7 @@
       "mom": 11.7,
       "ytdReturn": 18.6,
       "weekHigh52": 692.0,
-      "weekLow52": 417.0,
+      "weekLow52": 419.0,
       "sector": "defense"
     },
     {
@@ -452,7 +452,7 @@
       "mom": -1.7,
       "ytdReturn": 8.1,
       "weekHigh52": 251.49,
-      "weekLow52": 191.19,
+      "weekLow52": 191.82,
       "sector": "defense"
     },
     {
@@ -581,8 +581,8 @@
       "name": "BAE Systems",
       "price": "£2,094",
       "dod": 2.1,
-      "mom": NaN,
-      "ytdReturn": NaN,
+      "mom": 5.6,
+      "ytdReturn": 19.4,
       "weekHigh52": 2360.0,
       "weekLow52": 1529.0,
       "sector": "defense"
@@ -601,10 +601,10 @@
     {
       "ticker": "BTC-USD",
       "name": "Bitcoin",
-      "price": "$63,023",
-      "dod": 0.3,
-      "mom": -1.2,
-      "ytdReturn": -29.0,
+      "price": "$63,447",
+      "dod": 1.1,
+      "mom": -0.5,
+      "ytdReturn": -28.5,
       "weekHigh52": 126198.07,
       "weekLow52": 57747.77,
       "sector": "crypto"
@@ -612,10 +612,10 @@
     {
       "ticker": "ETH-USD",
       "name": "Ethereum",
-      "price": "$1,866",
-      "dod": 0.3,
-      "mom": 4.4,
-      "ytdReturn": -37.8,
+      "price": "$1,876",
+      "dod": 1.8,
+      "mom": 3.9,
+      "ytdReturn": -37.5,
       "weekHigh52": 4953.73,
       "weekLow52": 1506.51,
       "sector": "crypto"
@@ -639,7 +639,7 @@
       "mom": -1.7,
       "ytdReturn": 8.4,
       "weekHigh52": 186.3,
-      "weekLow52": 142.07,
+      "weekLow52": 143.44,
       "sector": "defense"
     },
     {
@@ -660,7 +660,7 @@
       "dod": 18.9,
       "mom": 7.7,
       "ytdReturn": -32.0,
-      "weekHigh52": 159500.0,
+      "weekHigh52": 159200.0,
       "weekLow52": 55200.0,
       "sector": "kr-defense"
     },
