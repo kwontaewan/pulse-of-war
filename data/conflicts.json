@@ -80,12 +80,6 @@
       ],
       "news": [
         {
-          "headline": "EXCLUSIVE: US has used 'virtually all' of its long-range precision missiles during Iran war, sources say",
-          "date": "2026-08-04",
-          "source": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZjVoa01lTFhQYVMtVjRxRWZKSng1YzFUTTNJOVI1T1pWZVNKc1czOWhJWHB3VDFFWnVrY3lLT1FnSVBfU1M1RFdrU2FsYVlKZXdhVm9VbF9PaEFNeGVMR0ZtNmlEeGhkWG1iang1U0kzb3hmWENGSnNXODRzdnZYaE1LYkY4Vm1hbzJEcEl1ZzZIRVBQLS1nYUYyTWdDdjZjXzN0NmtuZm5IV2FEdlBQby1UUnBqc0FF?oc=5"
-        },
-        {
           "headline": "August 6, 2026 — Trump says US has ‘massive amounts’ of munitions after reports of low stockpile",
           "date": "2026-08-07",
           "source": "CNN",
@@ -96,6 +90,12 @@
           "date": "2026-08-06",
           "source": "CNBC",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBkWWoyQy1VN3RCOVNZR09iUXE0QkQtM2N1dXVsbjc4UEFJU3U0cTRJcW5GSXN6cVpmc0pBeEgzMHRBX3lpdS0tQWZaR0s0c0JWUGF1SFJpQUtES3IzQ0RSUWhYc2stMWx3anlPaHJENkVZWU5reEUwZ3UxNXJSOG_SAYQBQVVfeXFMT3ZCZGhlODNUeS1YVzZPVXlsZElGeE4xRUlBTUJfRGtFcjJqanE1aERKUjYxVWJrY1NlYTE5WFI4SWd0S2lKbFN4Z0tYSmRyX1RmbVNoODRDcWdQZzlYcGx1M0RrZHBhdzRrWFRBbldlVk5RZVE0LUVOMEVZZURSd1hHbmlz?oc=5"
+        },
+        {
+          "headline": "Will the US-Iran war and Hormuz deadlock last for months?",
+          "date": "2026-08-06",
+          "source": "Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeWV1dlM0Uk8ya1hsSnUwMDluTlBGQW9zak8zVzh4RnRRNVBIMEszdkZjdTNoTFN2UlNpSDFXNXZZUlBfcWQ5YWpVMkptd2ZSV3oxNTBPbkU5eTAzRkhSUHhuSTVRclNQbS1kOF9QaDlVV21nZ3c5eVkyVWRYY09xZWlWMFZ0X0tZQTNTSlV0MGlKblFKS3ppN1p4bETSAaIBQVVfeXFMTWZkOHNkZkRlMUE5dTVSbXNsLVo3ZDB5b1hsS1QtMnY2Q1B2aG84dGoyYldwMmpidnZXdUtZa1JGMUVIS3VJcmhtaGU4eXRzVzVSR2o0QTR4R3ltZlM1aExuU3dyMWlkU3RIYmM1Sy0yZTRNMWFpTnFKbkRXTmxkTDNJRUVRbmZxal9vWWgwZUNDRHF5MDEyUHFiWUVOR1dWZ09n?oc=5"
         }
       ]
     },
@@ -165,22 +165,22 @@
       ],
       "news": [
         {
-          "headline": "Russian Offensive Campaign Assessment, August 5, 2026",
-          "date": "2026-08-06",
-          "source": "Institute for the Study of War",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNS1NMUV9XOGlLcElmQkZjYmRCTnZIZm9KS3U3SllETUFwUXgzLXNFVHlMT3VwYmd5V2wzV196OU5lTXpsUW5OTklveDVVbnVUZldMdzZINWo4RjZaNzg5Q3F5eTJoNEtKQ1dCOHFsXzZCNEF6eEh4cnE2SGJ2SU5YSENXOFJCZGYtX1hHZ0pJWFpySUVnTHktZV9GT1VoTDdZeEVwdVJIZ3c?oc=5"
-        },
-        {
-          "headline": "The War That’s Happening Above Russia and Ukraine",
+          "headline": "Ukraine war latest: Russia bombs football stadium on eve of top-flight match in Odesa",
           "date": "2026-08-05",
-          "source": "nytimes.com",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTU56a0JTQm9ZVTNaN1dtMlFVM1lKQlFkdG9MNXBsQnF3cGxVN0VlVTZERmtkV1dJbW1CSVNvUTk1M1ZVVHRQVnJxLUVCWmcxenI0U1A0dnVyUklPUEgycW9QS0ptYTFvamlScTlEN2VLY3gxd0RFVW51eHhUNjF6UQ?oc=5"
+          "source": "Sky News",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNaEdacTRDSzU2SG8xRjhzaV8taVhMWHVoRjVYNU1OWTdOZWtlRnJaTklxLWNKdmczaDR3VHZmQ3lOTjFJcjc0NHM3Mm94Wm1tUG1ZZkgyYngtcjBoU05laGh6YUFCS0NTY1VLLTF4U003RWFzRUdQeW9BSHFibDdEeFRlaw?oc=5"
         },
         {
-          "headline": "Ukraine war briefing: We will build missiles the way we built drones – Zelenskyy",
+          "headline": "Russia, Ukraine exchange overnight strikes, killing 3, injuring 10",
+          "date": "2026-08-08",
+          "source": "Anadolu Ajansı",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUXVoN2J1RDlQak9sSXpuRV93UGUxZjZSR3pZMFNVRFVRZElOQUYxeGVIeEgxSXNrQ0NjZ1dtMVNTcVhsS0dKeFFGbmY2bFlKRnc5dHdUUmV1M1V2TWVucnR6XzlkdzhVdGdBUm5xQ21odVgteG5xeTZOQlVKMDM0VWNfOXhNVXUwd3RJdGJIb2x3ZGFfVWw4Tk11Qnpha0lrTlU5NVZiVQ?oc=5"
+        },
+        {
+          "headline": "Russia drops record number of glide bombs on Ukraine as casualties pile up",
           "date": "2026-08-07",
-          "source": "The Guardian",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVmxfUGpqSGNDWHYxbmFGdnRzTEJrN2FqV3hFN045bGZsQ2N6aVA1ZXJfY1lHN0tIaW4wUzE3d2Fua2JiTnU1NFZwU19PbTJyUXpEcmZHaWVYZmZnNWozVUx4Y2Z3U0MzS2liR3laMFNhX1VnemY5d2RlMzAzMi1wRXVnQjhBOHF1S3laUTZVMjYyR0xKZ2lnTnozSWJla2d4Zkp4bF9xZlRDOURU?oc=5"
+          "source": "Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYkVwQ2I2WDlkcHRGM01CSDBTSFEwNm1oMzhvV1Nsa0kxZ290V0pBX243OXNlRmdYTFM4cElla2hJVHJMZjFpZmFrclYwSF96R3BORVdkT2lBNk03ZEZia2s3UnhYb2Q0VEdnUjBRWUJaczNFMzNKLUVOdW03REk4QzZLZWhGTTFPeVVsV1piTEdueEFvbW4xSGIxUXVvMFlsdW5nM2sydWNqSS1kVEFMOTZwVdIBuAFBVV95cUxNOU5wbU1UdTNoRVhLcFJ6ckEtRUxFWXFvYkRLUml3V1Zad1lHNnFfX1NtbVloRlhlcDlORmRZYnltdzRYRmg3TVpTMF9lSzRFLUlRNW10UHYwQWtjdzVyYUVrR3pxMUItbDUxLVUtaDRreGUwYmJWam0yWUV5eVQ0RzNIRWRvakRzYkY1NVd5Y3lDbFpqTEpjdjNSNm96dDJXaldKSjRwVENfclFNT2xYWFRDYW0tS1NW?oc=5"
         }
       ]
     },
@@ -243,20 +243,20 @@
         {
           "headline": "Teva seeks to keep Israel ties from jury, cites Gaza war",
           "date": "2026-08-06",
-          "source": "Reuters",
+          "source": "reuters.com",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRkFTb3RHc3JFSXc2Wk5YZUFYYWtYeUZEMnVJeEVRcUd1cl9JTDgwV3BLSzN3NVN4Q1RXRDJ0VU9QR0FsTk1iVUF1TXZySG95cUs2THdHUXd4TlZuRHdvNGtNWGxoTXlGMXhpYk9QbzhpYW9ZNEhVU2tNRGdSNkdZdzlGUmFCbVcwNUgtOHB2S21mTHk2Q0VJWlNsLTdVSEhYelE?oc=5"
         },
         {
-          "headline": "Hamas Agreed to Disarm. Why Did Israel Reject the Deal?",
+          "headline": "Citing Gaza war, pharma firm Teva seeks to keep its Israeli origins from US jury",
           "date": "2026-08-06",
-          "source": "Foreign Policy",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVUhNSEhwaVZhZW52X0N3UkpYcnpYcmpQNjlUaGVYYk1iR19uMmFpVkkwako1NUF4dmFHV0ktMlJ6QXo4QXctVWl2ZmdiSVczemNLTVF3dGppZFdDWi1qNzlPVkNuY3NZLTZpUnc0RjRRdGlLX1p1UXdYakZMUGhaOXNLZVMxODFMbnc?oc=5"
+          "source": "The Times of Israel",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdlMzWFNQMVRIUTdtX3FRTWJ0QW1yRVE0Y1dIMHdWVFNsc2dabGJHWTZaS2gxX3ZkUFk4MVlvVFptU2lJQ2o2NEpxYm5qZGhwVUgwOERuRWhobEhvMFg2T19CamxCME1vQ3hRbWY1Ymd6QUNFWTNvbUE0NEcwa2JDaWRlVkRPeGdrMW5DVmw0R0NlT0VxM3NrUkxxUW0xMTViWjR4ZW1oTzNjM0o4cGNB0gG0AUFVX3lxTE1MZEQxMTdrRFZUUE14T0JEUWRQZlQ4MTROcGRKYVNtMURHZk5xSkFITEpWSnJTanF0N1NDMWFXbjJBejB6eG9EWFhkbXRHa1Fha0JUSG9ickVHUHB2WERDUHhGQ2QyTWVJLUZUakljSWlOV0tpQ0hrTWVRR0ZDdnp3a3hXN2tiOVlkQUtkSEI5eHgwS2tibUtPajlJYjZMVDRLZVk2a05FRzNUVDk0Nm1tbWpLSA?oc=5"
         },
         {
-          "headline": "Iran war updates: Trump says talks ongoing, says ‘last chance’ for a deal",
+          "headline": "Opinion | Israel's 'total victory' means endless war",
           "date": "2026-08-04",
-          "source": "Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUmVFUVgwZ2Izb1FIaVF0Z3U3Sjhtc3NFM0JUWkhNcHpOUXRCZEY4SkhkcDZyNWNXOEJYRDJ5SnBGLXVwak5zSWtnNGZCM29wcF9TWk1Mcm5CRWJJY1diVzlicHNvV3h0NjBETzJWTFlfM2xmUUFLdGZHcERjdElXNWhoSXBjM0lKRkEyR29KemhDbzlKWVlJR0ZRYXRad2FXTHdYSlZCV3E1Y05JVm8tbk1PTXVVMnItQzVpRHoxQdIBxAFBVV95cUxPSEdtMjB6bUhkd0JYOUFYOXlGYlJuSWt5Z1l3VVk5aWU3bWd0bjJNUENNQm9iYXdnYzBTTzhpUkliTGhtT3N6NTJfQUtmLTlPYmU4TkN2c1k3OFo3ZzdvczQ1QmRpM01XaTZWbnA4bzBpMXRaTkVEUHU3N2w0RldGTHZNek5ZaW5ka3BoOHB6M3p1TDlGR3UxWFdZTGpTZEZINHF6MXZpQlk4bGROSkJoRUlxTUxjdFVEMDhYbVI2eGJqNF9Y?oc=5"
+          "source": "Haaretz",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOSmVwV0RXeHJ3VWM3TFNzN3docmhTSTg3X0twbnNxbjJKcTIwaE1JRl96QU9YX3U4ODJlRXJ1VXhURmE2MEtFSUZlMllzcVMxQUxONUhERGNJQTh5ZGVDMmUtQ2VRZmRlRXdZSEdma0NmQlZiVFhBODRPRk9fQmtpWGhfM1M2eVdVbzB1dlNDajlCZlNwaTF3ZUw5Q3R3NVc2anhsR0JiZnpuTE5jN0t1eVlEQ0tKWjhFUkxldDRHVWR3TFBfeU9Qd0RvWnZNVmo3bUJfQjRZVUdzLXBpa1N5Qk9XMngxWkQzOHVVcw?oc=5"
         }
       ]
     },
@@ -306,9 +306,15 @@
       ],
       "news": [
         {
+          "headline": "Sudan’s war threatens an ‘entire generation’s’ future, UN warns",
+          "date": "2026-08-08",
+          "source": "Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOd1dlc3RpbmFHS3ZxNVIwcWNKTmkzeXBlVlE3SmRZNzRNNnptX3RKeF9wbnhneVI2b2hYOTQ0dTVpWkVUNk94R0xDMUJpTUZYMmtIQlBxUlF0SEx5Nnl4cFg2NFA4S295WndQT3pILXVndTlMQ1NNUGR6SUNQLTUxcXE4d2R5NFpxLXVMNXl2b0tfTFNDdlQwMVB3SHBOM0HSAaQBQVVfeXFMTjVDRHliYVk3dzJTY2pEaXZUOFlvX2c2YmpDQkJvbEVnc3c2TnRKR05fa3RVMU1lOHI4azlvOWdGUlFiaDVPQWVYT0hVd1VzeHBUYXRoNEgya0U0QkpIRUg0TFdXeVU1bFI3TlRjb2dSaWRyVFBXY2NtU0tzbEpkMHlGSkZXM2xUVlU1Z1ZtZGdJbTlDMDl5VTFnLWplVTNpOGJNRHg?oc=5"
+        },
+        {
           "headline": "Sudanese Armed Forces gains in civil war force strategic adjustment from paramilitia rival",
           "date": "2026-08-06",
-          "source": "Long War Journal",
+          "source": "The Long War Journal",
           "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTjhIOW9DSXJ4UWNPamRVLW5wc05fUDZNSnl6S0IyeWVrbFoybkxWRVRZeV9uSmNZa25PUTlCRFppSmlmNWtwbDlqZVA2bDRxM2tyUkszaEhaeUFYZlVqVENtMU5EMUdUcHVGVjQtbmpHTkxjYXJZVWZnZHRKRUxXWmZBS0RNVHZ2a1E4RVk1Z2dvRjhmV0tybmphTEYxZlBsTGh2SXpzdHpqMS1felNsU0FhVTF1T3JmNWNSdm9MaGR6NlpfbTh0ME5kX010QkRhLVAtNUIzaFVBUQ?oc=5"
         },
         {
@@ -316,12 +322,6 @@
           "date": "2026-08-06",
           "source": "The Economist",
           "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNU21Mb1FGOW8xT0NGQjBfY0RxcmEtRmJVMTV0eHItRm1EdTUzZUxtSjExSy1Nd3FjNHl4YWRraTFmQVhyalBYc2c1ai1oeGNpLUh1TTNabXVIQ2lFZkFQZEVyanlZdmdDeFBJWTM3a2hsR1VlM2h3OFRiMGVISHJldGgxQnEyTHNtS0o4NnRZUlVRdw?oc=5"
-        },
-        {
-          "headline": "Sudan’s Civil War in a Changing Middle Eastern Security Landscape",
-          "date": "2026-08-05",
-          "source": "ISPI",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdWM3eFdTMlRvZkxWTjhFRFN4dDlQRUE4NXpxT1JGSEdXYURwTU9JVGRzajFsbWdJVUdHak5JX01GV3FLMk1QUHU5QnBDcUY3aFAtdGJNN0NkWU93Q2haSkNCT3hPaVpId2RzbTlIVkhGSVczZU9TR0tGNm5HcVJRSE5sTGpLYnNHYzdiLUdNNllrOWtBMFl5bVlDQURmVmJDY2JkNGRUbkx6dXlUNGpPemJB?oc=5"
         }
       ]
     },
@@ -372,20 +372,20 @@
         {
           "headline": "Myanmar civil war nears a rare opening for talks as diplomacy gains ground",
           "date": "2026-08-05",
-          "source": "Reuters",
+          "source": "reuters.com",
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOa25IelZmaG1tdC1sbzBlODB6VFpxQXhLazhiUUZMWkd5aGprb0gzczZPdjFERXlpNlF5Yzdza3RzdklvdTlYSGZjS2xhWTNRVGREQkM3N2R0NUpnaURFbFdjeVpNeWVUYVd4V0E4ZUo4cXBReXdCR2pEcHpsdU12U1luQ1lBcTRMZVVITTlVTEJsZzdfeVdReG1aYVZDb25Fb3F6TW1Cb2REUWsxQTdwczdRalRmbk5GT0tqNA?oc=5"
+        },
+        {
+          "headline": "Myanmar Civil War | Background, Coup, Casualties, & Significance",
+          "date": "2026-07-29",
+          "source": "Encyclopedia Britannica",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9CTlVTQkRPRXdtbmRDNjZhd1VfY3lMdHNGWVpycU1DVURtVk5Nc19tMjVxVWhLcVJwX3p5RlRaSUtjZEZaRG5NRFVhZGhocTFrN2RodG5kUDFvanowazI0?oc=5"
         },
         {
           "headline": "As Myanmar collapses, it’s time for China to step up and be the hero",
           "date": "2026-07-27",
-          "source": "responsiblestatecraft.org",
+          "source": "Responsible Statecraft",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5PM2s0Y2VlNlRia0VHMmkzWGUwNnlFTEFPWUtIbnNteGI2LXhRVVVmVWxYUXd4d2xzSVlsemJKemxJT0ZDYWxNTTcxWGRXcXVlWmdDdEU0aGFRLUVRX1lnWjc2RDlLajQyY1E?oc=5"
-        },
-        {
-          "headline": "Myanmar leader visits Thailand in bid to bolster international legitimacy",
-          "date": "2026-08-06",
-          "source": "Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNFdXMzV5anpDQThYSzdUQTlDVU1QcHpVa05xa0wzMEV6V0hsR3BXNktGQTNfTW9hQk9tMV9YeGFxcTZ1NEdDMG8zLVZZLXVjd0pQMVZZal9FdGFGSEJxLXpTaWdDNlFWeWxZVVRGMlFEdnVTZE1SNUtVcTNwVzV1NHdGOWk4Q29uRks2eXdUZ0p0LUZCWk0yZWNKZGtzMnpMSHZNTVZxaVRNTWRWM0ppd2Zqa9IBuAFBVV95cUxQV0RfMFVYalh2azEyMjZxcko2SjJKalJMVlVNNnhuYWd6OVBxVTFVRTdUd1BRd2hXUFRWRmgzT3ZyZ2xsaDZlNEw0d1l4UjJ6aElrNTRBdGppYlBFTlZIOUdiU0FIaWhzT000QXdsQmltcG5HVkc0R3lnb05Eb29jc0VWZk04Y3NXTHRpdDcyMzZRV05aUi1Vb01SX3pCMlhaX2VfVmlfRXhpUWZrc2ctZHZPcU9MQzNJ?oc=5"
         }
       ]
     },
@@ -508,21 +508,21 @@
       ],
       "news": [
         {
-          "headline": "Houthi attacks on Yemeni government forces kill at least 30",
-          "date": "2026-08-06",
-          "source": "Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUTZFVkJ1MkFwSmJma1RPdm1wdnJmd1BsQ1BFdnVlYWZmbklOWmZGN1hKUUkyb0pQUXZHcjEzcEZGYmZvMzlVM2d5bmRDa3g4eUs5eGE1V0dPVE1abnphYzdaVFhURWw3dTRMODNVdzhSRVhPWGJycXRSaVU5bVEwd1ZNSkVsVXBSN04tS1R2Sm5icmxtODdGcUQ2VUw5T0Q2TUpZQWU3U25fYjM3THdr0gG0AUFVX3lxTE9KRzNmSW5LOFktOTFwdnVPclItMWNvNUZLSV9fYXN1bDRfSVhvaGhMVWprVFBsTGNmMlIxajdRRko5cVVjOXF5Q0hqV3A3LUs0RzZQYjExZGl0ZG9aMVNsODhJRlljQ0Y4RTdrNDNWM3hwQ0lNYXpLYkprejJZcDFfaXNPenRaX3F1VXUyRHpMVGlibXYwalN3S2xXQ0MweC0xbnVKM24xSGExQUtnMU5vbFM5bQ?oc=5"
+          "headline": "Iran War Updates: Yemen's Houthis escalate deadly attacks on Saudi-backed troops",
+          "date": "2026-08-07",
+          "source": "CBS News",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMVhleVdzazZyT0ZHcXV5aWJxa3FZaGtTelNHdUJ5cm4tNXNlLU5PYUM3Tk40cVRLQjdWY2Job2NyM0hNTnhKN1diQkkzN0Y0a0lOWmtCaGxxdU5GTUFxZW9IODM0MjI4aU5sS2YzREFrODBHV0pocFpGMkpPWHhla1JaXzRzclYtb085WFhMOFcxaXVfWWh1SXQzSmpJNUU5TzR3?oc=5"
         },
         {
-          "headline": "Houthi strikes kill dozens in Yemen, officials say, as Saudi Arabia warns of further attacks",
+          "headline": "Houthi attacks on gov’t forces hint that a major battle in Yemen is brewing",
           "date": "2026-08-07",
-          "source": "The Guardian",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQaTlOU0hRaHlJSm01eDh2elJCZFpfSHpGTS10V2plRmpuV21keW1hLXZDX0NVN01BM0ZRYXdGSzNwTU1XVjdkR1hJT3lEa3pjdGFjZVF1czI5aXBCemlNT2ZLbUxZdW1RODdLeHlsZXdKR2NRbWhPMnJNbEFJTU80RDVubWhlbzRqWFJwVEVNZ1o4cFBUS1VtS3B1R0N6Zjh0Y0NKczNDTkxNWXFhbmI5c2pISlNYQQ?oc=5"
+          "source": "Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSm5zYllnbms2MmxrX093bTdMTWdaTVJiUkF6T09VNzFvYmRaTG5LYjZWR3p1a2RVdVFrRE9XN2VZc0VIRy1nNUE4ZlJ0eFNIYXduUHQ5Y3VZSVBjdzdyOVpiVkdvZkp0YS01NGJFM1dEZjFMck5IVWNKR3BBV1RHU0Z4X3NiS3dMNUpTQjlZT3EtS2JIemNSSEdIUXFvMVpfUU5la0l3S2ZQQWZXOEVBWXNycEzSAboBQVVfeXFMTV95RXlyQ1c1ZkpEMzlLbFVLYTAtV1d0cHlnbzk1eHV4QWwyd04wMk5VYmJVeTllVlVuU0Z6ZjVWSlhmWTRDOVB6WHhBcTlZOEJ3RGtvdjJaOTE3ZzJNTlZGcTh2N2JpY3dxYkN2WHpOcWNISXRCaFpxWkJKQ3hsNGZpalZYQWJaZHRfS0U1ZWNwZEY0OUxYMnRCMGpKSFVqMlRBYWpmSFFJUUlSaXZDd2VMaVlkNXpyNlpR?oc=5"
         },
         {
           "headline": "Houthi Attacks on Yemeni Military Threaten to Reignite Civil War",
           "date": "2026-08-06",
-          "source": "nytimes.com",
+          "source": "The New York Times",
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQV25TaENldXRJczNVdkd0LVpQT2JIRkZOUGUxdEoyb0QwTE9wejl5ZW50V0U4ek82cFh3bHJUbUJUdnNYc243OWU4U0ZOUU9ldXJNLURULXBNcFN6MUViSW1rRTJmVm80ZnJHUWptYm5pMVNMNG5qcEJVQjVyOGNiTWZYOA?oc=5"
         }
       ]
@@ -608,10 +608,10 @@
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1VZzJZN2Nfb014a3Jlelp6cE1mV2pZem9QeTJ0elpQUmN3ci1tVV9qYzQ5bEQydHRhVEhsaXRJb2R1WldrQXhpRmxzNzZxdC1BQXJFbDF1dTBBb0FCYWRWejl1TFRXXzNDRUZkN3NNYWl6OHlQVkJjMzMwNS16dw?oc=5"
         },
         {
-          "headline": "Congo forms new council in push for war crimes justice",
+          "headline": "Democratic Republic of the Congo",
           "date": "2026-07-15",
-          "source": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPV29TV0JWSTRuWm1XMmdicWIwaDNfN2RvYTFlNHBQYTRBa0NSOVVBUmJ5bnl0M3Zxa0ZQa1NnbDRQVWhJYXFNNTV2ZmtucjlxSTdzZjNmSmlDZF85MnNSbHlUVzlCb2xXTFM0WDRmUjE1MHNuaHpzMkQ4VUJqRnRCMmVkdUF4Q1pIeU5RLVF4c1oySHJuTTFYX0hnSzc?oc=5"
+          "source": "Global Centre for the Responsi",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBvQTFuVWszeTl6TmdKU2kzRXdCUDlETXIwcGlCZ0pBamcwYkpRbmptTGZmZWpGbG54LTdOT0ZCZGV4dDI4RTQ1WEFNMHh4WjdNcFVpbTRQbkpka016QlM1UVZpUUI3aWtTOGNUZ3ZhZkhsWXlmUy1sRA?oc=5"
         }
       ]
     },
