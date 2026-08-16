@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T06:27:46.440377+00:00",
+  "generatedAt": "2026-08-16T06:29:45.215644+00:00",
   "conflictCount": 26,
   "conflictsWithImpact": [
     {
@@ -416,8 +416,8 @@
       "name": "Rheinmetall",
       "price": "€1,202",
       "dod": 3.2,
-      "mom": NaN,
-      "ytdReturn": NaN,
+      "mom": 22.7,
+      "ytdReturn": -24.2,
       "weekHigh52": 2008.0,
       "weekLow52": 928.8,
       "sector": "defense"
@@ -581,8 +581,8 @@
       "name": "BAE Systems",
       "price": "£2,258",
       "dod": 1.0,
-      "mom": NaN,
-      "ytdReturn": NaN,
+      "mom": 23.1,
+      "ytdReturn": 28.7,
       "weekHigh52": 2360.0,
       "weekLow52": 1529.0,
       "sector": "defense"
@@ -592,8 +592,8 @@
       "name": "Leonardo",
       "price": "€59.90",
       "dod": 1.0,
-      "mom": NaN,
-      "ytdReturn": NaN,
+      "mom": 17.5,
+      "ytdReturn": 18.4,
       "weekHigh52": 66.26,
       "weekLow52": 43.15,
       "sector": "defense"
@@ -601,9 +601,9 @@
     {
       "ticker": "BTC-USD",
       "name": "Bitcoin",
-      "price": "$62,975",
+      "price": "$63,000",
       "dod": -0.0,
-      "mom": -1.8,
+      "mom": -2.0,
       "ytdReturn": -29.0,
       "weekHigh52": 126198.07,
       "weekLow52": 57747.77,
@@ -612,9 +612,9 @@
     {
       "ticker": "ETH-USD",
       "name": "Ethereum",
-      "price": "$1,879",
-      "dod": -0.1,
-      "mom": 1.0,
+      "price": "$1,878",
+      "dod": -0.2,
+      "mom": 0.3,
       "ytdReturn": -37.4,
       "weekHigh52": 4953.73,
       "weekLow52": 1506.51,
