@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T06:41:14.205307+00:00",
+  "generatedAt": "2026-08-18T06:32:56.011398+00:00",
   "conflictCount": 26,
   "conflictsWithImpact": [
     {
@@ -392,10 +392,10 @@
     {
       "ticker": "LMT",
       "name": "Lockheed Martin",
-      "price": "$609",
-      "dod": 1.8,
-      "mom": 18.5,
-      "ytdReturn": 23.9,
+      "price": "$594",
+      "dod": -2.5,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 692.0,
       "weekLow52": 437.25,
       "sector": "defense"
@@ -403,10 +403,10 @@
     {
       "ticker": "RTX",
       "name": "RTX Corp",
-      "price": "$223",
-      "dod": 1.5,
-      "mom": 15.1,
-      "ytdReturn": 20.4,
+      "price": "$222",
+      "dod": -0.6,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 226.88,
       "weekLow52": 150.61,
       "sector": "defense"
@@ -414,10 +414,10 @@
     {
       "ticker": "RHMT.ME",
       "name": "Rheinmetall",
-      "price": "€1,202",
-      "dod": 3.2,
-      "mom": 22.7,
-      "ytdReturn": -24.2,
+      "price": "€1,214",
+      "dod": 1.0,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 2008.0,
       "weekLow52": 928.8,
       "sector": "defense"
@@ -425,10 +425,10 @@
     {
       "ticker": "NOC",
       "name": "Northrop Grumman",
-      "price": "$586",
-      "dod": 1.9,
-      "mom": 13.0,
-      "ytdReturn": 0.8,
+      "price": "$570",
+      "dod": -2.7,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 774.0,
       "weekLow52": 479.02,
       "sector": "defense"
@@ -436,10 +436,10 @@
     {
       "ticker": "ESLT",
       "name": "Elbit Systems",
-      "price": "$784",
-      "dod": 0.5,
-      "mom": 6.6,
-      "ytdReturn": 32.7,
+      "price": "$783",
+      "dod": -0.1,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 1016.06,
       "weekLow52": 447.0,
       "sector": "defense"
@@ -447,10 +447,10 @@
     {
       "ticker": "ITA",
       "name": "iShares Aerospace & Defense ETF",
-      "price": "$253",
-      "dod": 1.4,
-      "mom": 9.7,
-      "ytdReturn": 14.2,
+      "price": "$251",
+      "dod": -0.8,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 256.6,
       "weekLow52": 191.82,
       "sector": "defense"
@@ -458,21 +458,21 @@
     {
       "ticker": "XOM",
       "name": "Exxon Mobil",
-      "price": "$160",
-      "dod": 0.9,
-      "mom": 9.7,
-      "ytdReturn": 32.3,
+      "price": "$161",
+      "dod": 0.8,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 176.41,
-      "weekLow52": 105.67,
+      "weekLow52": 106.15,
       "sector": "energy"
     },
     {
       "ticker": "CVX",
       "name": "Chevron",
-      "price": "$200",
-      "dod": 1.2,
-      "mom": 8.8,
-      "ytdReturn": 30.7,
+      "price": "$203",
+      "dod": 1.3,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 214.71,
       "weekLow52": 146.49,
       "sector": "energy"
@@ -480,10 +480,10 @@
     {
       "ticker": "OXY",
       "name": "Occidental Petroleum",
-      "price": "$58.36",
-      "dod": 1.1,
-      "mom": 8.8,
-      "ytdReturn": 39.0,
+      "price": "$59.04",
+      "dod": 1.2,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 67.45,
       "weekLow52": 38.8,
       "sector": "energy"
@@ -491,10 +491,10 @@
     {
       "ticker": "ZIM",
       "name": "ZIM Shipping",
-      "price": "$28.14",
-      "dod": 4.9,
-      "mom": 15.3,
-      "ytdReturn": 32.8,
+      "price": "$28.81",
+      "dod": 2.4,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 29.97,
       "weekLow52": 12.33,
       "sector": "shipping"
@@ -502,10 +502,10 @@
     {
       "ticker": "GLD",
       "name": "SPDR Gold Trust",
-      "price": "$401",
-      "dod": 0.6,
-      "mom": 10.0,
-      "ytdReturn": 0.8,
+      "price": "$405",
+      "dod": 1.0,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 509.7,
       "weekLow52": 305.19,
       "sector": "commodity"
@@ -513,10 +513,10 @@
     {
       "ticker": "CRWD",
       "name": "CrowdStrike",
-      "price": "$217",
-      "dod": -3.8,
-      "mom": 6.5,
-      "ytdReturn": 91.3,
+      "price": "$214",
+      "dod": -1.4,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 227.5,
       "weekLow52": 85.68,
       "sector": "cyber"
@@ -524,10 +524,10 @@
     {
       "ticker": "PANW",
       "name": "Palo Alto Networks",
-      "price": "$384",
-      "dod": -3.0,
-      "mom": 8.6,
-      "ytdReturn": 114.2,
+      "price": "$376",
+      "dod": -2.2,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 398.88,
       "weekLow52": 139.57,
       "sector": "cyber"
@@ -535,10 +535,10 @@
     {
       "ticker": "AXON",
       "name": "Axon Enterprise",
-      "price": "$613",
-      "dod": -0.4,
-      "mom": 12.0,
-      "ytdReturn": 8.8,
+      "price": "$604",
+      "dod": -1.4,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 794.29,
       "weekLow52": 339.01,
       "sector": "security"
@@ -546,10 +546,10 @@
     {
       "ticker": "012450.KS",
       "name": "Hanwha Aerospace",
-      "price": "₩1,160,000",
-      "dod": -2.1,
-      "mom": 24.9,
-      "ytdReturn": 22.6,
+      "price": "₩1,142,000",
+      "dod": -1.6,
+      "mom": 21.1,
+      "ytdReturn": 20.7,
       "weekHigh52": 1655000.0,
       "weekLow52": 783000.0,
       "sector": "kr-defense"
@@ -557,10 +557,10 @@
     {
       "ticker": "079550.KS",
       "name": "LIG Nex1",
-      "price": "₩815,000",
-      "dod": -2.6,
-      "mom": 7.7,
-      "ytdReturn": 86.4,
+      "price": "₩795,000",
+      "dod": -2.5,
+      "mom": 6.1,
+      "ytdReturn": 81.8,
       "weekHigh52": 1118000.0,
       "weekLow52": 360000.0,
       "sector": "kr-defense"
@@ -568,10 +568,10 @@
     {
       "ticker": "064350.KS",
       "name": "Hyundai Rotem",
-      "price": "₩146,900",
-      "dod": -0.5,
-      "mom": -12.4,
-      "ytdReturn": -23.8,
+      "price": "₩142,500",
+      "dod": -3.0,
+      "mom": -10.4,
+      "ytdReturn": -26.1,
       "weekHigh52": 282000.0,
       "weekLow52": 113100.0,
       "sector": "kr-defense"
@@ -579,10 +579,10 @@
     {
       "ticker": "BA.L",
       "name": "BAE Systems",
-      "price": "£2,258",
-      "dod": 1.0,
-      "mom": 23.1,
-      "ytdReturn": 28.7,
+      "price": "£2,236",
+      "dod": -1.0,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 2360.0,
       "weekLow52": 1529.0,
       "sector": "defense"
@@ -590,10 +590,10 @@
     {
       "ticker": "LDOF.MI",
       "name": "Leonardo",
-      "price": "€59.90",
-      "dod": 1.0,
-      "mom": 17.5,
-      "ytdReturn": 18.4,
+      "price": "€59.71",
+      "dod": -0.3,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 66.26,
       "weekLow52": 43.15,
       "sector": "defense"
@@ -601,10 +601,10 @@
     {
       "ticker": "BTC-USD",
       "name": "Bitcoin",
-      "price": "$63,544",
-      "dod": 1.1,
-      "mom": -2.7,
-      "ytdReturn": -28.4,
+      "price": "$64,323",
+      "dod": -0.3,
+      "mom": 0.9,
+      "ytdReturn": -27.5,
       "weekHigh52": 126198.07,
       "weekLow52": 57747.77,
       "sector": "crypto"
@@ -612,10 +612,10 @@
     {
       "ticker": "ETH-USD",
       "name": "Ethereum",
-      "price": "$1,901",
-      "dod": 1.4,
-      "mom": -2.7,
-      "ytdReturn": -36.6,
+      "price": "$1,899",
+      "dod": -0.6,
+      "mom": 0.5,
+      "ytdReturn": -36.7,
       "weekHigh52": 4953.73,
       "weekLow52": 1506.51,
       "sector": "crypto"
@@ -623,10 +623,10 @@
     {
       "ticker": "IBIT",
       "name": "iShares Bitcoin Trust",
-      "price": "$35.63",
-      "dod": -0.7,
-      "mom": -2.1,
-      "ytdReturn": -30.1,
+      "price": "$36.42",
+      "dod": 2.2,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 71.82,
       "weekLow52": 32.84,
       "sector": "crypto"
@@ -634,10 +634,10 @@
     {
       "ticker": "PPA",
       "name": "Invesco Aerospace & Defense",
-      "price": "$185",
-      "dod": 1.0,
-      "mom": 8.0,
-      "ytdReturn": 15.0,
+      "price": "$183",
+      "dod": -1.0,
+      "mom": NaN,
+      "ytdReturn": NaN,
       "weekHigh52": 186.3,
       "weekLow52": 143.44,
       "sector": "defense"
@@ -645,10 +645,10 @@
     {
       "ticker": "047810.KS",
       "name": "Korea Aerospace Industries",
-      "price": "₩146,400",
-      "dod": -3.2,
-      "mom": -0.7,
-      "ytdReturn": 25.7,
+      "price": "₩139,900",
+      "dod": -4.4,
+      "mom": -6.2,
+      "ytdReturn": 20.1,
       "weekHigh52": 215500.0,
       "weekLow52": 85100.0,
       "sector": "kr-defense"
@@ -656,10 +656,10 @@
     {
       "ticker": "103140.KS",
       "name": "Poongsan",
-      "price": "₩82,000",
-      "dod": -2.4,
-      "mom": 31.4,
-      "ytdReturn": -21.7,
+      "price": "₩80,200",
+      "dod": -2.2,
+      "mom": 29.1,
+      "ytdReturn": -23.4,
       "weekHigh52": 159200.0,
       "weekLow52": 55200.0,
       "sector": "kr-defense"
@@ -667,10 +667,10 @@
     {
       "ticker": "329180.KS",
       "name": "HD Hyundai Heavy Industries",
-      "price": "₩510,000",
-      "dod": 2.8,
-      "mom": 9.6,
-      "ytdReturn": 3.1,
+      "price": "₩488,500",
+      "dod": -4.2,
+      "mom": 2.2,
+      "ytdReturn": -1.2,
       "weekHigh52": 765000.0,
       "weekLow52": 411500.0,
       "sector": "kr-defense"
@@ -678,10 +678,10 @@
     {
       "ticker": "272210.KS",
       "name": "Hanwha Systems",
-      "price": "₩80,300",
-      "dod": 0.9,
-      "mom": 22.0,
-      "ytdReturn": 45.7,
+      "price": "₩79,600",
+      "dod": -0.9,
+      "mom": 21.5,
+      "ytdReturn": 44.5,
       "weekHigh52": 184000.0,
       "weekLow52": 44750.0,
       "sector": "kr-defense"
@@ -689,10 +689,10 @@
     {
       "ticker": "042660.KS",
       "name": "Hanwha Ocean",
-      "price": "₩95,800",
-      "dod": 5.6,
-      "mom": 16.8,
-      "ytdReturn": -16.5,
+      "price": "₩90,700",
+      "dod": -5.3,
+      "mom": 4.6,
+      "ytdReturn": -20.9,
       "weekHigh52": 154800.0,
       "weekLow52": 71300.0,
       "sector": "kr-defense"
@@ -700,10 +700,10 @@
     {
       "ticker": "096770.KS",
       "name": "SK Innovation",
-      "price": "₩128,700",
-      "dod": 5.8,
-      "mom": 10.0,
-      "ytdReturn": 28.8,
+      "price": "₩131,600",
+      "dod": 2.3,
+      "mom": 8.4,
+      "ytdReturn": 31.7,
       "weekHigh52": 155400.0,
       "weekLow52": 87700.0,
       "sector": "kr-energy"
@@ -711,10 +711,10 @@
     {
       "ticker": "011200.KS",
       "name": "HMM",
-      "price": "₩21,250",
-      "dod": 1.0,
-      "mom": 5.7,
-      "ytdReturn": 8.4,
+      "price": "₩22,500",
+      "dod": 5.9,
+      "mom": 12.2,
+      "ytdReturn": 14.8,
       "weekHigh52": 24950.0,
       "weekLow52": 17910.0,
       "sector": "kr-shipping"
@@ -722,10 +722,10 @@
     {
       "ticker": "005490.KS",
       "name": "POSCO Holdings",
-      "price": "₩334,000",
-      "dod": 2.6,
-      "mom": 6.2,
-      "ytdReturn": 13.5,
+      "price": "₩322,500",
+      "dod": -3.4,
+      "mom": 3.5,
+      "ytdReturn": 9.6,
       "weekHigh52": 542000.0,
       "weekLow52": 258500.0,
       "sector": "kr-energy"
@@ -733,10 +733,10 @@
     {
       "ticker": "010120.KS",
       "name": "LS Electric",
-      "price": "₩206,500",
-      "dod": -3.5,
-      "mom": 2.5,
-      "ytdReturn": 110.5,
+      "price": "₩208,000",
+      "dod": 0.7,
+      "mom": 9.5,
+      "ytdReturn": 112.0,
       "weekHigh52": 335000.0,
       "weekLow52": 50600.0,
       "sector": "kr-defense"
