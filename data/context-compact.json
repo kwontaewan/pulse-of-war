@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T10:56:55.847298+00:00",
+  "generatedAt": "2026-09-14T11:31:04.511691+00:00",
   "conflictCount": 26,
   "conflictsWithImpact": [
     {
@@ -414,10 +414,10 @@
     {
       "ticker": "RHMT.ME",
       "name": "Rheinmetall",
-      "price": "€991",
-      "dod": -2.5,
-      "mom": -15.2,
-      "ytdReturn": -37.5,
+      "price": "€998",
+      "dod": 0.8,
+      "mom": -14.3,
+      "ytdReturn": -37.1,
       "weekHigh52": 2008.0,
       "weekLow52": 928.8,
       "sector": "defense"
@@ -546,10 +546,10 @@
     {
       "ticker": "012450.KS",
       "name": "Hanwha Aerospace",
-      "price": "₩1,081,000",
-      "dod": 1.3,
-      "mom": -6.5,
-      "ytdReturn": 14.3,
+      "price": "₩1,137,000",
+      "dod": 5.2,
+      "mom": -4.1,
+      "ytdReturn": 20.2,
       "weekHigh52": 1655000.0,
       "weekLow52": 783000.0,
       "sector": "kr-defense"
@@ -557,10 +557,10 @@
     {
       "ticker": "079550.KS",
       "name": "LIG Nex1",
-      "price": "₩678,000",
-      "dod": -0.3,
-      "mom": -14.0,
-      "ytdReturn": 55.1,
+      "price": "₩705,000",
+      "dod": 4.0,
+      "mom": -15.8,
+      "ytdReturn": 61.2,
       "weekHigh52": 1118000.0,
       "weekLow52": 360000.0,
       "sector": "kr-defense"
@@ -568,10 +568,10 @@
     {
       "ticker": "064350.KS",
       "name": "Hyundai Rotem",
-      "price": "₩124,100",
+      "price": "₩124,400",
       "dod": 0.2,
-      "mom": -15.3,
-      "ytdReturn": -35.6,
+      "mom": -15.7,
+      "ytdReturn": -35.5,
       "weekHigh52": 282000.0,
       "weekLow52": 113100.0,
       "sector": "kr-defense"
@@ -579,10 +579,10 @@
     {
       "ticker": "BA.L",
       "name": "BAE Systems",
-      "price": "£1,898",
-      "dod": -1.3,
-      "mom": -16.4,
-      "ytdReturn": 8.2,
+      "price": "£1,931",
+      "dod": 1.8,
+      "mom": -13.6,
+      "ytdReturn": 10.1,
       "weekHigh52": 2360.0,
       "weekLow52": 1529.0,
       "sector": "defense"
@@ -590,10 +590,10 @@
     {
       "ticker": "LDOF.MI",
       "name": "Leonardo",
-      "price": "€50.00",
-      "dod": -0.1,
-      "mom": -16.3,
-      "ytdReturn": -1.2,
+      "price": "€49.69",
+      "dod": -0.6,
+      "mom": -16.2,
+      "ytdReturn": -1.8,
       "weekHigh52": 66.26,
       "weekLow52": 44.25,
       "sector": "defense"
@@ -601,10 +601,10 @@
     {
       "ticker": "BTC-USD",
       "name": "Bitcoin",
-      "price": "$76,661",
-      "dod": -0.8,
+      "price": "$77,849",
+      "dod": 19.7,
       "mom": -1.4,
-      "ytdReturn": -13.6,
+      "ytdReturn": -12.3,
       "weekHigh52": 126198.07,
       "weekLow52": 57747.77,
       "sector": "crypto"
@@ -612,10 +612,10 @@
     {
       "ticker": "ETH-USD",
       "name": "Ethereum",
-      "price": "$2,474",
-      "dod": -2.0,
-      "mom": 0.4,
-      "ytdReturn": -17.5,
+      "price": "$2,513",
+      "dod": 33.9,
+      "mom": 1.3,
+      "ytdReturn": -16.2,
       "weekHigh52": 4755.22,
       "weekLow52": 1506.51,
       "sector": "crypto"
@@ -645,10 +645,10 @@
     {
       "ticker": "047810.KS",
       "name": "Korea Aerospace Industries",
-      "price": "₩130,500",
-      "dod": -2.0,
-      "mom": -9.4,
-      "ytdReturn": 12.1,
+      "price": "₩133,000",
+      "dod": 1.9,
+      "mom": -12.0,
+      "ytdReturn": 14.2,
       "weekHigh52": 215500.0,
       "weekLow52": 95100.0,
       "sector": "kr-defense"
@@ -656,10 +656,10 @@
     {
       "ticker": "103140.KS",
       "name": "Poongsan",
-      "price": "₩77,500",
-      "dod": -1.6,
-      "mom": -5.7,
-      "ytdReturn": -26.0,
+      "price": "₩78,400",
+      "dod": 1.2,
+      "mom": -6.7,
+      "ytdReturn": -25.1,
       "weekHigh52": 159200.0,
       "weekLow52": 55200.0,
       "sector": "kr-defense"
@@ -668,7 +668,7 @@
       "ticker": "329180.KS",
       "name": "HD Hyundai Heavy Industries",
       "price": "₩479,000",
-      "dod": 5.6,
+      "dod": 0.0,
       "mom": -3.4,
       "ytdReturn": -3.1,
       "weekHigh52": 765000.0,
@@ -678,10 +678,10 @@
     {
       "ticker": "272210.KS",
       "name": "Hanwha Systems",
-      "price": "₩70,900",
-      "dod": -2.1,
-      "mom": -6.2,
-      "ytdReturn": 28.7,
+      "price": "₩75,000",
+      "dod": 5.8,
+      "mom": -5.8,
+      "ytdReturn": 36.1,
       "weekHigh52": 184000.0,
       "weekLow52": 44750.0,
       "sector": "kr-defense"
@@ -689,10 +689,10 @@
     {
       "ticker": "042660.KS",
       "name": "Hanwha Ocean",
-      "price": "₩85,600",
-      "dod": 0.1,
-      "mom": -5.0,
-      "ytdReturn": -25.4,
+      "price": "₩85,900",
+      "dod": 0.4,
+      "mom": -5.3,
+      "ytdReturn": -25.1,
       "weekHigh52": 154800.0,
       "weekLow52": 71300.0,
       "sector": "kr-defense"
@@ -700,10 +700,10 @@
     {
       "ticker": "096770.KS",
       "name": "SK Innovation",
-      "price": "₩144,800",
-      "dod": -5.4,
-      "mom": 18.3,
-      "ytdReturn": 44.9,
+      "price": "₩136,700",
+      "dod": -5.6,
+      "mom": 12.3,
+      "ytdReturn": 36.8,
       "weekHigh52": 164700.0,
       "weekLow52": 87700.0,
       "sector": "kr-energy"
@@ -711,10 +711,10 @@
     {
       "ticker": "011200.KS",
       "name": "HMM",
-      "price": "₩20,850",
-      "dod": 0.0,
-      "mom": -2.3,
-      "ytdReturn": 6.4,
+      "price": "₩21,250",
+      "dod": 1.9,
+      "mom": 1.0,
+      "ytdReturn": 8.4,
       "weekHigh52": 24950.0,
       "weekLow52": 17910.0,
       "sector": "kr-shipping"
@@ -722,10 +722,10 @@
     {
       "ticker": "005490.KS",
       "name": "POSCO Holdings",
-      "price": "₩334,000",
-      "dod": -1.5,
-      "mom": 3.4,
-      "ytdReturn": 14.2,
+      "price": "₩326,000",
+      "dod": -2.4,
+      "mom": 0.8,
+      "ytdReturn": 11.4,
       "weekHigh52": 542000.0,
       "weekLow52": 258500.0,
       "sector": "kr-energy"
@@ -733,10 +733,10 @@
     {
       "ticker": "010120.KS",
       "name": "LS Electric",
-      "price": "₩204,500",
-      "dod": -0.7,
-      "mom": -1.9,
-      "ytdReturn": 108.4,
+      "price": "₩199,300",
+      "dod": -2.5,
+      "mom": -6.9,
+      "ytdReturn": 103.1,
       "weekHigh52": 335000.0,
       "weekLow52": 53800.0,
       "sector": "kr-defense"
@@ -744,10 +744,10 @@
     {
       "ticker": "000880.KS",
       "name": "Hanwha",
-      "price": "₩137,300",
-      "dod": -0.9,
-      "mom": 23.9,
-      "ytdReturn": 29.2,
+      "price": "₩143,700",
+      "dod": 4.7,
+      "mom": 29.7,
+      "ytdReturn": 35.2,
       "weekHigh52": 220003.0,
       "weekLow52": 100600.0,
       "sector": "kr-defense"
