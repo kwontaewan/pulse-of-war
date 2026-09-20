@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T10:09:03.610318+00:00",
+  "generatedAt": "2026-09-20T10:27:28.581319+00:00",
   "conflictCount": 26,
   "conflictsWithImpact": [
     {
@@ -507,7 +507,7 @@
       "mom": -3.1,
       "ytdReturn": 0.7,
       "weekHigh52": 509.7,
-      "weekLow52": 336.31,
+      "weekLow52": 341.84,
       "sector": "commodity"
     },
     {
@@ -601,10 +601,10 @@
     {
       "ticker": "BTC-USD",
       "name": "Bitcoin",
-      "price": "$81,230",
-      "dod": 0.4,
-      "mom": 3.8,
-      "ytdReturn": -8.5,
+      "price": "$80,306",
+      "dod": -1.1,
+      "mom": 3.4,
+      "ytdReturn": -9.5,
       "weekHigh52": 126198.07,
       "weekLow52": 57747.77,
       "sector": "crypto"
@@ -612,10 +612,10 @@
     {
       "ticker": "ETH-USD",
       "name": "Ethereum",
-      "price": "$2,639",
-      "dod": 1.1,
-      "mom": 7.4,
-      "ytdReturn": -12.0,
+      "price": "$2,574",
+      "dod": -2.2,
+      "mom": 6.5,
+      "ytdReturn": -14.2,
       "weekHigh52": 4755.22,
       "weekLow52": 1506.51,
       "sector": "crypto"
