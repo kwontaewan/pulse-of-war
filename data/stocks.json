@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-26",
+  "lastUpdated": "2026-09-27",
   "sectors": [
     {
       "id": "defense",
@@ -406,7 +406,7 @@
       "pe": null,
       "dividendYield": 0.0,
       "weekHigh52": 509.7,
-      "weekLow52": 345.31,
+      "weekLow52": 350.87,
       "priceNumeric": 393.41,
       "volume": "7.2M"
     },
@@ -461,7 +461,7 @@
       "dod": -3.9,
       "mom": 10.4,
       "yoy": 85.2,
-      "pe": 1012.8,
+      "pe": 914.0,
       "dividendYield": null,
       "weekHigh52": 398.88,
       "weekLow52": 139.57,
@@ -489,7 +489,7 @@
       "dod": -3.3,
       "mom": -29.2,
       "yoy": -39.3,
-      "pe": 179.2,
+      "pe": 178.5,
       "dividendYield": null,
       "weekHigh52": 764.02,
       "weekLow52": 339.01,
@@ -645,11 +645,11 @@
       "name_ko": "비트코인",
       "sector": "crypto",
       "exchange": "CRYPTO",
-      "ytdReturn": -5.2,
+      "ytdReturn": -4.3,
       "warReturn": 45,
       "warReturnSince": "2022-02",
       "marketCap": "$1.7T",
-      "price": "$84,109",
+      "price": "$84,912",
       "conflicts": [
         "US-Iran",
         "Ukraine"
@@ -658,15 +658,15 @@
       "description_ko": "디지털 금 — 지정학 위기 시 안전자산, 제재 우회 수단",
       "rank": 20,
       "trending": true,
-      "dod": 0.0,
-      "mom": 5.4,
-      "yoy": -23.3,
+      "dod": 0.6,
+      "mom": 5.7,
+      "yoy": -22.6,
       "pe": null,
       "dividendYield": null,
       "weekHigh52": 126198.07,
       "weekLow52": 57747.77,
-      "priceNumeric": 84109.27,
-      "volume": "29B"
+      "priceNumeric": 84912.56,
+      "volume": "17B"
     },
     {
       "ticker": "ETH-USD",
@@ -674,11 +674,11 @@
       "name_ko": "이더리움",
       "sector": "crypto",
       "exchange": "CRYPTO",
-      "ytdReturn": -10.5,
+      "ytdReturn": -9.7,
       "warReturn": 25,
       "warReturnSince": "2022-02",
-      "marketCap": "$328B",
-      "price": "$2,686",
+      "marketCap": "$331B",
+      "price": "$2,710",
       "conflicts": [
         "US-Iran"
       ],
@@ -686,15 +686,15 @@
       "description_ko": "스마트 컨트랙트 플랫폼 — 제재 우회 금융 인프라",
       "rank": 21,
       "trending": false,
-      "dod": -0.2,
-      "mom": 8.3,
-      "yoy": -33.4,
+      "dod": 0.5,
+      "mom": 7.8,
+      "yoy": -32.6,
       "pe": null,
       "dividendYield": null,
       "weekHigh52": 4755.22,
       "weekLow52": 1506.51,
-      "priceNumeric": 2686.69,
-      "volume": "11B"
+      "priceNumeric": 2710.3,
+      "volume": "6B"
     },
     {
       "ticker": "IBIT",
@@ -1003,7 +1003,7 @@
       "pe": 40.5,
       "dividendYield": 29.0,
       "weekHigh52": 335000.0,
-      "weekLow52": 53800.0,
+      "weekLow52": 54600.0,
       "priceNumeric": 205500.0,
       "volume": "332K",
       "price": "₩205,500",
