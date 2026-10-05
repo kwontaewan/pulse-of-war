@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-04",
+  "lastUpdated": "2026-10-05",
   "sectors": [
     {
       "id": "defense",
@@ -158,11 +158,11 @@
       "name_ko": "라인메탈",
       "sector": "defense",
       "exchange": "XETRA",
-      "ytdReturn": -39.7,
+      "ytdReturn": -38.8,
       "warReturn": 312,
       "warReturnSince": "2022-02",
       "marketCap": "$45B",
-      "price": "€957",
+      "price": "€971",
       "conflicts": [
         "Ukraine"
       ],
@@ -170,15 +170,15 @@
       "description_ko": "유럽 방산 대장주 — 탱크, 탄약, 군용 차량",
       "rank": 3,
       "trending": true,
-      "dod": 1.2,
-      "mom": -10.6,
-      "yoy": -51.3,
-      "pe": 36.8,
+      "dod": 1.5,
+      "mom": -6.1,
+      "yoy": -48.1,
+      "pe": 37.7,
       "dividendYield": 120.0,
       "weekHigh52": 1972.0,
       "weekLow52": 928.8,
-      "priceNumeric": 956.9,
-      "volume": "208K"
+      "priceNumeric": 971.1,
+      "volume": "71K"
     },
     {
       "ticker": "NOC",
@@ -231,7 +231,7 @@
       "dod": 0.1,
       "mom": -1.8,
       "yoy": 35.9,
-      "pe": 52.3,
+      "pe": 52.4,
       "dividendYield": 57.0,
       "weekHigh52": 1016.06,
       "weekLow52": 453.0,
@@ -345,7 +345,7 @@
       "dod": 0.4,
       "mom": -4.2,
       "yoy": 32.1,
-      "pe": 17.1,
+      "pe": 16.5,
       "dividendYield": 193.0,
       "weekHigh52": 67.45,
       "weekLow52": 38.8,
@@ -375,7 +375,7 @@
       "mom": 5.7,
       "yoy": 120.2,
       "pe": 25.8,
-      "dividendYield": 788.0,
+      "dividendYield": 0.0,
       "weekHigh52": 30.96,
       "weekLow52": 12.33,
       "priceNumeric": 29.63,
@@ -432,12 +432,12 @@
       "dod": 1.5,
       "mom": 32.7,
       "yoy": 120.5,
-      "pe": 9001.3,
-      "dividendYield": null,
+      "pe": 4500.7,
+      "dividendYield": 0.0,
       "weekHigh52": 273.54,
       "weekLow52": 85.68,
       "priceNumeric": 270.04,
-      "volume": "5.8M"
+      "volume": "5.9M"
     },
     {
       "ticker": "PANW",
@@ -462,11 +462,11 @@
       "mom": 22.8,
       "yoy": 94.6,
       "pe": 1008.1,
-      "dividendYield": null,
+      "dividendYield": 0.0,
       "weekHigh52": 409.5,
       "weekLow52": 139.57,
       "priceNumeric": 403.24,
-      "volume": "4.8M"
+      "volume": "4.9M"
     },
     {
       "ticker": "AXON",
@@ -489,12 +489,12 @@
       "dod": -2.1,
       "mom": -18.5,
       "yoy": -42.2,
-      "pe": 172.2,
-      "dividendYield": null,
+      "pe": 171.5,
+      "dividendYield": 0.0,
       "weekHigh52": 764.02,
       "weekLow52": 339.01,
       "priceNumeric": 413.35,
-      "volume": "823K"
+      "volume": "825K"
     },
     {
       "ticker": "012450.KS",
@@ -588,11 +588,11 @@
       "name_ko": "BAE 시스템즈",
       "sector": "defense",
       "exchange": "LSE",
-      "ytdReturn": 9.5,
+      "ytdReturn": 10.7,
       "warReturn": 120,
       "warReturnSince": "2022-02",
-      "marketCap": "$56B",
-      "price": "£1,921",
+      "marketCap": "$57B",
+      "price": "£1,940",
       "conflicts": [
         "Ukraine",
         "US-Iran"
@@ -601,15 +601,15 @@
       "description_ko": "영국 최대 방산업체 — 잠수함, 전투기, 사이버전",
       "rank": 18,
       "trending": false,
-      "dod": -1.1,
-      "mom": -2.9,
-      "yoy": -6.7,
-      "pe": 27.4,
-      "dividendYield": 197.0,
+      "dod": 1.0,
+      "mom": -0.8,
+      "yoy": -3.7,
+      "pe": 27.7,
+      "dividendYield": 189.0,
       "weekHigh52": 2360.0,
       "weekLow52": 1529.0,
-      "priceNumeric": 1921.0,
-      "volume": "3.2M"
+      "priceNumeric": 1940.63,
+      "volume": "817K"
     },
     {
       "ticker": "LDOF.MI",
@@ -617,11 +617,11 @@
       "name_ko": "레오나르도",
       "sector": "defense",
       "exchange": "MIL",
-      "ytdReturn": -6.4,
+      "ytdReturn": -5.2,
       "warReturn": 95,
       "warReturnSince": "2022-02",
-      "marketCap": "$27B",
-      "price": "€47.39",
+      "marketCap": "$28B",
+      "price": "€47.98",
       "conflicts": [
         "Ukraine"
       ],
@@ -629,15 +629,15 @@
       "description_ko": "이탈리아 방산 대장 — 헬기, 전자장비, 사이버보안",
       "rank": 19,
       "trending": false,
-      "dod": -0.9,
-      "mom": -6.4,
-      "yoy": -13.8,
-      "pe": 24.3,
+      "dod": 1.3,
+      "mom": -4.9,
+      "yoy": -12.3,
+      "pe": 24.0,
       "dividendYield": 133.0,
       "weekHigh52": 66.26,
       "weekLow52": 44.25,
-      "priceNumeric": 47.39,
-      "volume": "2.0M"
+      "priceNumeric": 47.98,
+      "volume": "737K"
     },
     {
       "ticker": "BTC-USD",
@@ -645,11 +645,11 @@
       "name_ko": "비트코인",
       "sector": "crypto",
       "exchange": "CRYPTO",
-      "ytdReturn": -3.9,
+      "ytdReturn": -2.9,
       "warReturn": 45,
       "warReturnSince": "2022-02",
       "marketCap": "$1.7T",
-      "price": "$85,269",
+      "price": "$86,148",
       "conflicts": [
         "US-Iran",
         "Ukraine"
@@ -658,15 +658,15 @@
       "description_ko": "디지털 금 — 지정학 위기 시 안전자산, 제재 우회 수단",
       "rank": 20,
       "trending": true,
-      "dod": 0.6,
-      "mom": 11.0,
+      "dod": -0.4,
+      "mom": 10.2,
       "yoy": -30.3,
       "pe": null,
       "dividendYield": null,
       "weekHigh52": 126198.07,
       "weekLow52": 57747.77,
-      "priceNumeric": 85269.75,
-      "volume": "13B"
+      "priceNumeric": 86148.71,
+      "volume": "24B"
     },
     {
       "ticker": "ETH-USD",
@@ -674,11 +674,11 @@
       "name_ko": "이더리움",
       "sector": "crypto",
       "exchange": "CRYPTO",
-      "ytdReturn": -10.0,
+      "ytdReturn": -9.3,
       "warReturn": 25,
       "warReturnSince": "2022-02",
-      "marketCap": "$330B",
-      "price": "$2,700",
+      "marketCap": "$332B",
+      "price": "$2,722",
       "conflicts": [
         "US-Iran"
       ],
@@ -686,15 +686,15 @@
       "description_ko": "스마트 컨트랙트 플랫폼 — 제재 우회 금융 인프라",
       "rank": 21,
       "trending": false,
-      "dod": 0.5,
-      "mom": 9.0,
-      "yoy": -39.8,
+      "dod": -0.2,
+      "mom": 8.3,
+      "yoy": -39.7,
       "pe": null,
       "dividendYield": null,
       "weekHigh52": 4755.22,
       "weekLow52": 1506.51,
-      "priceNumeric": 2700.66,
-      "volume": "5B"
+      "priceNumeric": 2722.23,
+      "volume": "10B"
     },
     {
       "ticker": "IBIT",
@@ -722,7 +722,7 @@
       "weekHigh52": 71.82,
       "weekLow52": 32.84,
       "priceNumeric": 47.73,
-      "volume": "48.5M"
+      "volume": "48.7M"
     },
     {
       "ticker": "PPA",
@@ -887,7 +887,7 @@
       "mom": -10.4,
       "yoy": -28.8,
       "pe": 12.4,
-      "dividendYield": null,
+      "dividendYield": 0.0,
       "weekHigh52": 154800.0,
       "weekLow52": 71300.0,
       "priceNumeric": 78800.0,
@@ -915,7 +915,7 @@
       "mom": 13.8,
       "yoy": 46.8,
       "pe": 14.6,
-      "dividendYield": 184.0,
+      "dividendYield": 0.0,
       "weekHigh52": 164700.0,
       "weekLow52": 87700.0,
       "priceNumeric": 154000.0,
