@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-17",
+  "lastUpdated": "2026-10-18",
   "sectors": [
     {
       "id": "defense",
@@ -174,7 +174,7 @@
       "mom": 7.3,
       "yoy": -37.9,
       "pe": 42.3,
-      "dividendYield": 112.0,
+      "dividendYield": 105.0,
       "weekHigh52": 1966.0,
       "weekLow52": 909.0,
       "priceNumeric": 1090.2,
@@ -377,7 +377,7 @@
       "pe": 25.4,
       "dividendYield": 0.0,
       "weekHigh52": 30.98,
-      "weekLow52": 13.19,
+      "weekLow52": 13.4,
       "priceNumeric": 29.21,
       "volume": "1.0M"
     },
@@ -605,7 +605,7 @@
       "mom": -2.9,
       "yoy": 4.0,
       "pe": 28.3,
-      "dividendYield": 188.0,
+      "dividendYield": 183.0,
       "weekHigh52": 2360.0,
       "weekLow52": 1529.0,
       "priceNumeric": 1983.5,
@@ -633,7 +633,7 @@
       "mom": -0.5,
       "yoy": 0.5,
       "pe": 24.8,
-      "dividendYield": 131.0,
+      "dividendYield": 125.0,
       "weekHigh52": 66.26,
       "weekLow52": 44.25,
       "priceNumeric": 50.42,
@@ -645,11 +645,11 @@
       "name_ko": "비트코인",
       "sector": "crypto",
       "exchange": "CRYPTO",
-      "ytdReturn": -8.2,
+      "ytdReturn": -7.5,
       "warReturn": 45,
       "warReturnSince": "2022-02",
       "marketCap": "$1.6T",
-      "price": "$81,462",
+      "price": "$82,053",
       "conflicts": [
         "US-Iran",
         "Ukraine"
@@ -658,15 +658,15 @@
       "description_ko": "디지털 금 — 지정학 위기 시 안전자산, 제재 우회 수단",
       "rank": 20,
       "trending": true,
-      "dod": -0.0,
-      "mom": -3.5,
+      "dod": 0.8,
+      "mom": -2.8,
       "yoy": -23.5,
       "pe": null,
       "dividendYield": null,
       "weekHigh52": 116273.31,
       "weekLow52": 57747.77,
-      "priceNumeric": 81462.03,
-      "volume": "23B"
+      "priceNumeric": 82053.18,
+      "volume": "13B"
     },
     {
       "ticker": "ETH-USD",
@@ -674,11 +674,11 @@
       "name_ko": "이더리움",
       "sector": "crypto",
       "exchange": "CRYPTO",
-      "ytdReturn": -19.0,
+      "ytdReturn": -19.3,
       "warReturn": 25,
       "warReturnSince": "2022-02",
-      "marketCap": "$297B",
-      "price": "$2,431",
+      "marketCap": "$296B",
+      "price": "$2,420",
       "conflicts": [
         "US-Iran"
       ],
@@ -686,15 +686,15 @@
       "description_ko": "스마트 컨트랙트 플랫폼 — 제재 우회 금융 인프라",
       "rank": 21,
       "trending": false,
-      "dod": 0.5,
-      "mom": -9.8,
-      "yoy": -36.6,
+      "dod": 0.9,
+      "mom": -9.9,
+      "yoy": -37.8,
       "pe": null,
       "dividendYield": null,
       "weekHigh52": 4250.67,
       "weekLow52": 1506.51,
-      "priceNumeric": 2431.26,
-      "volume": "10B"
+      "priceNumeric": 2420.28,
+      "volume": "6B"
     },
     {
       "ticker": "IBIT",
@@ -829,7 +829,7 @@
       "dod": -0.3,
       "mom": -26.6,
       "yoy": -29.5,
-      "pe": 9.9,
+      "pe": 10.1,
       "dividendYield": 287.0,
       "weekHigh52": 765000.0,
       "weekLow52": 343500.0,
